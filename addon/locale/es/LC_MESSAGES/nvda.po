@@ -1,0 +1,211 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 13:35+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: NVDA DevOn Addon\n"
+
+#: diagnostic.py:59
+msgid "&Cancel"
+msgstr "&Cancelar"
+
+#: diagnostic.py:56
+msgid "&No"
+msgstr "&No"
+
+#: diagnostic.py:62
+msgid "&OK"
+msgstr "&Aceptar"
+
+#: diagnostic.py:53
+msgid "&Yes"
+msgstr "&Sí"
+
+#: doctor.py:305
+msgid "All addons active"
+msgstr "Todos los complementos están activos"
+
+#: doctor.py:284
+msgid "All configuration files present"
+msgstr "Todos los archivos de configuración presentes"
+
+#: recovery.py:139
+#: recovery_gui.py:81
+msgid "All recoveries removed"
+msgstr "Todos los puntos de recuperación eliminados"
+
+#: recovery_gui.py:114
+msgid "Are you sure you want to delete {}?"
+msgstr "¿Estás seguro de que deseas eliminar {}?"
+
+#: recovery_gui.py:76
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "¿Estás seguro de que deseas eliminar todos los puntos de recuperación?"
+
+#: __init__.py:70
+msgid "Binary Search Debugging add-on"
+msgstr "Complemento de depuración mediante búsqueda binaria"
+
+#: recovery_gui.py:40
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: __init__.py:68
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Cancelar diagnóstico de complementos y restaurar todo"
+
+#: recovery_gui.py:115
+msgid "Confirm delete"
+msgstr "Confirmar eliminación"
+
+#: recovery_gui.py:77
+msgid "Confirm remove all"
+msgstr "Confirmar eliminar todo"
+
+#: doctor.py:331
+msgid "Copied to clipboard: {}"
+msgstr "Copiado al portapapeles: {}"
+
+#: __init__.py:61
+msgid "Create NVDA Setting Recovery"
+msgstr "Crear recuperación de configuración de NVDA"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Error al crear recuperación"
+
+#: recovery_gui.py:102
+msgid "Delete"
+msgstr "Eliminar"
+
+#: recovery_gui.py:121
+msgid "Deleted."
+msgstr "Eliminado."
+
+#: diagnostic.py:214
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Diagnóstico completado. Encontrado y desactivado: {name}"
+
+#: __init__.py:85
+#: diagnostic.py:160
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:43
+msgid "DoctorNVDA Health Check"
+msgstr "Control de salud de DoctorNVDA"
+
+#: menu.py:17
+#: menu.py:86
+msgid "DoctorNVDA Menu"
+msgstr "Menú de DoctorNVDA"
+
+#: recovery_gui.py:123
+msgid "Error"
+msgstr "Error"
+
+#: recovery_gui.py:123
+msgid "Error deleting: {}"
+msgstr "Error al eliminar: {}"
+
+#: doctor.py:307
+msgid "Found {n} inactive addons Opening report"
+msgstr "Encontrados {n} complementos inactivos. Abriendo informe"
+
+#: doctor.py:286
+msgid "Missing {n} configuration files"
+msgstr "Faltan {n} archivos de configuración"
+
+#: __init__.py:60
+msgid "NVDA Version: {}"
+msgstr "Versión de NVDA: {}"
+
+#: diagnostic.py:153
+msgid "No active add-ons found to diagnose."
+msgstr "No se encontraron complementos activos para diagnosticar."
+
+#: recovery_gui.py:73
+msgid "No selection"
+msgstr "Sin selección"
+
+#: recovery_gui.py:73
+msgid "Please select a folder."
+msgstr "Por favor, selecciona una carpeta."
+
+#: diagnostic.py:159
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "¿Listo para iniciar el diagnóstico? NVDA se reiniciará y desactivará la mitad de tus complementos activos."
+
+#: recovery_gui.py:30
+msgid "Recovery Folder"
+msgstr "Carpeta de recuperación"
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Recuperación creada: {n}"
+
+#: recovery_gui.py:38
+msgid "Remove All"
+msgstr "Eliminar todo"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Eliminado: {n}"
+
+#: __init__.py:65
+msgid "Restart NVDA with add-ons disabled"
+msgstr "Reiniciar NVDA con los complementos desactivados"
+
+#: recovery_gui.py:36
+msgid "Restore"
+msgstr "Restaurar"
+
+#: __init__.py:64
+msgid "Restore NVDA Setting"
+msgstr "Restaurar configuración de NVDA"
+
+#: __init__.py:64
+msgid "Restore NVDA Setting unavailable"
+msgstr "Restauración de configuración de NVDA no disponible"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Restauración completada, reiniciando NVDA..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Error al restaurar"
+
+#: __init__.py:34
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"Ronda {round}: {count} complementos están DESACTIVADOS.\n"
+"\n"
+"¿Se ha SOLUCIONADO el problema?\n"
+
+#: recovery_gui.py:19
+msgid "Select Recovery Folder"
+msgstr "Seleccionar carpeta de recuperación"
+
+#: __init__.py:72
+msgid "System Info Summary"
+msgstr "Resumen de información del sistema"
+
+#: doctor.py:279
+msgid "System info copied"
+msgstr "Información del sistema copiada"
+
+#: doctor.py:321
+#: doctor.py:324
+msgid "Unknown NVDA version"
+msgstr "Versión de NVDA desconocida"
