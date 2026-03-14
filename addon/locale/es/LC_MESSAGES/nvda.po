@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.3\n"
+"Project-Id-Version: DoctorNVDA 2026.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11 13:35+0700\n"
+"POT-Creation-Date: 2026-03-14 14:47+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Anonymous <anonymous@example.com>\n"
 "Language-Team: Spanish\n"
@@ -28,32 +28,32 @@ msgstr "&Aceptar"
 msgid "&Yes"
 msgstr "&Sí"
 
-#: doctor.py:305
+#: doctor.py:308
 msgid "All addons active"
 msgstr "Todos los complementos están activos"
 
-#: doctor.py:284
+#: doctor.py:287
 msgid "All configuration files present"
 msgstr "Todos los archivos de configuración presentes"
 
 #: recovery.py:139
-#: recovery_gui.py:81
+#: recovery_gui.py:80
 msgid "All recoveries removed"
-msgstr "Todos los puntos de recuperación eliminados"
+msgstr "Todas las recuperaciones eliminadas"
 
-#: recovery_gui.py:114
+#: recovery_gui.py:113
 msgid "Are you sure you want to delete {}?"
-msgstr "¿Estás seguro de que deseas eliminar {}?"
+msgstr "¿Estás seguro de que quieres eliminar {}?"
 
-#: recovery_gui.py:76
+#: recovery_gui.py:75
 msgid "Are you sure you want to remove all recovery points?"
-msgstr "¿Estás seguro de que deseas eliminar todos los puntos de recuperación?"
+msgstr "¿Estás seguro de que quieres eliminar todos los puntos de recuperación?"
 
 #: __init__.py:70
 msgid "Binary Search Debugging add-on"
-msgstr "Complemento de depuración mediante búsqueda binaria"
+msgstr "Complemento de depuración por búsqueda binaria"
 
-#: recovery_gui.py:40
+#: recovery_gui.py:39
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -61,15 +61,23 @@ msgstr "Cancelar"
 msgid "Cancel Add-on Diagnostic and Restore All"
 msgstr "Cancelar diagnóstico de complementos y restaurar todo"
 
-#: recovery_gui.py:115
+#: __init__.py:73
+msgid "Check Ram"
+msgstr "Comprobar RAM"
+
+#: recovery_gui.py:114
 msgid "Confirm delete"
 msgstr "Confirmar eliminación"
 
-#: recovery_gui.py:77
+#: recovery_gui.py:76
 msgid "Confirm remove all"
 msgstr "Confirmar eliminar todo"
 
-#: doctor.py:331
+#: doctor.py:712
+msgid "Copied to clipboard: RAM details"
+msgstr "Copiado al portapapeles: detalles de la RAM"
+
+#: doctor.py:334
 msgid "Copied to clipboard: {}"
 msgstr "Copiado al portapapeles: {}"
 
@@ -79,13 +87,13 @@ msgstr "Crear recuperación de configuración de NVDA"
 
 #: recovery.py:93
 msgid "Create recovery failed"
-msgstr "Error al crear recuperación"
+msgstr "Fallo al crear la recuperación"
 
-#: recovery_gui.py:102
+#: recovery_gui.py:101
 msgid "Delete"
 msgstr "Eliminar"
 
-#: recovery_gui.py:121
+#: recovery_gui.py:122
 msgid "Deleted."
 msgstr "Eliminado."
 
@@ -93,33 +101,41 @@ msgstr "Eliminado."
 msgid "Diagnostic complete. Found and disabled: {name}"
 msgstr "Diagnóstico completado. Encontrado y desactivado: {name}"
 
-#: __init__.py:85
+#: __init__.py:88
 #: diagnostic.py:160
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
 #: __init__.py:43
 msgid "DoctorNVDA Health Check"
-msgstr "Control de salud de DoctorNVDA"
+msgstr "Chequeo de salud de DoctorNVDA"
 
 #: menu.py:17
 #: menu.py:86
 msgid "DoctorNVDA Menu"
-msgstr "Menú de DoctorNVDA"
+msgstr "Menú DoctorNVDA"
 
-#: recovery_gui.py:123
+#: recovery_gui.py:124
 msgid "Error"
 msgstr "Error"
 
-#: recovery_gui.py:123
+#: recovery_gui.py:124
 msgid "Error deleting: {}"
 msgstr "Error al eliminar: {}"
 
-#: doctor.py:307
-msgid "Found {n} inactive addons Opening report"
-msgstr "Encontrados {n} complementos inactivos. Abriendo informe"
+#: doctor.py:717
+msgid "Error retrieving RAM details"
+msgstr "Error al obtener los detalles de la RAM"
 
-#: doctor.py:286
+#: doctor.py:310
+msgid "Found {n} inactive addons Opening report"
+msgstr "Se encontraron {n} complementos inactivos. Abriendo informe"
+
+#: doctor.py:714
+msgid "If information is incomplete, please check NVDA log for raw data."
+msgstr "Si la información es incompleta, consulta el registro de NVDA para ver datos brutos."
+
+#: doctor.py:289
 msgid "Missing {n} configuration files"
 msgstr "Faltan {n} archivos de configuración"
 
@@ -131,19 +147,19 @@ msgstr "Versión de NVDA: {}"
 msgid "No active add-ons found to diagnose."
 msgstr "No se encontraron complementos activos para diagnosticar."
 
-#: recovery_gui.py:73
+#: recovery_gui.py:72
 msgid "No selection"
 msgstr "Sin selección"
 
-#: recovery_gui.py:73
+#: recovery_gui.py:72
 msgid "Please select a folder."
 msgstr "Por favor, selecciona una carpeta."
 
 #: diagnostic.py:159
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
-msgstr "¿Listo para iniciar el diagnóstico? NVDA se reiniciará y desactivará la mitad de tus complementos activos."
+msgstr "¿Listo para comenzar el diagnóstico? NVDA se reiniciará y desactivará la mitad de tus complementos activos."
 
-#: recovery_gui.py:30
+#: recovery_gui.py:29
 msgid "Recovery Folder"
 msgstr "Carpeta de recuperación"
 
@@ -151,7 +167,7 @@ msgstr "Carpeta de recuperación"
 msgid "Recovery created: {n}"
 msgstr "Recuperación creada: {n}"
 
-#: recovery_gui.py:38
+#: recovery_gui.py:37
 msgid "Remove All"
 msgstr "Eliminar todo"
 
@@ -161,9 +177,9 @@ msgstr "Eliminado: {n}"
 
 #: __init__.py:65
 msgid "Restart NVDA with add-ons disabled"
-msgstr "Reiniciar NVDA con los complementos desactivados"
+msgstr "Reiniciar NVDA con complementos desactivados"
 
-#: recovery_gui.py:36
+#: recovery_gui.py:35
 msgid "Restore"
 msgstr "Restaurar"
 
@@ -173,7 +189,7 @@ msgstr "Restaurar configuración de NVDA"
 
 #: __init__.py:64
 msgid "Restore NVDA Setting unavailable"
-msgstr "Restauración de configuración de NVDA no disponible"
+msgstr "Restauración de configuración no disponible"
 
 #: recovery.py:124
 msgid "Restore completed, restarting NVDA..."
@@ -181,7 +197,7 @@ msgstr "Restauración completada, reiniciando NVDA..."
 
 #: recovery.py:126
 msgid "Restore failed"
-msgstr "Error al restaurar"
+msgstr "Fallo al restaurar"
 
 #: __init__.py:34
 msgid ""
@@ -193,19 +209,23 @@ msgstr ""
 "\n"
 "¿Se ha SOLUCIONADO el problema?\n"
 
-#: recovery_gui.py:19
+#: recovery_gui.py:18
 msgid "Select Recovery Folder"
 msgstr "Seleccionar carpeta de recuperación"
 
-#: __init__.py:72
+#: __init__.py:74
 msgid "System Info Summary"
 msgstr "Resumen de información del sistema"
 
-#: doctor.py:279
+#: doctor.py:282
 msgid "System info copied"
 msgstr "Información del sistema copiada"
 
-#: doctor.py:321
+#: doctor.py:640
+msgid "Unable to retrieve RAM details."
+msgstr "No se pudieron obtener los detalles de la RAM."
+
 #: doctor.py:324
+#: doctor.py:327
 msgid "Unknown NVDA version"
 msgstr "Versión de NVDA desconocida"

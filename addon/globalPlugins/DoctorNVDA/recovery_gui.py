@@ -1,5 +1,4 @@
 # recovery_gui.py
-
 import wx
 import os
 import shutil
@@ -114,7 +113,9 @@ class RestoreDialog(wx.Dialog):
 		if wx.MessageBox(_("Are you sure you want to delete {}?").format(os.path.basename(folder)),
 						 _("Confirm delete"), wx.YES_NO | wx.ICON_QUESTION) == wx.YES:
 			try:
-				shutil.rmtree(folder)
+				# Construct full path using recovery base path
+				full_path = os.path.join(recovery.get_recovery_base_path(), folder)
+				shutil.rmtree(full_path)
 				index = self.listCtrl.GetFirstSelected()
 				self.listCtrl.DeleteItem(index)
 				self.folders.pop(index)

@@ -69,6 +69,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			items.append((_("Binary Search Debugging add-on"), "diag_addons"))
 
+		# Insert Check Ram here
+		items.append((_("Check Ram"), "check_ram"))
 		items.append((_("System Info Summary"), "sys_info"))
 		return items
 
@@ -79,10 +81,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		elif data == "copy_version": doctor.copy_version_to_clipboard()
 		elif data == "create_rec": recovery.create_recovery()
 		elif data == "sys_info": doctor.copy_sys_info()
-		elif data == "restart_safe": doctor.restart_nvda()  # Changed from core.restart() to doctor.restart_nvda()
+		elif data == "restart_safe": doctor.restart_nvda()
+		elif data == "check_ram": doctor.copy_ram_info()  # New handler
 
 	def script_doctorNVDA_menu(self, gesture):
 		wx.CallAfter(menu.showMenu, self._get_flat_menu_items, self._menu_callback, title=_("DoctorNVDA"))
 
 	__gestures = {"kb:alt+windows+d": "doctorNVDA_menu"}
-
