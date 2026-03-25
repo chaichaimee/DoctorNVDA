@@ -9,7 +9,7 @@ import core
 import gui
 import addonHandler
 import globalPluginHandler
-from . import recovery, doctor, menu, recovery_gui, diagnostic
+from . import recovery, doctor, menu, recovery_gui, diagnostic, utils
 
 addonHandler.initTranslation()
 try:
@@ -64,10 +64,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		items.append((_("Restore NVDA Setting") if recs else _("Restore NVDA Setting unavailable"), "sub_restore" if recs else "none"))
 		items.append((_("Restart NVDA with add-ons disabled"), "restart_safe"))
 
+		# New normal restart item with version number (no extra parentheses)
+		ver = doctor.get_nvda_version()
+		items.append((_("Restart NVDA {}").format(ver), "restart_normal"))
+
 		if diagnostic.load_state():
 			items.append((_("Cancel Add-on Diagnostic and Restore All"), "diag_cancel"))
 		else:
 			items.append((_("Binary Search Debugging add-on"), "diag_addons"))
+
+		# Add new menu item to open user config folder
+		items.append((_("User Config Folder"), "open_user_config"))
 
 		# Insert Check Ram here
 		items.append((_("Check Ram"), "check_ram"))
@@ -82,9 +89,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		elif data == "create_rec": recovery.create_recovery()
 		elif data == "sys_info": doctor.copy_sys_info()
 		elif data == "restart_safe": doctor.restart_nvda()
-		elif data == "check_ram": doctor.copy_ram_info()  # New handler
+		elif data == "restart_normal": doctor.restart_nvda_normal()  # New handler
+		elif data == "check_ram": doctor.copy_ram_info()
+		elif data == "open_user_config": utils.open_user_config()  # New handler
 
 	def script_doctorNVDA_menu(self, gesture):
+		"""Opens the DoctorNVDA menu with diagnostic and recovery options."""
 		wx.CallAfter(menu.showMenu, self._get_flat_menu_items, self._menu_callback, title=_("DoctorNVDA"))
+
+	# Set script description and category for Input Gestures dialog
+	script_doctorNVDA_menu.description = _("Opens the DoctorNVDA menu.")
+	script_doctorNVDA_menu.category = "DoctorNVDA"
 
 	__gestures = {"kb:alt+windows+d": "doctorNVDA_menu"}

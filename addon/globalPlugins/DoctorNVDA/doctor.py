@@ -315,14 +315,23 @@ def restart_nvda():
 	"""Restart NVDA in safe mode (add-ons disabled)."""
 	core.callLater(100, core.restart, disableAddons=True)
 
+def restart_nvda_normal():
+	"""Restart NVDA normally (with add-ons enabled)."""
+	core.callLater(100, core.restart)
+
 # --- Functions for NVDA Version ---
 def get_nvda_version():
-	"""Return NVDA version string like '2025.3.3 (2025.3.3.54605)'."""
+	"""Return NVDA version string. For stable releases, return just 'YYYY.M.M'. For beta/dev, return 'YYYY.M.M (full version)'."""
 	try:
 		from buildVersion import version, version_year, version_major, version_minor
 		if version == "unknown":
 			return _("Unknown NVDA version")
-		return f"{version_year}.{version_major}.{version_minor} ({version})"
+		main_ver = f"{version_year}.{version_major}.{version_minor}"
+		# If version is exactly the same as main_ver, it's a stable release (no extra build)
+		if version == main_ver:
+			return main_ver
+		else:
+			return f"{main_ver} ({version})"
 	except ImportError:
 		return _("Unknown NVDA version")
 

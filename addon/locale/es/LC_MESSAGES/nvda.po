@@ -1,16 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.3.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-14 14:47+0700\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Anonymous <anonymous@example.com>\n"
-"Language-Team: Spanish\n"
+"Project-Id-Version: DoctorNVDA 2026.3.4\n"
 "Language: es\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: NVDA DevOn Addon\n"
 
 #: diagnostic.py:59
 msgid "&Cancel"
@@ -30,7 +23,7 @@ msgstr "&Sí"
 
 #: doctor.py:308
 msgid "All addons active"
-msgstr "Todos los complementos están activos"
+msgstr "Todos los complementos activos"
 
 #: doctor.py:287
 msgid "All configuration files present"
@@ -49,7 +42,7 @@ msgstr "¿Estás seguro de que quieres eliminar {}?"
 msgid "Are you sure you want to remove all recovery points?"
 msgstr "¿Estás seguro de que quieres eliminar todos los puntos de recuperación?"
 
-#: __init__.py:70
+#: __init__.py:74
 msgid "Binary Search Debugging add-on"
 msgstr "Complemento de depuración por búsqueda binaria"
 
@@ -57,11 +50,11 @@ msgstr "Complemento de depuración por búsqueda binaria"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: __init__.py:68
+#: __init__.py:72
 msgid "Cancel Add-on Diagnostic and Restore All"
 msgstr "Cancelar diagnóstico de complementos y restaurar todo"
 
-#: __init__.py:73
+#: __init__.py:80
 msgid "Check Ram"
 msgstr "Comprobar RAM"
 
@@ -73,11 +66,11 @@ msgstr "Confirmar eliminación"
 msgid "Confirm remove all"
 msgstr "Confirmar eliminar todo"
 
-#: doctor.py:712
+#: doctor.py:721
 msgid "Copied to clipboard: RAM details"
 msgstr "Copiado al portapapeles: detalles de la RAM"
 
-#: doctor.py:334
+#: doctor.py:343
 msgid "Copied to clipboard: {}"
 msgstr "Copiado al portapapeles: {}"
 
@@ -101,7 +94,7 @@ msgstr "Eliminado."
 msgid "Diagnostic complete. Found and disabled: {name}"
 msgstr "Diagnóstico completado. Encontrado y desactivado: {name}"
 
-#: __init__.py:88
+#: __init__.py:98
 #: diagnostic.py:160
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
@@ -123,15 +116,19 @@ msgstr "Error"
 msgid "Error deleting: {}"
 msgstr "Error al eliminar: {}"
 
-#: doctor.py:717
+#: doctor.py:726
 msgid "Error retrieving RAM details"
 msgstr "Error al obtener los detalles de la RAM"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Fallo al abrir la carpeta de configuración de usuario"
 
 #: doctor.py:310
 msgid "Found {n} inactive addons Opening report"
 msgstr "Se encontraron {n} complementos inactivos. Abriendo informe"
 
-#: doctor.py:714
+#: doctor.py:723
 msgid "If information is incomplete, please check NVDA log for raw data."
 msgstr "Si la información es incompleta, consulta el registro de NVDA para ver datos brutos."
 
@@ -150,6 +147,10 @@ msgstr "No se encontraron complementos activos para diagnosticar."
 #: recovery_gui.py:72
 msgid "No selection"
 msgstr "Sin selección"
+
+#: __init__.py:101
+msgid "Opens the DoctorNVDA menu."
+msgstr "Abre el menú de DoctorNVDA."
 
 #: recovery_gui.py:72
 msgid "Please select a folder."
@@ -178,6 +179,10 @@ msgstr "Eliminado: {n}"
 #: __init__.py:65
 msgid "Restart NVDA with add-ons disabled"
 msgstr "Reiniciar NVDA con complementos desactivados"
+
+#: __init__.py:69
+msgid "Restart NVDA {}"
+msgstr "Reiniciar NVDA {}"
 
 #: recovery_gui.py:35
 msgid "Restore"
@@ -213,7 +218,7 @@ msgstr ""
 msgid "Select Recovery Folder"
 msgstr "Seleccionar carpeta de recuperación"
 
-#: __init__.py:74
+#: __init__.py:81
 msgid "System Info Summary"
 msgstr "Resumen de información del sistema"
 
@@ -221,11 +226,19 @@ msgstr "Resumen de información del sistema"
 msgid "System info copied"
 msgstr "Información del sistema copiada"
 
-#: doctor.py:640
+#: doctor.py:649
 msgid "Unable to retrieve RAM details."
 msgstr "No se pudieron obtener los detalles de la RAM."
 
-#: doctor.py:324
-#: doctor.py:327
+#: doctor.py:328
+#: doctor.py:336
 msgid "Unknown NVDA version"
 msgstr "Versión de NVDA desconocida"
+
+#: __init__.py:77
+msgid "User Config Folder"
+msgstr "Carpeta de configuración de usuario"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Carpeta de configuración de usuario no encontrada"

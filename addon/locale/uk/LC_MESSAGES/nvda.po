@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.3.4\n"
+"Language: uk\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: diagnostic.py:59
+msgid "&Cancel"
+msgstr "Ска&сувати"
+
+#: diagnostic.py:56
+msgid "&No"
+msgstr "&Ні"
+
+#: diagnostic.py:62
+msgid "&OK"
+msgstr "&OK"
+
+#: diagnostic.py:53
+msgid "&Yes"
+msgstr "&Так"
+
+#: doctor.py:308
+msgid "All addons active"
+msgstr "Усі додатки активні"
+
+#: doctor.py:287
+msgid "All configuration files present"
+msgstr "Усі файли конфігурації на місці"
+
+#: recovery.py:139
+#: recovery_gui.py:80
+msgid "All recoveries removed"
+msgstr "Усі точки відновлення видалено"
+
+#: recovery_gui.py:113
+msgid "Are you sure you want to delete {}?"
+msgstr "Ви впевнені, що хочете видалити {}?"
+
+#: recovery_gui.py:75
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "Ви впевнені, що хочете видалити всі точки відновлення?"
+
+#: __init__.py:74
+msgid "Binary Search Debugging add-on"
+msgstr "Додаток для налагодження методом бінарного пошуку"
+
+#: recovery_gui.py:39
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: __init__.py:72
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Скасувати діагностику та відновити все"
+
+#: __init__.py:80
+msgid "Check Ram"
+msgstr "Перевірити ОЗП"
+
+#: recovery_gui.py:114
+msgid "Confirm delete"
+msgstr "Підтвердьте видалення"
+
+#: recovery_gui.py:76
+msgid "Confirm remove all"
+msgstr "Підтвердьте видалення всього"
+
+#: doctor.py:721
+msgid "Copied to clipboard: RAM details"
+msgstr "Відомості про ОЗП скопійовано в буфер обміну"
+
+#: doctor.py:343
+msgid "Copied to clipboard: {}"
+msgstr "Скопійовано в буфер обміну: {}"
+
+#: __init__.py:61
+msgid "Create NVDA Setting Recovery"
+msgstr "Створити точку відновлення налаштувань NVDA"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Помилка при створенні точки відновлення"
+
+#: recovery_gui.py:101
+msgid "Delete"
+msgstr "Видалити"
+
+#: recovery_gui.py:122
+msgid "Deleted."
+msgstr "Видалено."
+
+#: diagnostic.py:214
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Діагностику завершено. Знайдено та вимкнено: {name}"
+
+#: __init__.py:98
+#: diagnostic.py:160
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:43
+msgid "DoctorNVDA Health Check"
+msgstr "Перевірка стану DoctorNVDA"
+
+#: menu.py:17
+#: menu.py:86
+msgid "DoctorNVDA Menu"
+msgstr "Меню DoctorNVDA"
+
+#: recovery_gui.py:124
+msgid "Error"
+msgstr "Помилка"
+
+#: recovery_gui.py:124
+msgid "Error deleting: {}"
+msgstr "Помилка при видаленні: {}"
+
+#: doctor.py:726
+msgid "Error retrieving RAM details"
+msgstr "Помилка при отриманні відомостей про ОЗП"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Не вдалося відкрити папку конфігурації користувача"
+
+#: doctor.py:310
+msgid "Found {n} inactive addons Opening report"
+msgstr "Знайдено неактивних додатків: {n}. Відкриття звіту"
+
+#: doctor.py:723
+msgid "If information is incomplete, please check NVDA log for raw data."
+msgstr "Якщо інформація неповна, перевірте лог NVDA."
+
+#: doctor.py:289
+msgid "Missing {n} configuration files"
+msgstr "Відсутні файли конфігурації: {n}"
+
+#: __init__.py:60
+msgid "NVDA Version: {}"
+msgstr "Версія NVDA: {}"
+
+#: diagnostic.py:153
+msgid "No active add-ons found to diagnose."
+msgstr "Активних додатків для діагностики не знайдено."
+
+#: recovery_gui.py:72
+msgid "No selection"
+msgstr "Нічого не вибрано"
+
+#: __init__.py:101
+msgid "Opens the DoctorNVDA menu."
+msgstr "Відкриває меню DoctorNVDA."
+
+#: recovery_gui.py:72
+msgid "Please select a folder."
+msgstr "Будь ласка, виберіть папку."
+
+#: diagnostic.py:159
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "Готові почати діагностику? NVDA перезавантажиться і вимкне половину ваших активних додатків."
+
+#: recovery_gui.py:29
+msgid "Recovery Folder"
+msgstr "Папка відновлення"
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Точку відновлення створено: {n}"
+
+#: recovery_gui.py:37
+msgid "Remove All"
+msgstr "Видалити все"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Видалено: {n}"
+
+#: __init__.py:65
+msgid "Restart NVDA with add-ons disabled"
+msgstr "Перезапустити NVDA без додатків"
+
+#: __init__.py:69
+msgid "Restart NVDA {}"
+msgstr "Перезапустити NVDA {}"
+
+#: recovery_gui.py:35
+msgid "Restore"
+msgstr "Відновити"
+
+#: __init__.py:64
+msgid "Restore NVDA Setting"
+msgstr "Відновити налаштування NVDA"
+
+#: __init__.py:64
+msgid "Restore NVDA Setting unavailable"
+msgstr "Відновлення недоступне"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Відновлення завершено, перезапуск NVDA..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Помилка відновлення"
+
+#: __init__.py:34
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"Раунд {round}: {count} додатків ВИМКНЕНО.\n"
+"\n"
+"Проблему УСУНЕНО?\n"
+
+#: recovery_gui.py:18
+msgid "Select Recovery Folder"
+msgstr "Виберіть папку відновлення"
+
+#: __init__.py:81
+msgid "System Info Summary"
+msgstr "Підсумок системної інформації"
+
+#: doctor.py:282
+msgid "System info copied"
+msgstr "Системну інформацію скопійовано"
+
+#: doctor.py:649
+msgid "Unable to retrieve RAM details."
+msgstr "Не вдалося отримати відомості про ОЗП."
+
+#: doctor.py:328
+#: doctor.py:336
+msgid "Unknown NVDA version"
+msgstr "Невідома версія NVDA"
+
+#: __init__.py:77
+msgid "User Config Folder"
+msgstr "Папка конфігурации користувача"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Папку конфігурації користувача не знайдено"
