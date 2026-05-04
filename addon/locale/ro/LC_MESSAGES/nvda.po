@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&Anulează"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&Nu"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&OK"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&Da"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(Nu există puncte de restaurare disponibile)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "Toate suplimentele sunt active"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "Toate fișierele de configurare sunt prezente"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "Toate restaurările au fost eliminate"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "Sigur doriți să ștergeți {}?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "Sigur doriți să eliminați toate punctele de restaurare?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "Supliment pentru depanare prin căutare binară"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "Anulează"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Anulează diagnosticul suplimentelor și restaurează tot"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "Confirmă ștergerea"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "Confirmă eliminarea totală"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "Copiat în clipboard: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "Creează punct de restaurare a setărilor NVDA"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Crearea punctului de restaurare a eșuat"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "Șters."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Diagnostic complet. Găsit și dezactivat: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "Verificare stare de sănătate DoctorNVDA"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "Meniu DoctorNVDA"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "Eroare"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "Eroare la ștergere: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Eșec la deschiderea dosarului de configurare utilizator"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "S-au găsit {n} suplimente inactive. Se deschide raportul"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "Lipsesc {n} fișiere de configurare"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "Versiune NVDA: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "Nu s-au găsit suplimente active pentru diagnosticare."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "Nu există puncte de restaurare. Creează unul mai întâi."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "Nicio selecție"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Vă rugăm să selectați mai întâi un dosar de restaurare."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "Gata de diagnosticare? NVDA se va reporni și va dezactiva jumătate din suplimentele active."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Punct de restaurare creat: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "Elimină tot"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Eliminat: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "Repornește NVDA cu suplimentele dezactivate"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "Repornește NVDA {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "Restaurează"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "Restaurează setările NVDA"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "Restaurarea setărilor NVDA nu este disponibilă"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Restaurare finalizată, se repornește NVDA..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Restaurarea a eșuat"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"Runda {round}: {count} suplimente sunt DEZACTIVATE.\n"
+"\n"
+"A dispărut problema?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "Selectează dosarul de restaurare"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "O apăsare: Deschide meniul DoctorNVDA, două apăsări: Repornește NVDA, trei apăsări: Repornește NVDA cu suplimentele dezactivate"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "Rezumat informații sistem"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "Informațiile despre sistem au fost copiate"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "Versiune NVDA necunoscută"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "Dosar configurare utilizator"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Dosarul de configurare utilizator nu a fost găsit"

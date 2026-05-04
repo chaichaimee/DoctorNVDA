@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&İptal"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&Hayır"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&Tamam"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&Evet"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(Kurtarma noktası yok)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "Tüm eklentiler etkin"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "Tüm yapılandırma dosyaları mevcut"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "Tüm kurtarmalar kaldırıldı"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "{} ögesini silmek istediğinizden emin misiniz?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "Tüm kurtarma noktalarını kaldırmak istediğinizden emin misiniz?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "İkili Arama Hata Ayıklama eklentisi"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "İptal"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Eklenti Tanılamasını İptal Et ve Tümünü Geri Yükle"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "Silmeyi onayla"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "Tümünü kaldırmayı onayla"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "Panoya kopyalandı: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "NVDA Ayar Kurtarma Noktası Oluştur"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Kurtarma noktası oluşturulamadı"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "Silindi."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Tanılama tamamlandı. Bulundu ve devre dışı bırakıldı: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA Durum Kontrolü"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA Menüsü"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "Hata"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "Silinirken hata oluştu: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Kullanıcı yapılandırma klasörü açılamadı"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "{n} devre dışı eklenti bulundu. Rapor açılıyor"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "{n} yapılandırma dosyası eksik"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA Sürümü: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "Tanılama için etkin eklenti bulunamadı."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "Kurtarma noktası yok. Önce bir tane oluşturun."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "Seçim yok"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Lütfen önce bir kurtarma klasörü seçin."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "Tanılamaya başlamaya hazır mısınız? NVDA yeniden başlatılacak ve etkin eklentilerinizin yarısını devre dışı bırakacaktır."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Kurtarma noktası oluşturuldu: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "Tümünü Kaldır"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Kaldırıldı: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "NVDA'yı eklentiler devre dışı olarak yeniden başlat"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "NVDA'yı yeniden başlat {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "Geri Yükle"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "NVDA Ayarlarını Geri Yükle"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA Ayarlarını Geri Yükleme kullanılamıyor"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Geri yükleme tamamlandı, NVDA yeniden başlatılıyor..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Geri yükleme başarısız"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"{round}. Tur: {count} eklenti DEVRE DIŞI.\n"
+"\n"
+"Sorun GİDERİLDİ Mİ?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "Kurtarma Klasörünü Seç"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Tek dokunuş: DoctorNVDA menüsünü aç, çift dokunuş: NVDA'yı yeniden başlat, üç dokunuş: Eklentiler devre dışı olarak yeniden başlat"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "Sistem Bilgisi Özeti"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "Sistem bilgisi kopyalandı"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "Bilinmeyen NVDA sürümü"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "Kullanıcı Yapılandırma Klasörü"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Kullanıcı yapılandırma klasörü bulunamadı"

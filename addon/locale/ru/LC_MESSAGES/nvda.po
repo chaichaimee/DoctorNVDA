@@ -1,80 +1,83 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.3.4\n"
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Russian\n"
 "Language: ru\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
 
-#: diagnostic.py:59
+#: diagnostic.py:168
 msgid "&Cancel"
-msgstr "От&мена"
+msgstr "&Отмена"
 
-#: diagnostic.py:56
+#: diagnostic.py:164
 msgid "&No"
 msgstr "&Нет"
 
-#: diagnostic.py:62
+#: diagnostic.py:172
 msgid "&OK"
-msgstr "&OK"
+msgstr "&ОК"
 
-#: diagnostic.py:53
+#: diagnostic.py:160
 msgid "&Yes"
 msgstr "&Да"
 
-#: doctor.py:308
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(Нет доступных точек восстановления)"
+
+#: doctor.py:288
 msgid "All addons active"
 msgstr "Все дополнения активны"
 
-#: doctor.py:287
+#: doctor.py:267
 msgid "All configuration files present"
 msgstr "Все файлы конфигурации на месте"
 
 #: recovery.py:139
-#: recovery_gui.py:80
+#: recovery_gui.py:99
 msgid "All recoveries removed"
 msgstr "Все точки восстановления удалены"
 
-#: recovery_gui.py:113
+#: recovery_gui.py:117
 msgid "Are you sure you want to delete {}?"
 msgstr "Вы уверены, что хотите удалить {}?"
 
-#: recovery_gui.py:75
+#: recovery_gui.py:94
 msgid "Are you sure you want to remove all recovery points?"
 msgstr "Вы уверены, что хотите удалить все точки восстановления?"
 
-#: __init__.py:74
+#: __init__.py:81
 msgid "Binary Search Debugging add-on"
-msgstr "Дополнение для отладки методом бинарного поиска"
+msgstr "Дополнение для отладки бинарным поиском"
 
-#: recovery_gui.py:39
+#: recovery_gui.py:48
 msgid "Cancel"
 msgstr "Отмена"
 
-#: __init__.py:72
+#: __init__.py:79
 msgid "Cancel Add-on Diagnostic and Restore All"
-msgstr "Отменить диагностику и восстановить всё"
+msgstr "Отменить диагностику дополнений и восстановить всё"
 
-#: __init__.py:80
-msgid "Check Ram"
-msgstr "Проверить ОЗУ"
-
-#: recovery_gui.py:114
+#: recovery_gui.py:118
 msgid "Confirm delete"
-msgstr "Подтвердите удаление"
+msgstr "Подтверждение удаления"
 
-#: recovery_gui.py:76
+#: recovery_gui.py:95
 msgid "Confirm remove all"
-msgstr "Подтвердите удаление всего"
+msgstr "Подтверждение удаления всех"
 
-#: doctor.py:721
-msgid "Copied to clipboard: RAM details"
-msgstr "Сведения об ОЗУ скопированы в буфер обмена"
-
-#: doctor.py:343
+#: doctor.py:321
 msgid "Copied to clipboard: {}"
 msgstr "Скопировано в буфер обмена: {}"
 
-#: __init__.py:61
+#: __init__.py:70
 msgid "Create NVDA Setting Recovery"
 msgstr "Создать точку восстановления настроек NVDA"
 
@@ -82,119 +85,103 @@ msgstr "Создать точку восстановления настроек 
 msgid "Create recovery failed"
 msgstr "Ошибка при создании точки восстановления"
 
-#: recovery_gui.py:101
-msgid "Delete"
-msgstr "Удалить"
-
-#: recovery_gui.py:122
+#: recovery_gui.py:125
 msgid "Deleted."
 msgstr "Удалено."
 
-#: diagnostic.py:214
+#: diagnostic.py:144
 msgid "Diagnostic complete. Found and disabled: {name}"
-msgstr "Диагностика завершена. Найден и отключен: {name}"
+msgstr "Диагностика завершена. Найдено и отключено: {name}"
 
-#: __init__.py:98
-#: diagnostic.py:160
+#: __init__.py:124
+#: diagnostic.py:100
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:43
+#: __init__.py:60
 msgid "DoctorNVDA Health Check"
 msgstr "Проверка состояния DoctorNVDA"
 
-#: menu.py:17
-#: menu.py:86
+#: menu.py:20
+#: menu.py:91
 msgid "DoctorNVDA Menu"
 msgstr "Меню DoctorNVDA"
 
-#: recovery_gui.py:124
+#: recovery_gui.py:131
 msgid "Error"
 msgstr "Ошибка"
 
-#: recovery_gui.py:124
+#: recovery_gui.py:131
 msgid "Error deleting: {}"
 msgstr "Ошибка при удалении: {}"
 
-#: doctor.py:726
-msgid "Error retrieving RAM details"
-msgstr "Ошибка при получении сведений об ОЗУ"
-
 #: utils.py:23
 msgid "Failed to open user config folder"
-msgstr "Не удалось открыть папку конфигурации пользователя"
+msgstr "Не удалось открыть папку настроек пользователя"
 
-#: doctor.py:310
+#: doctor.py:290
 msgid "Found {n} inactive addons Opening report"
-msgstr "Найдено {n} неактивных дополнений. Открытие отчета"
+msgstr "Найдено неактивных дополнений: {n}. Открытие отчета"
 
-#: doctor.py:723
-msgid "If information is incomplete, please check NVDA log for raw data."
-msgstr "Если информация неполная, проверьте лог NVDA."
-
-#: doctor.py:289
+#: doctor.py:269
 msgid "Missing {n} configuration files"
 msgstr "Отсутствует файлов конфигурации: {n}"
 
-#: __init__.py:60
+#: __init__.py:69
 msgid "NVDA Version: {}"
 msgstr "Версия NVDA: {}"
 
-#: diagnostic.py:153
+#: diagnostic.py:82
 msgid "No active add-ons found to diagnose."
 msgstr "Активные дополнения для диагностики не найдены."
 
-#: recovery_gui.py:72
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "Нет точек восстановления. Сначала создайте одну."
+
+#: recovery_gui.py:88
 msgid "No selection"
 msgstr "Ничего не выбрано"
 
-#: __init__.py:101
-msgid "Opens the DoctorNVDA menu."
-msgstr "Открывает меню DoctorNVDA."
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Пожалуйста, сначала выберите папку восстановления."
 
-#: recovery_gui.py:72
-msgid "Please select a folder."
-msgstr "Пожалуйста, выберите папку."
-
-#: diagnostic.py:159
+#: diagnostic.py:99
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
 msgstr "Готовы начать диагностику? NVDA перезапустится и отключит половину ваших активных дополнений."
-
-#: recovery_gui.py:29
-msgid "Recovery Folder"
-msgstr "Папка восстановления"
 
 #: recovery.py:91
 msgid "Recovery created: {n}"
 msgstr "Точка восстановления создана: {n}"
 
-#: recovery_gui.py:37
+#: recovery_gui.py:46
 msgid "Remove All"
-msgstr "Удалить всё"
+msgstr "Удалить все"
 
 #: recovery.py:132
 msgid "Removed: {n}"
 msgstr "Удалено: {n}"
 
-#: __init__.py:65
+#: __init__.py:74
 msgid "Restart NVDA with add-ons disabled"
-msgstr "Перезапустить NVDA без дополнений"
+msgstr "Перезапустить NVDA с отключенными дополнениями"
 
-#: __init__.py:69
+#: __init__.py:76
 msgid "Restart NVDA {}"
 msgstr "Перезапустить NVDA {}"
 
-#: recovery_gui.py:35
+#: recovery_gui.py:44
 msgid "Restore"
 msgstr "Восстановить"
 
-#: __init__.py:64
+#: __init__.py:73
 msgid "Restore NVDA Setting"
 msgstr "Восстановить настройки NVDA"
 
-#: __init__.py:64
+#: __init__.py:73
 msgid "Restore NVDA Setting unavailable"
-msgstr "Восстановление недоступно"
+msgstr "Восстановление настроек NVDA недоступно"
 
 #: recovery.py:124
 msgid "Restore completed, restarting NVDA..."
@@ -202,43 +189,43 @@ msgstr "Восстановление завершено, перезапуск NV
 
 #: recovery.py:126
 msgid "Restore failed"
-msgstr "Ошибка восстановления"
+msgstr "Восстановление не удалось"
 
-#: __init__.py:34
+#: __init__.py:41
 msgid ""
 "Round {round}: {count} add-ons are DISABLED.\n"
 "\n"
 "Is the problem GONE?\n"
 msgstr ""
-"Раунд {round}: {count} дополнений ОТКЛЮЧЕНО.\n"
+"Раунд {round}: {count} дополнений ОТКЛЮЧЕНЫ.\n"
 "\n"
 "Проблема ИСЧЕЗЛА?\n"
 
-#: recovery_gui.py:18
+#: recovery_gui.py:30
 msgid "Select Recovery Folder"
-msgstr "Выберите папку восстановления"
+msgstr "Выбрать папку восстановления"
 
-#: __init__.py:81
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Одно нажатие: Меню DoctorNVDA, два нажатия: Перезапуск NVDA, три нажатия: Перезапуск без дополнений"
+
+#: __init__.py:83
 msgid "System Info Summary"
-msgstr "Сводка системной информации"
+msgstr "Сводка информации о системе"
 
-#: doctor.py:282
+#: doctor.py:262
 msgid "System info copied"
-msgstr "Системная информация скопирована"
+msgstr "Информация о системе скопирована"
 
-#: doctor.py:649
-msgid "Unable to retrieve RAM details."
-msgstr "Не удалось получить сведения об ОЗУ."
-
-#: doctor.py:328
-#: doctor.py:336
+#: doctor.py:307
+#: doctor.py:314
 msgid "Unknown NVDA version"
 msgstr "Неизвестная версия NVDA"
 
-#: __init__.py:77
+#: __init__.py:82
 msgid "User Config Folder"
-msgstr "Папка конфигурации пользователя"
+msgstr "Папка настроек пользователя"
 
 #: utils.py:25
 msgid "User config folder not found"
-msgstr "Папка конфигурации пользователя не найдена"
+msgstr "Папка настроек пользователя не найдена"

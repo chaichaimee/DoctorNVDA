@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Sinhala\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&අවලංගු කරන්න"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&නැත"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&හරි"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&ඔව්"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(ප්‍රතිසාධන ලක්ෂ්‍ය නොමැත)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "සියලුම ඇඩෝන සක්‍රියයි"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "සියලුම වින්‍යාස ගොනු පවතී"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "සියලුම ප්‍රතිසාධනයන් ඉවත් කරන ලදී"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "ඔබට {} මකා දැමීමට අවශ්‍ය බව සහතිකද?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "ඔබට සියලුම ප්‍රතිසාධන ලක්ෂ්‍ය ඉවත් කිරීමට අවශ්‍ය බව සහතිකද?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "ද්විමය සෙවුම් නිදොස් කිරීමේ ඇඩෝනය"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "අවලංගු කරන්න"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "ඇඩෝන රෝග විනිශ්චය අවලංගු කර සියල්ල ප්‍රතිසාධනය කරන්න"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "මකා දැමීම තහවුරු කරන්න"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "සියල්ල ඉවත් කිරීම තහවුරු කරන්න"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "ක්ලිප්බෝඩ් එකට පිටපත් කරන ලදී: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "NVDA සැකසුම් ප්‍රතිසාධනයක් සාදන්න"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "ප්‍රතිසාධනය සෑදීම අසාර්ථක විය"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "මකා දමන ලදී."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "රෝග විනිශ්චය අවසන්. සොයාගෙන අක්‍රිය කරන ලදී: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA සෞඛ්‍ය පරීක්ෂාව"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA මෙනුව"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "දෝෂයකි"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "මකා දැමීමේ දෝෂය: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "පරිශීලක වින්‍යාස ෆෝල්ඩරය විවෘත කිරීමට අපොහොසත් විය"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "අක්‍රිය ඇඩෝන {n} ක් හමු විය. වාර්තාව විවෘත කරමින්"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "වින්‍යාස ගොනු {n} ක් අස්ථානගත වී ඇත"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA සංස්කරණය: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "රෝග විනිශ්චය සඳහා සක්‍රිය ඇඩෝන කිසිවක් හමු නොවීය."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "ප්‍රතිසාධන ලක්ෂ්‍ය නොමැත. පළමුව ප්‍රතිසාධනයක් සාදන්න."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "තේරීමක් නැත"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "කරුණාකර පළමුව ප්‍රතිසාධන ෆෝල්ඩරයක් තෝරන්න."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "රෝග විනිශ්චය ආරම්භ කිරීමට සූදානම්ද? NVDA නැවත ආරම්භ වී ඔබේ සක්‍රිය ඇඩෝනවලින් අඩක් අක්‍රිය කරනු ඇත."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "ප්‍රතිසාධනය සාදන ලදී: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "සියල්ල ඉවත් කරන්න"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "ඉවත් කරන ලදී: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "ඇඩෝන අක්‍රිය කර NVDA නැවත ආරම්භ කරන්න"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "NVDA නැවත ආරම්භ කරන්න {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "ප්‍රතිසාධනය කරන්න"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "NVDA සැකසුම් ප්‍රතිසාධනය කරන්න"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA සැකසුම් ප්‍රතිසාධනය ලබා ගත නොහැක"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "ප්‍රතිසාධනය අවසන්, NVDA නැවත ආරම්භ වෙමින් පවතී..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "ප්‍රතිසාධනය අසාර්ථක විය"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"{round} වන වටය: ඇඩෝන {count} ක් අක්‍රිය කර ඇත.\n"
+"\n"
+"ගැටලුව විසඳී තිබේද?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "ප්‍රතිසාධන ෆෝල්ඩරය තෝරන්න"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "එක් වරක් එබීම: DoctorNVDA මෙනුව විවෘත කරන්න, දෙවරක් එබීම: NVDA නැවත ආරම්භ කරන්න, තෙවරක් එබීම: ඇඩෝන අක්‍රිය කර NVDA නැවත ආරම්භ කරන්න"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "පද්ධති තොරතුරු සාරාංශය"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "පද්ධති තොරතුරු පිටපත් කරන ලදී"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "නොදන්නා NVDA සංස්කරණය"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "පරිශීලක වින්‍යාස ෆෝල්ඩරය"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "පරිශීලක වින්‍යාස ෆෝල්ඩරය හමු නොවීය"

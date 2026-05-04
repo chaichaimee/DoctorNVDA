@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:40+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "否(&N)"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "确定(&O)"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "是(&Y)"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(无可用恢复点)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "所有插件均已启用"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "所有配置文件齐全"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "已移除所有恢复点"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "您确定要删除 {} 吗？"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "您确定要移除所有恢复点吗？"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "二分查找调试插件"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "取消"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "取消插件诊断并恢复所有"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "确认删除"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "确认全部移除"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "已复制到剪贴板：{}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "创建 NVDA 设置恢复点"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "创建恢复点失败"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "已删除。"
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "诊断完成。已找到并禁用：{name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA 健康检查"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA 菜单"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "错误"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "删除错误：{}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "无法打开用户配置文件夹"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "发现 {n} 个未启用的插件，正在打开报告"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "缺失 {n} 个配置文件"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA 版本：{}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "未发现可诊断的已启用插件。"
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "无可用恢复点。请先创建一个。"
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "未选择"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "请先选择一个恢复文件夹。"
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "准备好开始诊断了吗？NVDA 将重启并禁用一半已启用的插件。"
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "已创建恢复点：{n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "全部移除"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "已移除：{n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "以禁用插件模式重启 NVDA"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "重启 NVDA {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "恢复"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "恢复 NVDA 设置"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA 设置恢复不可用"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "恢复完成，正在重启 NVDA..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "恢复失败"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"第 {round} 轮：{count} 个插件已被禁用。\n"
+"\n"
+"问题解决了吗？\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "选择恢复文件夹"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "单击：打开 DoctorNVDA 菜单；双击：重启 NVDA；三击：以禁用插件模式重启 NVDA"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "系统信息摘要"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "系统信息已复制"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "未知的 NVDA 版本"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "用户配置文件夹"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "找不到用户配置文件夹"

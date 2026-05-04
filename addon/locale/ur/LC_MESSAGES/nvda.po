@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Urdu\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&منسوخ کریں"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&نہیں"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&ٹھیک ہے"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&جی ہاں"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(کوئی ریکوری پوائنٹ دستیاب نہیں ہے)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "تمام ایڈ اونز فعال ہیں"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "تمام کنفیگریشن فائلیں موجود ہیں"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "تمام ریکوریز ہٹا دی گئیں"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "کیا آپ واقعی {} کو حذف کرنا چاہتے ہیں؟"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "کیا آپ واقعی تمام ریکوری پوائنٹس کو ہٹانا چاہتے ہیں؟"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "بائنری سرچ ڈیبگنگ ایڈ اون"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "منسوخ کریں"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "ایڈ اون تشخیص منسوخ کریں اور تمام بحال کریں"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "حذف کرنے کی تصدیق کریں"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "تمام ہٹانے کی تصدیق کریں"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "کلپ بورڈ پر کاپی ہو گیا: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "NVDA ترتیبات کی ریکوری بنائیں"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "ریکوری بنانا ناکام رہا"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "حذف ہو گیا۔"
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "تشخیص مکمل ہو گئی۔ مل گیا اور غیر فعال کر دیا گیا: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA ہیلتھ چیک"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA مینو"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "غلطی"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "حذف کرنے میں غلطی: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "صارف کے کنفیگریشن فولڈر کو کھولنے میں ناکامی"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "{n} غیر فعال ایڈ اونز ملے۔ رپورٹ کھولی جا رہی ہے"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "{n} کنفیگریشن فائلیں غائب ہیں"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA ورژن: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "تشخیص کے لیے کوئی فعال ایڈ اونز نہیں ملے۔"
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "کوئی ریکوری پوائنٹ نہیں ہے۔ پہلے ایک ریکوری بنائیں۔"
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "کوئی انتخاب نہیں"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "براہ کرم پہلے ریکوری فولڈر منتخب کریں۔"
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "تشخیص شروع کرنے کے لیے تیار ہیں؟ NVDA دوبارہ شروع ہوگا اور آپ کے نصف فعال ایڈ اونز کو غیر فعال کر دے گا۔"
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "ریکوری بن گئی: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "تمام ہٹائیں"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "ہٹا دیا گیا: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "ایڈ اونز کو غیر فعال کر کے NVDA دوبارہ شروع کریں"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "NVDA دوبارہ شروع کریں {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "بحال کریں"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "NVDA ترتیبات بحال کریں"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA ترتیبات کی بحالی دستیاب نہیں ہے"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "بحالی مکمل ہو گئی، NVDA دوبارہ شروع ہو رہا ہے..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "بحالی ناکام رہی"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"راؤنڈ {round}: {count} ایڈ اونز غیر فعال ہیں۔\n"
+"\n"
+"کیا مسئلہ حل ہو گیا؟\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "ریکوری فولڈر منتخب کریں"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "ایک بار دبائیں: DoctorNVDA مینو کھولیں، دو بار دبائیں: NVDA دوبارہ شروع کریں، تین بار دبائیں: ایڈ اونز کے بغیر دوبارہ شروع کریں"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "سسٹم کی معلومات کا خلاصہ"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "سسٹم کی معلومات کاپی ہو گئی"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "نامعلوم NVDA ورژن"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "صارف کا کنفیگریشن فولڈر"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "صارف کا کنفیگریشن فولڈر نہیں ملا"

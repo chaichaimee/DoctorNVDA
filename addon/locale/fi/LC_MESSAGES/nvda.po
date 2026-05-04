@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:00+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&Peruuta"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&Ei"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&OK"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&Kyllä"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(Palautuspisteitä ei ole saatavilla)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "Kaikki lisäosat ovat aktiivisia"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "Kaikki asetustiedostot ovat tallella"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "Kaikki palautuspisteet on poistettu"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "Haluatko varmasti poistaa kohteen {}?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "Haluatko varmasti poistaa kaikki palautuspisteet?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "Binäärihakuun perustuva vianmäärityslisäosa"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Peruuta lisäosien vianmääritys ja palauta kaikki"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "Vahvista poisto"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "Vahvista kaikkien poistaminen"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "Kopioitu leikepöydälle: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "Luo NVDA-asetusten palautuspiste"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Palautuspisteen luominen epäonnistui"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "Poistettu."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Vianmääritys valmis. Ongelman aiheuttaja löytynyt ja poistettu käytöstä: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA-kuntotarkastus"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA-valikko"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "Virhe"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "Virhe poistettaessa: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Käyttäjän asetuskansion avaaminen epäonnistui"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "Löytyi {n} epäaktiivista lisäosaa. Avataan raportti"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "{n} asetustiedostoa puuttuu"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA-versio: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "Aktiivisia lisäosia ei löytynyt diagnosoitavaksi."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "Palautuspisteitä ei ole. Luo ensin palautuspiste."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "Ei valintaa"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Valitse ensin palautuskansio."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "Aloitetaanko vianmääritys? NVDA käynnistyy uudelleen ja poistaa puolet aktiivisista lisäosista käytöstä."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Palautuspiste luotu: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "Poista kaikki"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Poistettu: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "Käynnistä NVDA uudelleen lisäosat poistettuina käytöstä"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "Käynnistä NVDA uudelleen {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "Palauta"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "Palauta NVDA-asetukset"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA-asetusten palautus ei ole saatavilla"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Palautus valmis, NVDA käynnistyy uudelleen..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Palautus epäonnistui"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"Kierros {round}: {count} lisäosaa on POISTETTU KÄYTÖSTÄ.\n"
+"\n"
+"Onko ongelma POISTUNUT?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "Valitse palautuskansio"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Yksi napautus: Avaa DoctorNVDA-valikko, kaksi: Käynnistä NVDA uudelleen, kolme: Käynnistä ilman lisäosia"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "Järjestelmätietojen yhteenveto"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "Järjestelmätiedot kopioitu"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "Tuntematon NVDA-versio"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "Käyttäjän asetuskansio"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Käyttäjän asetuskansiota ei löytynyt"

@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Burmese\n"
+"Language: my\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&ပယ်ဖျက်မည်"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&မဟုတ်ပါ"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&အိုကေ"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&ဟုတ်ကဲ့"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(ပြန်လည်ရယူနိုင်သည့် အမှတ်များမရှိပါ)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "နောက်ဆက်တွဲအားလုံး အသုံးပြုနေသည်"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "ပြင်ဆင်သတ်မှတ်ချက် ဖိုင်အားလုံးရှိနေသည်"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "ပြန်လည်ရယူမှုအားလုံးကို ဖယ်ရှားပြီးပါပြီ"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "{} ကို ဖျက်ရန် သေချာပါသလား?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "ပြန်လည်ရယူနိုင်သည့် အမှတ်အားလုံးကို ဖယ်ရှားရန် သေချာပါသလား?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "Binary Search ဖြင့် အမှားရှာဖွေရေး နောက်ဆက်တွဲ"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "ပယ်ဖျက်မည်"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "နောက်ဆက်တွဲ အဖြေရှာမှုကို ပယ်ဖျက်ပြီး အားလုံးကို ပြန်လည်ထားရှိမည်"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "ဖျက်ရန် အတည်ပြုပါ"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "အားလုံးဖယ်ရှားရန် အတည်ပြုပါ"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "Clip-board သို့ ကူးယူပြီး: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "NVDA ဆက်တင် ပြန်လည်ရယူမှုအမှတ် ဖန်တီးမည်"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "ပြန်လည်ရယူမှုအမှတ် ဖန်တီးခြင်း မအောင်မြင်ပါ"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "ဖျက်ပြီးပါပြီ။"
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "အဖြေရှာမှု ပြီးဆုံးပါပြီ။ {name} ကို တွေ့ရှိပြီး ပိတ်ထားလိုက်ပါပြီ။"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA ကျန်းမာရေး စစ်ဆေးမှု"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA မီနူး"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "အမှားအယွင်း"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "{} ကို ဖျက်ရာတွင် အမှားအယွင်းရှိသည်"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "အသုံးပြုသူ ဆက်တင်ဖိုင်တွဲကို ဖွင့်ရန် မအောင်မြင်ပါ"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "အသုံးမပြုသော နောက်ဆက်တွဲ {n} ခု တွေ့ရှိသည်။ အစီရင်ခံစာကို ဖွင့်နေသည်"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "ပြင်ဆင်သတ်မှတ်ချက် ဖိုင် {n} ခု ပျောက်ဆုံးနေသည်"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA ဗားရှင်း: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "စစ်ဆေးရန် အသုံးပြုနေသော နောက်ဆက်တွဲများ မတွေ့ပါ။"
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "ပြန်လည်ရယူနိုင်သည့် အမှတ်များမရှိပါ။ အရင်ဆုံး တစ်ခုဖန်တီးပါ။"
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "ရွေးချယ်ထားခြင်းမရှိပါ"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "ပြန်လည်ရယူမည့် ဖိုင်တွဲကို အရင်ရွေးချယ်ပါ။"
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "အဖြေရှာမှုကို စတင်ရန် အဆင်သင့်ဖြစ်ပြီလား? NVDA ပြန်စတင်မည်ဖြစ်ပြီး အသုံးပြုနေသော နောက်ဆက်တွဲ ထက်ဝက်ကို ပိတ်ပါလိမ့်မည်။"
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "ပြန်လည်ရယူမှုအမှတ် ဖန်တီးပြီး: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "အားလုံးကို ဖယ်ရှားမည်"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "ဖယ်ရှားပြီး: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "နောက်ဆက်တွဲများ ပိတ်ပြီး NVDA ကို ပြန်စတင်မည်"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "NVDA ကို ပြန်စတင်မည် {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "ပြန်လည်ထားရှိမည်"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "NVDA ဆက်တင်ကို ပြန်လည်ထားရှိမည်"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA ဆက်တင် ပြန်လည်ထားရှိမှု မရနိုင်ပါ"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "ပြန်လည်ထားရှိမှု ပြီးဆုံးပါပြီ၊ NVDA ကို ပြန်စတင်နေသည်..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "ပြန်လည်ထားရှိမှု မအောင်မြင်ပါ"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"အဆင့် {round}: နောက်ဆက်တွဲ {count} ခုကို ပိတ်ထားသည်။\n"
+"\n"
+"ပြဿနာ ပြေလည်သွားပြီလား?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "ပြန်လည်ရယူမည့် ဖိုင်တွဲကို ရွေးပါ"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "တစ်ချက်နှိပ်: DoctorNVDA မီနူးဖွင့်မည်၊ နှစ်ချက်နှိပ်: NVDA ကို ပြန်စတင်မည်၊ သုံးချက်နှိပ်: နောက်ဆက်တွဲများ ပိတ်ပြီး NVDA ကို ပြันစတင်မည်"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "စနစ်အချက်အလက် အကျဉ်းချုပ်"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "စနစ်အချက်အလက် ကူးယူပြီးပါပြီ"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "အမျိုးအမည်မသိ NVDA ဗားရှင်း"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "အသုံးပြုသူ ဆက်တင်ဖိုင်တွဲ"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "အသုံးပြုသူ ဆက်တင်ဖိုင်တွဲ မတွေ့ပါ"

@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:10+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Croatian\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&Odustani"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&Ne"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&U redu"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&Da"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(Nema dostupnih točaka oporavka)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "Svi su dodaci aktivni"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "Sve su konfiguracijske datoteke prisutne"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "Svi oporavci su uklonjeni"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "Jeste li sigurni da želite obrisati {}?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "Jeste li sigurni da želite ukloniti sve točke oporavka?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "Dodatak za otklanjanje pogrešaka binarnim pretraživanjem"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "Odustani"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Prekini dijagnostiku dodataka i vrati sve"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "Potvrdi brisanje"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "Potvrdi uklanjanje svega"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "Kopirano u međuspremnik: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "Stvori oporavak NVDA postavki"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Stvaranje oporavka nije uspjelo"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "Obrisano."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Dijagnostika završena. Pronađeno i onemogućeno: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA provjera stanja"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA izbornik"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "Pogreška"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "Pogreška pri brisanju: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Otvaranje mape korisničkih postavki nije uspjelo"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "Pronađeno je {n} neaktivnih dodataka. Otvaranje izvještaja"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "Nedostaje {n} konfiguracijskih datoteka"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA verzija: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "Nisu pronađeni aktivni dodaci za dijagnostiku."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "Nema dostupnih točaka oporavka. Prvo stvorite točku oporavka."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "Nema odabira"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Prvo odaberite mapu za oporavak."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "Spremni za početak dijagnostike? NVDA će se ponovno pokrenuti i onemogućiti polovicu vaših aktivnih dodataka."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Oporavak stvoren: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "Ukloni sve"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Uklonjeno: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "Ponovno pokreni NVDA s onemogućenim dodacima"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "Ponovno pokreni NVDA {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "Vrati"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "Vrati NVDA postavke"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "Vraćanje NVDA postavki nije dostupno"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Vraćanje završeno, ponovno pokretanje NVDA..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Vraćanje nije uspjelo"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"Krug {round}: {count} dodataka je ONEMOGUĆENO.\n"
+"\n"
+"Je li problem NESTAO?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "Odaberi mapu oporavka"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Jedan dodir: Otvori DoctorNVDA izbornik, dva dodira: Ponovno pokreni NVDA, tri dodira: Ponovno pokreni bez dodataka"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "Sažetak informacija o sustavu"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "Informacije o sustavu su kopirane"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "Nepoznata verzija NVDA"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "Mapa korisničkih postavki"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Mapa korisničkih postavki nije pronađena"

@@ -1,6 +1,9 @@
 # menu.py
+# Copyright (C) 2026 Chai Chaimee
+# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import wx
+import core
 import addonHandler
 import tones
 import gui
@@ -31,12 +34,11 @@ class DoctorMenu(wx.Frame):
 		vbox.Add(self.list_box, 1, wx.EXPAND | wx.ALL, 15)
 		panel.SetSizer(vbox)
 
-		self.refresh_list()
+		core.callLater(50, self.refresh_list)
 
 		self.list_box.Bind(wx.EVT_LISTBOX_DCLICK, self.on_select)
 		self.list_box.Bind(wx.EVT_CHAR_HOOK, self.on_key)
 		
-		# Auto-close timer (15 seconds)
 		self.timer = wx.Timer(self)
 		self.Bind(wx.EVT_TIMER, self.on_timeout, self.timer)
 		self.timer.Start(15000)
@@ -47,24 +49,27 @@ class DoctorMenu(wx.Frame):
 		self.Raise()
 
 	def refresh_list(self):
-		raw_items = self.items_func()
-		self.current_items = raw_items
-		self.list_box.Clear()
-		self.list_box.AppendItems([item[0] for item in raw_items])
-		if self.list_box.GetCount() > 0:
-			self.list_box.SetSelection(0)
-		self.list_box.SetFocus()
+		try:
+			raw_items = self.items_func()
+			self.current_items = raw_items
+			self.list_box.Clear()
+			self.list_box.AppendItems([item[0] for item in raw_items])
+			if self.list_box.GetCount() > 0:
+				self.list_box.SetSelection(0)
+			self.list_box.SetFocus()
+		except Exception as e:
+			self.Close()
+			raise
 
 	def on_select(self, event):
 		idx = self.list_box.GetSelection()
 		if idx != wx.NOT_FOUND:
 			data = self.current_items[idx][1]
-			# Use CallAfter to ensure the callback runs after the menu is fully closed
 			wx.CallAfter(self.callback, data)
 			self.Close()
 
 	def on_key(self, event):
-		self.timer.Start(15000) # Reset timer on any key press
+		self.timer.Start(15000)
 		key = event.GetKeyCode()
 		if key == wx.WXK_RETURN:
 			self.on_select(None)

@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:10+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Kazakh\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&Бас тарту"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&Жоқ"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&ОК"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&Иә"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(Қалпына келтіру нүктелері жоқ)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "Барлық қосымшалар белсенді"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "Барлық конфигурация файлдары бар"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "Барлық қалпына келтірулер жойылды"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "{} нысанын жоюды растайсыз ба?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "Барлық қалпына келтіру нүктелерін жоюды растайсыз ба?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "Бинарлық іздеу арқылы түзету қосымшасы"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "Бас тарту"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Қосымша диагностикасынан бас тарту және бәрін қалпына келтіру"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "Жоюды растау"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "Бәрін жоюды растау"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "Алмасу буферіне көшірілді: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "NVDA параметрлерін қалпына келтіру нүктесін жасау"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Қалпына келтіру нүктесін жасау сәтсіз аяқталды"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "Жойылды."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Диагностика аяқталды. Табылды және өшірілді: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA денсаулығын тексеру"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA мәзірі"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "Қате"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "Жою қатесі: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Пайдаланушы конфигурация папкасын ашу сәтсіз аяқталды"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "{n} белсенді емес қосымша табылды. Есепті ашу"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "{n} конфигурация файлы жетіспейді"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA нұсқасы: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "Диагностикалау үшін белсенді қосымшалар табылмады."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "Қалпына келтіру нүктелері жоқ. Алдымен жасаңыз."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "Таңдау жоқ"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Алдымен қалпына келтіру папкасын таңдаңыз."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "Диагностиканы бастауға дайынсыз ба? NVDA қайта іске қосылып, белсенді қосымшалардың жартысын өшіреді."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Қалпына келтіру нүктесі жасалды: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "Бәрін жою"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Жойылды: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "NVDA-ны қосымшаларсыз қайта іске қосу"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "NVDA-ны қайта іске қосу {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "Қалпына келтіру"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "NVDA параметрлерін қалпына келтіру"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA параметрлерін қалпына келтіру қолжетімсіз"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Қалпына келтіру аяқталды, NVDA қайта іске қосылуда..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Қалпына келтіру сәтсіз аяқталды"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"{round}-кезең: {count} қосымша ӨШІРІЛДІ.\n"
+"\n"
+"Мәселе шешілді ме?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "Қалпына келтіру папкасын таңдау"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Бір рет басу: DoctorNVDA мәзірі, екі рет: Қайта іске қосу, үш рет: Қосымшаларсыз қайта іске қосу"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "Жүйе туралы ақпарат"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "Жүйе ақпараты көшірілді"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "Белгісіз NVDA нұсқасы"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "Пайдаланушы конфигурация папкасы"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Пайдаланушы конфигурация папкасы табылмады"

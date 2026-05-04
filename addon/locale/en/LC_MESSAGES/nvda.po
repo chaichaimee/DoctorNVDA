@@ -1,87 +1,83 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.3.4\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 12:19+0700\n"
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: English\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: NVDA DevOn Addon\n"
+"X-Generator: DevOn Addon\n"
 
-#: diagnostic.py:59
+#: diagnostic.py:168
 msgid "&Cancel"
 msgstr "&Cancel"
 
-#: diagnostic.py:56
+#: diagnostic.py:164
 msgid "&No"
 msgstr "&No"
 
-#: diagnostic.py:62
+#: diagnostic.py:172
 msgid "&OK"
 msgstr "&OK"
 
-#: diagnostic.py:53
+#: diagnostic.py:160
 msgid "&Yes"
 msgstr "&Yes"
 
-#: doctor.py:308
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(No recovery points available)"
+
+#: doctor.py:288
 msgid "All addons active"
 msgstr "All addons active"
 
-#: doctor.py:287
+#: doctor.py:267
 msgid "All configuration files present"
 msgstr "All configuration files present"
 
 #: recovery.py:139
-#: recovery_gui.py:80
+#: recovery_gui.py:99
 msgid "All recoveries removed"
 msgstr "All recoveries removed"
 
-#: recovery_gui.py:113
+#: recovery_gui.py:117
 msgid "Are you sure you want to delete {}?"
 msgstr "Are you sure you want to delete {}?"
 
-#: recovery_gui.py:75
+#: recovery_gui.py:94
 msgid "Are you sure you want to remove all recovery points?"
 msgstr "Are you sure you want to remove all recovery points?"
 
-#: __init__.py:74
+#: __init__.py:81
 msgid "Binary Search Debugging add-on"
 msgstr "Binary Search Debugging add-on"
 
-#: recovery_gui.py:39
+#: recovery_gui.py:48
 msgid "Cancel"
 msgstr "Cancel"
 
-#: __init__.py:72
+#: __init__.py:79
 msgid "Cancel Add-on Diagnostic and Restore All"
 msgstr "Cancel Add-on Diagnostic and Restore All"
 
-#: __init__.py:80
-msgid "Check Ram"
-msgstr "Check Ram"
-
-#: recovery_gui.py:114
+#: recovery_gui.py:118
 msgid "Confirm delete"
 msgstr "Confirm delete"
 
-#: recovery_gui.py:76
+#: recovery_gui.py:95
 msgid "Confirm remove all"
 msgstr "Confirm remove all"
 
-#: doctor.py:721
-msgid "Copied to clipboard: RAM details"
-msgstr "Copied to clipboard: RAM details"
-
-#: doctor.py:343
+#: doctor.py:321
 msgid "Copied to clipboard: {}"
 msgstr "Copied to clipboard: {}"
 
-#: __init__.py:61
+#: __init__.py:70
 msgid "Create NVDA Setting Recovery"
 msgstr "Create NVDA Setting Recovery"
 
@@ -89,93 +85,77 @@ msgstr "Create NVDA Setting Recovery"
 msgid "Create recovery failed"
 msgstr "Create recovery failed"
 
-#: recovery_gui.py:101
-msgid "Delete"
-msgstr "Delete"
-
-#: recovery_gui.py:122
+#: recovery_gui.py:125
 msgid "Deleted."
 msgstr "Deleted."
 
-#: diagnostic.py:214
+#: diagnostic.py:144
 msgid "Diagnostic complete. Found and disabled: {name}"
 msgstr "Diagnostic complete. Found and disabled: {name}"
 
-#: __init__.py:98
-#: diagnostic.py:160
+#: __init__.py:124
+#: diagnostic.py:100
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:43
+#: __init__.py:60
 msgid "DoctorNVDA Health Check"
 msgstr "DoctorNVDA Health Check"
 
-#: menu.py:17
-#: menu.py:86
+#: menu.py:20
+#: menu.py:91
 msgid "DoctorNVDA Menu"
 msgstr "DoctorNVDA Menu"
 
-#: recovery_gui.py:124
+#: recovery_gui.py:131
 msgid "Error"
 msgstr "Error"
 
-#: recovery_gui.py:124
+#: recovery_gui.py:131
 msgid "Error deleting: {}"
 msgstr "Error deleting: {}"
-
-#: doctor.py:726
-msgid "Error retrieving RAM details"
-msgstr "Error retrieving RAM details"
 
 #: utils.py:23
 msgid "Failed to open user config folder"
 msgstr "Failed to open user config folder"
 
-#: doctor.py:310
+#: doctor.py:290
 msgid "Found {n} inactive addons Opening report"
 msgstr "Found {n} inactive addons Opening report"
 
-#: doctor.py:723
-msgid "If information is incomplete, please check NVDA log for raw data."
-msgstr "If information is incomplete, please check NVDA log for raw data."
-
-#: doctor.py:289
+#: doctor.py:269
 msgid "Missing {n} configuration files"
 msgstr "Missing {n} configuration files"
 
-#: __init__.py:60
+#: __init__.py:69
 msgid "NVDA Version: {}"
 msgstr "NVDA Version: {}"
 
-#: diagnostic.py:153
+#: diagnostic.py:82
 msgid "No active add-ons found to diagnose."
 msgstr "No active add-ons found to diagnose."
 
-#: recovery_gui.py:72
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "No recovery points available. Create a recovery first."
+
+#: recovery_gui.py:88
 msgid "No selection"
 msgstr "No selection"
 
-#: __init__.py:101
-msgid "Opens the DoctorNVDA menu."
-msgstr "Opens the DoctorNVDA menu."
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Please select a recovery folder first."
 
-#: recovery_gui.py:72
-msgid "Please select a folder."
-msgstr "Please select a folder."
-
-#: diagnostic.py:159
+#: diagnostic.py:99
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
 msgstr "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
-
-#: recovery_gui.py:29
-msgid "Recovery Folder"
-msgstr "Recovery Folder"
 
 #: recovery.py:91
 msgid "Recovery created: {n}"
 msgstr "Recovery created: {n}"
 
-#: recovery_gui.py:37
+#: recovery_gui.py:46
 msgid "Remove All"
 msgstr "Remove All"
 
@@ -183,23 +163,23 @@ msgstr "Remove All"
 msgid "Removed: {n}"
 msgstr "Removed: {n}"
 
-#: __init__.py:65
+#: __init__.py:74
 msgid "Restart NVDA with add-ons disabled"
 msgstr "Restart NVDA with add-ons disabled"
 
-#: __init__.py:69
+#: __init__.py:76
 msgid "Restart NVDA {}"
 msgstr "Restart NVDA {}"
 
-#: recovery_gui.py:35
+#: recovery_gui.py:44
 msgid "Restore"
 msgstr "Restore"
 
-#: __init__.py:64
+#: __init__.py:73
 msgid "Restore NVDA Setting"
 msgstr "Restore NVDA Setting"
 
-#: __init__.py:64
+#: __init__.py:73
 msgid "Restore NVDA Setting unavailable"
 msgstr "Restore NVDA Setting unavailable"
 
@@ -211,7 +191,7 @@ msgstr "Restore completed, restarting NVDA..."
 msgid "Restore failed"
 msgstr "Restore failed"
 
-#: __init__.py:34
+#: __init__.py:41
 msgid ""
 "Round {round}: {count} add-ons are DISABLED.\n"
 "\n"
@@ -221,28 +201,28 @@ msgstr ""
 "\n"
 "Is the problem GONE?\n"
 
-#: recovery_gui.py:18
+#: recovery_gui.py:30
 msgid "Select Recovery Folder"
 msgstr "Select Recovery Folder"
 
-#: __init__.py:81
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+
+#: __init__.py:83
 msgid "System Info Summary"
 msgstr "System Info Summary"
 
-#: doctor.py:282
+#: doctor.py:262
 msgid "System info copied"
 msgstr "System info copied"
 
-#: doctor.py:649
-msgid "Unable to retrieve RAM details."
-msgstr "Unable to retrieve RAM details."
-
-#: doctor.py:328
-#: doctor.py:336
+#: doctor.py:307
+#: doctor.py:314
 msgid "Unknown NVDA version"
 msgstr "Unknown NVDA version"
 
-#: __init__.py:77
+#: __init__.py:82
 msgid "User Config Folder"
 msgstr "User Config Folder"
 

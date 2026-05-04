@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Lao\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&ຍົກເລີກ"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&ບໍ່"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&ຕົກລົງ"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&ແມ່ນ"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(ບໍ່ມີຈຸດກູ້ຄືນທີ່ມີຢູ່)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "ສ່ວນເສີມທັງໝົດເປີດໃຊ້ງານຢູ່"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "ໄຟລ໌ການຕັ້ງຄ່າທັງໝົດມີຢູ່ຄົບຖ້ວນ"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "ລຶບຈຸດກູ້ຄືນທັງໝົດແລ້ວ"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບ {}?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບຈຸດກູ້ຄືນທັງໝົດ?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "ສ່ວນເສີມການດີບັກແບບຄົ້ນຫາແບບສອງສ່ວນ (Binary Search)"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "ຍົກເລີກ"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "ຍົກເລີກການວິນິດໄສສ່ວນເສີມ ແລະ ກູ້ຄືນທັງໝົດ"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "ຢືນຢັນການລຶບ"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "ຢືນຢັນການລຶບທັງໝົດ"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "ຄັດລອກໄປທີ່ຄລິບອດແລ້ວ: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "ສ້າງຈຸດກູ້ຄືນການຕັ້ງຄ່າ NVDA"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "ການສ້າງຈຸດກູ້ຄືນຫຼົ້ມເຫຼວ"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "ລຶບແລ້ວ."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "ການວິນິດໄສສຳເລັດແລ້ວ. ພົບ ແລະ ປິດໃຊ້ງານ: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "ກວດສອບສຸຂະພາບ DoctorNVDA"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "ເມນູ DoctorNVDA"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "ຂໍ້ຜິດພາດ"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "ເກີດຂໍ້ຜິດພາດໃນການລຶບ: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "ບໍ່ສາມາດເປີດໂຟນເດີການຕັ້ງຄ່າຜູ້ໃຊ້ໄດ້"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "ພົບສ່ວນເສີມທີ່ບໍ່ໄດ້ເປີດໃຊ້ງານ {n} ລາຍການ ກຳລັງເປີດລາຍງານ"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "ໄຟລ໌ການຕັ້ງຄ່າຫາຍໄປ {n} ໄຟລ໌"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "ເວີຊັນ NVDA: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "ບໍ່ພົບສ່ວນເສີມທີ່ເປີດໃຊ້ງານເພື່ອວິນິດໄສ."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "ບໍ່ມີຈຸດກູ້ຄືນ. ກະລຸນາສ້າງຈຸດກູ້ຄືນກ່ອນ."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "ບໍ່ມີການເລືອກ"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "ກະລຸນາເລືອກໂຟນເດີກູ້ຄືນກ່ອນ."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "ພ້ອມທີ່ຈະເລີ່ມການວິນິດໄສບໍ່? NVDA ຈະເລີ່ມໃໝ່ ແລະ ປິດໃຊ້ງານສ່ວນເສີມເຄິ່ງໜຶ່ງຂອງທ່ານ."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "ສ້າງຈຸດກູ້ຄືນແລ້ວ: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "ລຶບທັງໝົດ"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "ລຶບແລ້ວ: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "ເລີ່ມ NVDA ໃໝ່ໂດຍປິດໃຊ້ງານສ່ວນເສີມ"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "ເລີ່ມ NVDA ໃໝ່ {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "ກູ້ຄືນ"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "ກູ້ຄືນການຕັ້ງຄ່າ NVDA"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "ການກູ້ຄືນການຕັ້ງຄ່າ NVDA ບໍ່ສາມາດໃຊ້ງານໄດ້"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "ການກູ້ຄືນສຳເລັດແລ້ວ, ກຳລັງເລີ່ມ NVDA ໃໝ່..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "ການກູ້ຄືນຫຼົ้มເຫຼວ"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"ຮອບທີ {round}: ສ່ວນເສີມ {count} ລາຍການຖືກປິດໃຊ້ງານ.\n"
+"\n"
+"ບັນຫາຫາຍໄປແລ້ວແມ່ນບໍ່?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "ເລືອກໂຟນເດີກູ້ຄືນ"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "ກົດຄັ້ງດຽວ: ເປີດເມນູ DoctorNVDA, ກົດສອງຄັ້ງ: ເລີ່ມ NVDA ໃໝ່, ກົດສາມຄັ້ງ: ເລີ່ມ NVDA ໃໝ່ໂດຍປິດໃຊ້ງານສ່ວນເສີມ"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "ສະຫຼຸບຂໍ້ມູນລະບົບ"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "ຄັດລອກຂໍ້ມູນລະບົບແລ้ວ"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "ບໍ່ຮູ້ເວີຊັນ NVDA"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "ໂຟນເດີການຕັ້ງຄ່າຜູ້ໃຊ້"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "ບໍ່ພົບໂຟນເດີການຕັ້ງຄ່າຜູ້ใช้"

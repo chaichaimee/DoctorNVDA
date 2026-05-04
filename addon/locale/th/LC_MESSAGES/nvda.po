@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Thai\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&ยกเลิก"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&ไม่"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&ตกลง"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&ใช่"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(ไม่มีจุดกู้คืน)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "ส่วนเสริมทั้งหมดเปิดใช้งานอยู่"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "ไฟล์การตั้งค่าทั้งหมดอยู่ครบถ้วน"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "ลบจุดกู้คืนทั้งหมดแล้ว"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบ {}?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบจุดกู้คืนทั้งหมด?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "ส่วนเสริมช่วยวิเคราะห์ปัญหาแบบแบ่งครึ่ง (Binary Search)"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "ยกเลิกการวิเคราะห์ปัญหาและคืนค่าส่วนเสริมทั้งหมด"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "ยืนยันการลบ"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "ยืนยันการลบทิ้งทั้งหมด"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "คัดลอกไปยังคลิปบอร์ดแล้ว: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "สร้างจุดกู้คืนการตั้งค่า NVDA"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "การสร้างจุดกู้คืนล้มเหลว"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "ลบเรียบร้อยแล้ว"
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "วิเคราะห์ปัญหาเสร็จสิ้น พบและปิดการใช้งานส่วนเสริม: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "ตรวจสุขภาพ DoctorNVDA"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "เมนู DoctorNVDA"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "ข้อผิดพลาด"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "เกิดข้อผิดพลาดในการลบ: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "ไม่สามารถเปิดโฟลเดอร์การตั้งค่าผู้ใช้ได้"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "พบส่วนเสริมที่ไม่ได้เปิดใช้งาน {n} รายการ กำลังเปิดรายงาน"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "ไฟล์การตั้งค่าหายไป {n} ไฟล์"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "เวอร์ชัน NVDA: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "ไม่พบส่วนเสริมที่เปิดใช้งานเพื่อทำการวิเคราะห์ปัญหา"
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "ไม่มีจุดกู้คืน กรุณาสร้างจุดกู้คืนก่อน"
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "ไม่ได้เลือก"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "กรุณาเลือกจุดกู้คืนก่อน"
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "พร้อมเริ่มการวิเคราะห์ปัญหาหรือไม่? NVDA จะเริ่มการทำงานใหม่และปิดส่วนเสริมที่ใช้งานอยู่ของคุณออกครึ่งหนึ่ง"
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "สร้างจุดกู้คืนแล้ว: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "ลบทั้งหมด"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "ลบออกแล้ว: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "เริ่มการทำงาน NVDA ใหม่โดยปิดส่วนเสริมทั้งหมด"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "เริ่มการทำงาน NVDA ใหม่ {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "คืนค่า"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "คืนค่าการตั้งค่า NVDA"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "ไม่สามารถคืนค่าการตั้งค่า NVDA ได้"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "คืนค่าเสร็จสมบูรณ์ กำลังเริ่มการทำงาน NVDA ใหม่..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "การคืนค่าล้มเหลว"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"รอบที่ {round}: มีส่วนเสริมถูกปิดการใช้งาน {count} ตัว\n"
+"\n"
+"ปัญหาหายไปแล้วใช่หรือไม่?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "เลือกโฟลเดอร์จุดกู้คืน"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "แตะ 1 ครั้ง: เปิดเมนู DoctorNVDA, แตะ 2 ครั้ง: เริ่มการทำงาน NVDA ใหม่, แตะ 3 ครั้ง: เริ่มการทำงาน NVDA ใหม่โดยปิดส่วนเสริม"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "สรุปข้อมูลระบบ"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "คัดลอกข้อมูลระบบแล้ว"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "ไม่ทราบเวอร์ชันของ NVDA"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "โฟลเดอร์การตั้งค่าผู้ใช้"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "ไม่พบโฟลเดอร์การตั้งค่าผู้ใช้"

@@ -1,12 +1,14 @@
 # diagnostic.py
+# Copyright (C) 2026 Chai Chaimee
+# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import os
 import json
 import wx
-import addonHandler
 import core
-import ui
 import gui
+import addonHandler
+import ui
 import config
 import tones
 from globalVars import appArgs
@@ -18,88 +20,19 @@ except:
 	def _(x): return x
 
 STATE_FILE = os.path.join(appArgs.configPath, "ChaiChaimee", "DoctorNVDA", "diagnostic_state.json")
-MY_ADDON_INTERNAL = "DoctorNVDA"  # Must match this addon's folder name
-
-class AccessibleMessageDialog(wx.Dialog):
-	"""
-	Dialog that NVDA will read the full message by focusing on a read-only TextCtrl
-	and always stays on top.
-	"""
-	def __init__(self, parent, message, title, style=wx.YES_NO | wx.CANCEL):
-		super().__init__(parent, title=title, style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER | wx.STAY_ON_TOP)
-		self.message = message
-		self.style = style
-
-		panel = wx.Panel(self)
-		sizer = wx.BoxSizer(wx.VERTICAL)
-
-		# Use read-only TextCtrl so it can receive focus and NVDA reads the message
-		self.text_ctrl = wx.TextCtrl(
-			panel,
-			value=message,
-			style=wx.TE_READONLY | wx.TE_MULTILINE | wx.TE_NO_VSCROLL,
-			size=(400, -1)
-		)
-		self.text_ctrl.SetBackgroundColour(panel.GetBackgroundColour())  # Blend in
-		sizer.Add(self.text_ctrl, 1, wx.EXPAND | wx.ALL, 15)
-
-		# Separator line
-		sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
-
-		# Buttons according to style
-		btnSizer = wx.BoxSizer(wx.HORIZONTAL)
-		buttons = []
-		if style & wx.YES:
-			yesBtn = wx.Button(panel, wx.ID_YES, _("&Yes"))
-			buttons.append(yesBtn)
-		if style & wx.NO:
-			noBtn = wx.Button(panel, wx.ID_NO, _("&No"))
-			buttons.append(noBtn)
-		if style & wx.CANCEL:
-			cancelBtn = wx.Button(panel, wx.ID_CANCEL, _("&Cancel"))
-			buttons.append(cancelBtn)
-		if style & wx.OK:
-			okBtn = wx.Button(panel, wx.ID_OK, _("&OK"))
-			buttons.append(okBtn)
-
-		for btn in buttons:
-			btnSizer.Add(btn, 0, wx.ALL, 5)
-			btn.Bind(wx.EVT_BUTTON, self.onButton)
-
-		sizer.Add(btnSizer, 0, wx.ALIGN_CENTER | wx.ALL, 10)
-
-		panel.SetSizer(sizer)
-		sizer.Fit(self)
-
-		# Set focus to TextCtrl so NVDA reads the message immediately
-		self.text_ctrl.SetFocus()
-
-		self.CentreOnParent()
-		self.Raise()  # Ensure it stays on top
-
-	def onButton(self, event):
-		btn_id = event.GetId()
-		self.EndModal(btn_id)
+MY_ADDON_INTERNAL = "DoctorNVDA"
 
 def apply_addon_states(to_disable_list, original_active):
-	"""Enable/disable add-ons using addon.enable() which automatically saves to config"""
 	addons = addonHandler.getAvailableAddons()
 	addon_dict = {a.name: a for a in addons}
-
-	# Disable according to to_disable_list
 	for name in to_disable_list:
 		if name in addon_dict and name != MY_ADDON_INTERNAL:
-			addon_dict[name].enable(False)  # disable
-
-	# Enable according to original_active that are not in to_disable_list
+			addon_dict[name].enable(False)
 	for name in original_active:
 		if name in addon_dict and name not in to_disable_list and name != MY_ADDON_INTERNAL:
-			addon_dict[name].enable(True)   # enable
-
-	# Always keep this addon enabled
+			addon_dict[name].enable(True)
 	if MY_ADDON_INTERNAL in addon_dict:
 		addon_dict[MY_ADDON_INTERNAL].enable(True)
-
 	config.conf.save()
 
 def save_state(state):
@@ -132,51 +65,47 @@ def restore_all_and_restart():
 		original_active = state["original_active"]
 		addons = addonHandler.getAvailableAddons()
 		addon_dict = {a.name: a for a in addons}
-
 		for name, addon in addon_dict.items():
 			if name == MY_ADDON_INTERNAL:
 				addon.enable(True)
 			else:
 				addon.enable(name in original_active)
-
 		config.conf.save()
 		clear_state()
 		core.restart()
 	else:
-		# No state or cancelled without starting diagnostic
 		core.restart()
 
 def start_diagnostic_with_confirmation():
 	active_addons = [a.name for a in addonHandler.getAvailableAddons() if a.isRunning and a.name != MY_ADDON_INTERNAL]
-
 	if not active_addons:
 		ui.message(_("No active add-ons found to diagnose."))
 		return
 
-	# Use AccessibleMessageDialog so NVDA reads the message
-	dlg = AccessibleMessageDialog(
-		gui.mainFrame,
-		_("Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."),
-		_("DoctorNVDA"),
-		style=wx.YES_NO | wx.CANCEL
-	)
-	result = dlg.ShowModal()
-	dlg.Destroy()
+	def on_response(btn_id):
+		if btn_id == wx.ID_YES:
+			tones.beep(880, 200)
+			state = {
+				"original_active": active_addons,
+				"candidates": active_addons,
+				"round": 1
+			}
+			save_state(state)
+			run_diagnostic_round(state)
 
-	if result == wx.ID_YES:
-		tones.beep(880, 200)
-		state = {
-			"original_active": active_addons,
-			"candidates": active_addons,
-			"round": 1
-		}
-		save_state(state)
-		run_diagnostic_round(state)
-	# No or Cancel do nothing
+	def show_dialog():
+		NonModalMessageDialog(
+			gui.mainFrame,
+			_("Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."),
+			_("DoctorNVDA"),
+			on_response,
+			wx.YES_NO | wx.CANCEL
+		).Show()
+
+	wx.CallLater(100, show_dialog)
 
 def run_diagnostic_round(state):
 	candidates = state["candidates"]
-
 	if len(candidates) == 1:
 		finalize_diagnostic(candidates[0], state["original_active"])
 		return
@@ -191,7 +120,8 @@ def run_diagnostic_round(state):
 
 def handle_restart_response(symptoms_gone):
 	state = load_state()
-	if not state: return
+	if not state:
+		return
 
 	if symptoms_gone:
 		state["candidates"] = state["test_group"]
@@ -210,5 +140,57 @@ def finalize_diagnostic(culprit, original_active):
 	addons = {a.name: a.manifest['name'] for a in addonHandler.getAvailableAddons()}
 	culprit_display = addons.get(culprit, culprit)
 
-	wx.CallAfter(gui.mainFrame.Raise)
+	core.callLater(100, gui.mainFrame.Raise)
 	core.callLater(1000, ui.message, _("Diagnostic complete. Found and disabled: {name}").format(name=culprit_display))
+
+class NonModalMessageDialog(wx.Dialog):
+	def __init__(self, parent, message, title, callback, style=wx.OK):
+		super().__init__(parent, title=title, style=wx.DEFAULT_DIALOG_STYLE | wx.STAY_ON_TOP)
+		self.callback = callback
+
+		panel = wx.Panel(self)
+		sizer = wx.BoxSizer(wx.VERTICAL)
+
+		msg_text = wx.StaticText(panel, label=message)
+		sizer.Add(msg_text, 1, wx.EXPAND | wx.ALL, 15)
+
+		btn_sizer = wx.BoxSizer(wx.HORIZONTAL)
+		buttons = []
+		if style & wx.YES:
+			btn = wx.Button(panel, wx.ID_YES, _("&Yes"))
+			btn.Bind(wx.EVT_BUTTON, self.on_button)
+			buttons.append(btn)
+		if style & wx.NO:
+			btn = wx.Button(panel, wx.ID_NO, _("&No"))
+			btn.Bind(wx.EVT_BUTTON, self.on_button)
+			buttons.append(btn)
+		if style & wx.CANCEL:
+			btn = wx.Button(panel, wx.ID_CANCEL, _("&Cancel"))
+			btn.Bind(wx.EVT_BUTTON, self.on_button)
+			buttons.append(btn)
+		if style & wx.OK:
+			btn = wx.Button(panel, wx.ID_OK, _("&OK"))
+			btn.Bind(wx.EVT_BUTTON, self.on_button)
+			buttons.append(btn)
+
+		for btn in buttons:
+			btn_sizer.Add(btn, 0, wx.ALL, 5)
+
+		sizer.Add(btn_sizer, 0, wx.ALIGN_CENTER | wx.ALL, 10)
+		panel.SetSizer(sizer)
+		sizer.Fit(self)
+		self.CentreOnParent()
+		self.Raise()
+		core.callLater(100, self._setFocus)
+
+	def _setFocus(self):
+		try:
+			self.SetFocus()
+		except:
+			pass
+
+	def on_button(self, event):
+		btn_id = event.GetId()
+		self.Destroy()
+		if self.callback:
+			self.callback(btn_id)

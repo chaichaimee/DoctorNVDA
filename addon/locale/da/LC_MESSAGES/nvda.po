@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:00+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Danish\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&Annuller"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&Nej"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&OK"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&Ja"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(Ingen gendannelsespunkter tilgængelige)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "Alle tilføjelser er aktive"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "Alle konfigurationsfiler er til stede"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "Alle gendannelser blev fjernet"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "Er du sikker på, at du vil slette {}?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "Er du sikker på, at du vil fjerne alle gendannelsespunkter?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "Binær søgning fejlfindingstilføjelse"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "Annuller"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "Annuller tilføjelsesdiagnostik og gendan alle"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "Bekræft sletning"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "Bekræft fjernelse af alle"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "Kopieret til udklipsholder: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "Opret gendannelsespunkt for NVDA-indstillinger"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "Oprettelse af gendannelsespunkt mislykkedes"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "Slettet."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "Diagnostik fuldført. Fundet og deaktiveret: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA helbredstjek"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA-menu"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "Fejl"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "Fejl ved sletning af: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "Kunne ikke åbne mappen med brugerkonfiguration"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "Fandt {n} inaktive tilføjelser. Åbner rapport"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "Mangler {n} konfigurationsfiler"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA-version: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "Ingen aktive tilføjelser fundet til diagnosticering."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "Ingen gendannelsespunkter tilgængelige. Opret en gendannelse først."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "Intet valgt"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "Vælg venligst en gendannelsesmappe først."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "Klar til at starte diagnostik? NVDA vil genstarte og deaktivere halvdelen af dine aktive tilføjelser."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "Gendannelsespunkt oprettet: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "Fjern alle"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "Fjernet: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "Genstart NVDA med tilføjelser deaktiveret"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "Genstart NVDA {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "Gendan"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "Gendan NVDA-indstillinger"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "Gendannelse af NVDA-indstillinger ikke tilgængelig"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "Gendannelse fuldført, genstarter NVDA..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "Gendannelse mislykkedes"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"Runde {round}: {count} tilføjelser er DEAKTIVERET.\n"
+"\n"
+"Er problemet VÆK?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "Vælg gendannelsesmappe"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Enkelt tryk: Åbn DoctorNVDA-menu, dobbelt tryk: Genstart NVDA, tredobbelt tryk: Genstart uden tilføjelser"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "Systeminfooversigt"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "Systeminfo kopieret"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "Ukendt NVDA-version"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "Brugerkonfigurationsmappe"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "Brugerkonfigurationsmappe ikke fundet"

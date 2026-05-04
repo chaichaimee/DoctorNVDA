@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-03 07:16+0700\n"
+"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Tamil\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: diagnostic.py:168
+msgid "&Cancel"
+msgstr "&இரத்து செய்"
+
+#: diagnostic.py:164
+msgid "&No"
+msgstr "&இல்லை"
+
+#: diagnostic.py:172
+msgid "&OK"
+msgstr "&சரி"
+
+#: diagnostic.py:160
+msgid "&Yes"
+msgstr "&ஆம்"
+
+#: recovery_gui.py:71
+msgid "(No recovery points available)"
+msgstr "(மீட்பு புள்ளிகள் எதுவும் இல்லை)"
+
+#: doctor.py:288
+msgid "All addons active"
+msgstr "அனைத்து துணைநிரல்களும் செயல்பாட்டில் உள்ளன"
+
+#: doctor.py:267
+msgid "All configuration files present"
+msgstr "அனைத்து உள்ளமைவு கோப்புகளும் உள்ளன"
+
+#: recovery.py:139
+#: recovery_gui.py:99
+msgid "All recoveries removed"
+msgstr "அனைத்து மீட்புகளும் அகற்றப்பட்டன"
+
+#: recovery_gui.py:117
+msgid "Are you sure you want to delete {}?"
+msgstr "{} ஐ நிச்சயமாக நீக்க விரும்புகிறீர்களா?"
+
+#: recovery_gui.py:94
+msgid "Are you sure you want to remove all recovery points?"
+msgstr "அனைத்து மீட்பு புள்ளிகளையும் நிச்சயமாக அகற்ற விரும்புகிறீர்களா?"
+
+#: __init__.py:81
+msgid "Binary Search Debugging add-on"
+msgstr "பைனரி தேடல் பிழைத்திருத்த துணைநிரல்"
+
+#: recovery_gui.py:48
+msgid "Cancel"
+msgstr "இரத்து செய்"
+
+#: __init__.py:79
+msgid "Cancel Add-on Diagnostic and Restore All"
+msgstr "துணைநிரல் கண்டறிதலை இரத்து செய்து அனைத்தையும் மீட்டமை"
+
+#: recovery_gui.py:118
+msgid "Confirm delete"
+msgstr "நீக்குதலை உறுதிப்படுத்து"
+
+#: recovery_gui.py:95
+msgid "Confirm remove all"
+msgstr "அனைத்தையும் அகற்றுவதை உறுதிப்படுத்து"
+
+#: doctor.py:321
+msgid "Copied to clipboard: {}"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது: {}"
+
+#: __init__.py:70
+msgid "Create NVDA Setting Recovery"
+msgstr "NVDA அமைவு மீட்பை உருவாக்கு"
+
+#: recovery.py:93
+msgid "Create recovery failed"
+msgstr "மீட்பை உருவாக்குதல் தோல்வியுற்றது"
+
+#: recovery_gui.py:125
+msgid "Deleted."
+msgstr "நீக்கப்பட்டது."
+
+#: diagnostic.py:144
+msgid "Diagnostic complete. Found and disabled: {name}"
+msgstr "கண்டறிதல் முடிந்தது. கண்டறியப்பட்டு முடக்கப்பட்டது: {name}"
+
+#: __init__.py:124
+#: diagnostic.py:100
+msgid "DoctorNVDA"
+msgstr "DoctorNVDA"
+
+#: __init__.py:60
+msgid "DoctorNVDA Health Check"
+msgstr "DoctorNVDA ஆரோக்கிய பரிசோதனை"
+
+#: menu.py:20
+#: menu.py:91
+msgid "DoctorNVDA Menu"
+msgstr "DoctorNVDA மெனு"
+
+#: recovery_gui.py:131
+msgid "Error"
+msgstr "பிழை"
+
+#: recovery_gui.py:131
+msgid "Error deleting: {}"
+msgstr "நீக்குவதில் பிழை: {}"
+
+#: utils.py:23
+msgid "Failed to open user config folder"
+msgstr "பயனர் உள்ளமைவு கோப்புறையைத் திறக்க முடியவில்லை"
+
+#: doctor.py:290
+msgid "Found {n} inactive addons Opening report"
+msgstr "{n} செயல்படாத துணைநிரல்கள் கண்டறியப்பட்டன. அறிக்கையைத் திறக்கிறது"
+
+#: doctor.py:269
+msgid "Missing {n} configuration files"
+msgstr "{n} உள்ளமைவு கோப்புகள் இல்லை"
+
+#: __init__.py:69
+msgid "NVDA Version: {}"
+msgstr "NVDA பதிப்பு: {}"
+
+#: diagnostic.py:82
+msgid "No active add-ons found to diagnose."
+msgstr "கண்டறியச் செயல்பாட்டில் உள்ள துணைநிரல்கள் எதுவும் இல்லை."
+
+#: recovery_gui.py:149
+msgid "No recovery points available. Create a recovery first."
+msgstr "மீட்பு புள்ளிகள் எதுவும் இல்லை. முதலில் ஒரு மீட்பை உருவாக்கவும்."
+
+#: recovery_gui.py:88
+msgid "No selection"
+msgstr "தேர்வு இல்லை"
+
+#: recovery_gui.py:88
+msgid "Please select a recovery folder first."
+msgstr "தயவுசெய்து முதலில் மீட்பு கோப்புறையைத் தேர்ந்தெடுக்கவும்."
+
+#: diagnostic.py:99
+msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
+msgstr "கண்டறிதலைத் தொடங்கத் தயாரா? NVDA மறுதொடக்கம் செய்யப்பட்டு உங்கள் செயல்பாட்டில் உள்ள துணைநிரல்களில் பாதியை முடக்கும்."
+
+#: recovery.py:91
+msgid "Recovery created: {n}"
+msgstr "மீட்பு உருவாக்கப்பட்டது: {n}"
+
+#: recovery_gui.py:46
+msgid "Remove All"
+msgstr "அனைத்தையும் அகற்று"
+
+#: recovery.py:132
+msgid "Removed: {n}"
+msgstr "அகற்றப்பட்டது: {n}"
+
+#: __init__.py:74
+msgid "Restart NVDA with add-ons disabled"
+msgstr "துணைநிரல்களை முடக்கி NVDA ஐ மறுதொடக்கம் செய்"
+
+#: __init__.py:76
+msgid "Restart NVDA {}"
+msgstr "NVDA ஐ மறுதொடக்கம் செய் {}"
+
+#: recovery_gui.py:44
+msgid "Restore"
+msgstr "மீட்டமை"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting"
+msgstr "NVDA அமைவை மீட்டமை"
+
+#: __init__.py:73
+msgid "Restore NVDA Setting unavailable"
+msgstr "NVDA அமைவு மீட்பு கிடைக்கவில்லை"
+
+#: recovery.py:124
+msgid "Restore completed, restarting NVDA..."
+msgstr "மீட்டமைப்பு முடிந்தது, NVDA மறுதொடக்கம் செய்யப்படுகிறது..."
+
+#: recovery.py:126
+msgid "Restore failed"
+msgstr "மீட்டமைப்பு தோல்வியுற்றது"
+
+#: __init__.py:41
+msgid ""
+"Round {round}: {count} add-ons are DISABLED.\n"
+"\n"
+"Is the problem GONE?\n"
+msgstr ""
+"சுற்று {round}: {count} துணைநிரல்கள் முடக்கப்பட்டுள்ளன.\n"
+"\n"
+"சிக்கல் தீர்ந்துவிட்டதா?\n"
+
+#: recovery_gui.py:30
+msgid "Select Recovery Folder"
+msgstr "மீட்பு கோப்புறையைத் தேர்ந்தெடு"
+
+#: __init__.py:107
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "ஒருமுறை தட்டுதல்: DoctorNVDA மெனுவைத் திறக்க, இருமுறை தட்டுதல்: NVDA ஐ மறுதொடக்கம் செய்ய, மூன்று முறை தட்டுதல்: துணைநிரல்களை முடக்கி NVDA ஐ மறுதொடக்கம் செய்ய"
+
+#: __init__.py:83
+msgid "System Info Summary"
+msgstr "கணினி தகவல் சுருக்கம்"
+
+#: doctor.py:262
+msgid "System info copied"
+msgstr "கணினி தகவல் நகலெடுக்கப்பட்டது"
+
+#: doctor.py:307
+#: doctor.py:314
+msgid "Unknown NVDA version"
+msgstr "அறியப்படாத NVDA பதிப்பு"
+
+#: __init__.py:82
+msgid "User Config Folder"
+msgstr "பயனர் உள்ளமைவு கோப்புறை"
+
+#: utils.py:25
+msgid "User config folder not found"
+msgstr "பயனர் உள்ளமைவு கோப்புறை காணப்படவில்லை"
