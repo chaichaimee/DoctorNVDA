@@ -1,6 +1,4 @@
 # diagnostic.py
-# Copyright (C) 2026 Chai Chaimee
-# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import os
 import json
@@ -47,7 +45,7 @@ def load_state():
 		try:
 			with open(STATE_FILE, 'r', encoding='utf-8') as f:
 				return json.load(f)
-		except:
+		except (OSError, ValueError):
 			return None
 	return None
 
@@ -55,7 +53,7 @@ def clear_state():
 	if os.path.exists(STATE_FILE):
 		try:
 			os.remove(STATE_FILE)
-		except:
+		except OSError:
 			pass
 
 def restore_all_and_restart():
@@ -72,9 +70,14 @@ def restore_all_and_restart():
 				addon.enable(name in original_active)
 		config.conf.save()
 		clear_state()
-		core.restart()
+		# Give the UI teardown from the dialog that triggered this (see
+		# NonModalMessageDialog.on_button) time to fully settle before
+		# core shutdown begins; restarting immediately here can race the
+		# dialog's own destruction/focus handling and deadlock the main
+		# pump or leave a zombie nvda.exe process behind.
+		core.callLater(500, core.restart)
 	else:
-		core.restart()
+		core.callLater(500, core.restart)
 
 def start_diagnostic_with_confirmation():
 	active_addons = [a.name for a in addonHandler.getAvailableAddons() if a.isRunning and a.name != MY_ADDON_INTERNAL]
@@ -116,7 +119,11 @@ def run_diagnostic_round(state):
 	save_state(state)
 
 	apply_addon_states(test_group, state["original_active"])
-	core.restart()
+	# See restore_all_and_restart: restart is deferred rather than
+	# immediate so the calling dialog's UI teardown and COM focus
+	# stabilization finish first, instead of racing NVDA's own exit
+	# sequence.
+	core.callLater(500, core.restart)
 
 def handle_restart_response(symptoms_gone):
 	state = load_state()
@@ -151,8 +158,15 @@ class NonModalMessageDialog(wx.Dialog):
 		panel = wx.Panel(self)
 		sizer = wx.BoxSizer(wx.VERTICAL)
 
-		msg_text = wx.StaticText(panel, label=message)
-		sizer.Add(msg_text, 1, wx.EXPAND | wx.ALL, 15)
+		# Use a read-only multi-line TextCtrl to allow arrow-key navigation.
+		self.textCtrl = wx.TextCtrl(
+			panel,
+			style=wx.TE_MULTILINE | wx.TE_READONLY | wx.TE_RICH2,
+			value=message
+		)
+		# Set a reasonable minimum size so the list is scrollable.
+		self.textCtrl.SetMinSize((450, 200))
+		sizer.Add(self.textCtrl, 1, wx.EXPAND | wx.ALL, 10)
 
 		btn_sizer = wx.BoxSizer(wx.HORIZONTAL)
 		buttons = []
@@ -181,16 +195,27 @@ class NonModalMessageDialog(wx.Dialog):
 		sizer.Fit(self)
 		self.CentreOnParent()
 		self.Raise()
+		# Give focus to the text control so screen readers read its content immediately.
 		core.callLater(100, self._setFocus)
 
 	def _setFocus(self):
 		try:
-			self.SetFocus()
-		except:
+			self.textCtrl.SetFocus()
+		except RuntimeError:
 			pass
 
 	def on_button(self, event):
 		btn_id = event.GetId()
-		self.Destroy()
+		# No self.Hide() here: forcing an immediate OS focus transition
+		# to the underlying window, at the same moment self.callback()
+		# below may trigger core.restart(), races NVDA's own exit
+		# teardown (heavy COM/UIA focus queries against the new
+		# foreground window while the core event pump is starting to
+		# shut down). That race has produced deadlocked/zombie nvda.exe
+		# processes. Letting wx destroy the dialog normally afterward,
+		# combined with callers deferring their own restart via
+		# core.callLater (see run_diagnostic_round/restore_all_and_restart),
+		# gives the UI teardown time to fully settle first.
 		if self.callback:
 			self.callback(btn_id)
+		wx.CallAfter(self.Destroy)

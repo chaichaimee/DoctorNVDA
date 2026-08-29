@@ -1,6 +1,4 @@
 # recovery_gui.py
-# Copyright (C) 2026 Chai Chaimee
-# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import wx
 import os
@@ -19,16 +17,16 @@ except:
 
 _active_frame = None
 
-class RestoreFrame(wx.Frame):
+class RestoreFrame(wx.Dialog):
 	def __init__(self, parent, folders, restore_callback):
 		global _active_frame
 		if _active_frame:
 			try:
 				_active_frame.Close()
-			except:
+			except RuntimeError:
 				pass
 		super().__init__(parent, title=_("Select Recovery Folder"), size=(500, 400),
-						 style=wx.DEFAULT_FRAME_STYLE | wx.STAY_ON_TOP)
+						 style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER)
 		self.restore_callback = restore_callback
 		self.folders = folders
 		_active_frame = self
@@ -59,9 +57,17 @@ class RestoreFrame(wx.Frame):
 		self.list_box.Bind(wx.EVT_LISTBOX_DCLICK, self.on_restore)
 		self.list_box.Bind(wx.EVT_CHAR_HOOK, self.on_key_down)
 
+		# Global ESC handler for the entire frame
+		self.Bind(wx.EVT_CHAR_HOOK, self.on_frame_char_hook)
+
 		self.Bind(wx.EVT_CLOSE, self.on_close)
 
 		self.CentreOnParent()
+		# wx.Dialog instantiates hidden by default; without an explicit
+		# Show(), _set_initial_focus() below forces keyboard focus into a
+		# ListBox that is never rendered, so NVDA appears to go completely
+		# dead with no visible or closable window.
+		self.Show()
 		self.Raise()
 		wx.CallLater(100, self._set_initial_focus)
 
@@ -110,6 +116,13 @@ class RestoreFrame(wx.Frame):
 		else:
 			event.Skip()
 
+	def on_frame_char_hook(self, event):
+		"""Catch ESC at frame level to close dialog no matter where focus is."""
+		if event.GetKeyCode() == wx.WXK_ESCAPE:
+			self.Close()
+		else:
+			event.Skip()
+
 	def delete_selected(self):
 		folder = self.get_selected_folder()
 		if not folder:
@@ -127,7 +140,7 @@ class RestoreFrame(wx.Frame):
 					self.list_box.SetSelection(0 if idx == 0 else idx - 1)
 				else:
 					self.refresh_list()
-			except Exception as e:
+			except OSError as e:
 				wx.MessageBox(_("Error deleting: {}").format(str(e)), _("Error"), wx.OK | wx.ICON_ERROR)
 
 	def on_close(self, event):
@@ -136,12 +149,25 @@ class RestoreFrame(wx.Frame):
 		self.Destroy()
 
 	def _set_initial_focus(self):
-		if self.list_box.GetCount() == 0:
+		"""Called via a queued wx.CallLater(100, ...) from __init__. If the
+		user closes the dialog (ESC, Cancel, or on_close) within that
+		100ms window, the underlying C++ ListBox/Dialog is already
+		destroyed by the time this fires. wx overrides truthiness for its
+		windows to reflect that, so "not self" catches it; IsBeingDeleted
+		catches the case where destruction is in progress but not yet
+		complete; the try/except is a last-resort guard against any wx
+		call still touching a half-destroyed object."""
+		if not self or self.IsBeingDeleted():
 			return
-		self.list_box.SetFocus()
-		if self.folders:
-			self.list_box.SetSelection(0)
-		self.Raise()
+		try:
+			if self.list_box.GetCount() == 0:
+				return
+			self.list_box.SetFocus()
+			if self.folders:
+				self.list_box.SetSelection(0)
+			self.Raise()
+		except RuntimeError:
+			pass
 
 
 def show_restore_dialog(folders, restore_callback):

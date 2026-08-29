@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Project-Id-Version: DoctorNVDA 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-03 07:16+0700\n"
-"PO-Revision-Date: 2026-05-04 14:40+0700\n"
+"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
@@ -12,220 +12,318 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: diagnostic.py:168
+#: diagnostic.py:173
 msgid "&Cancel"
 msgstr "取消(&C)"
 
-#: diagnostic.py:164
+#: diagnostic.py:169
 msgid "&No"
 msgstr "否(&N)"
 
-#: diagnostic.py:172
+#: diagnostic.py:177
 msgid "&OK"
 msgstr "确定(&O)"
 
-#: diagnostic.py:160
+#: diagnostic.py:165
 msgid "&Yes"
 msgstr "是(&Y)"
 
-#: recovery_gui.py:71
+#: recovery_gui.py:77
 msgid "(No recovery points available)"
-msgstr "(无可用恢复点)"
+msgstr "(没有可用的还原点)"
 
-#: doctor.py:288
+#: doctor.py:296
 msgid "All addons active"
 msgstr "所有插件均已启用"
 
-#: doctor.py:267
+#: doctor.py:275
 msgid "All configuration files present"
 msgstr "所有配置文件齐全"
 
-#: recovery.py:139
-#: recovery_gui.py:99
+#: recovery.py:192
+#: recovery_gui.py:105
 msgid "All recoveries removed"
-msgstr "已移除所有恢复点"
+msgstr "已删除所有还原点"
 
-#: recovery_gui.py:117
+#: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
-msgstr "您确定要删除 {} 吗？"
+msgstr "确定要删除 {} 吗？"
 
-#: recovery_gui.py:94
+#: recovery_gui.py:100
 msgid "Are you sure you want to remove all recovery points?"
-msgstr "您确定要移除所有恢复点吗？"
+msgstr "确定要删除所有还原点吗？"
 
-#: __init__.py:81
+#: audio_reset.py:44
+msgid "Audio reset failed. Check NVDA log."
+msgstr "音频重置失败。请检查 NVDA 日志。"
+
+#: audio_reset.py:48
+msgid "Audio subsystem reset complete"
+msgstr "音频子系统重置完成"
+
+#: __init__.py:102
 msgid "Binary Search Debugging add-on"
-msgstr "二分查找调试插件"
+msgstr "二分法插件故障诊断"
 
-#: recovery_gui.py:48
+#: cleanup.py:132
+msgid "Cache cleanup encountered an error. Check NVDA log."
+msgstr "清理缓存时出错。请检查 NVDA 日志。"
+
+#: recovery_gui.py:46
 msgid "Cancel"
 msgstr "取消"
 
-#: __init__.py:79
+#: __init__.py:100
 msgid "Cancel Add-on Diagnostic and Restore All"
-msgstr "取消插件诊断并恢复所有"
+msgstr "取消插件诊断并恢复所有插件"
 
-#: recovery_gui.py:118
+#: __init__.py:107
+msgid "Clean Add-on Caches"
+msgstr "清理插件缓存"
+
+#: __init__.py:108
+msgid "Clean NVDA Temp Files"
+msgstr "清理 NVDA 临时文件"
+
+#: cleanup.py:124
+msgid "Cleaned {files} file(s) in {dirs} cache folder(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "已清理 {dirs} 个缓存文件夹中的 {files} 个文件，释放了 {size} 字节空间。正在重启 NVDA。"
+
+#: recovery_gui.py:131
 msgid "Confirm delete"
 msgstr "确认删除"
 
-#: recovery_gui.py:95
+#: recovery_gui.py:101
 msgid "Confirm remove all"
-msgstr "确认全部移除"
+msgstr "确认全部删除"
 
-#: doctor.py:321
+#: doctor.py:329
 msgid "Copied to clipboard: {}"
 msgstr "已复制到剪贴板：{}"
 
-#: __init__.py:70
+#: __init__.py:104
+msgid "Crash Log Analyzer"
+msgstr "崩溃日志分析器"
+
+#: __init__.py:91
 msgid "Create NVDA Setting Recovery"
-msgstr "创建 NVDA 设置恢复点"
+msgstr "创建 NVDA 设置还原点"
 
-#: recovery.py:93
+#: recovery.py:100
 msgid "Create recovery failed"
-msgstr "创建恢复点失败"
+msgstr "创建还原点失败"
 
-#: recovery_gui.py:125
+#: cleanup.py:164
+msgid "Deleted {count} temporary/.delete file(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "已删除 {count} 个临时/.delete 文件，释放了 {size} 字节空间。正在重启 NVDA。"
+
+#: recovery_gui.py:138
 msgid "Deleted."
 msgstr "已删除。"
 
-#: diagnostic.py:144
+#: diagnostic.py:142
 msgid "Diagnostic complete. Found and disabled: {name}"
-msgstr "诊断完成。已找到并禁用：{name}"
+msgstr "诊断完成。已定位并禁用存在问题的插件：{name}"
 
-#: __init__.py:124
-#: diagnostic.py:100
+#: __init__.py:157
+#: diagnostic.py:98
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:60
+#: __init__.py:81
 msgid "DoctorNVDA Health Check"
-msgstr "DoctorNVDA 健康检查"
+msgstr "DoctorNVDA 系统健康检查"
 
-#: menu.py:20
-#: menu.py:91
+#: menu.py:18
+#: menu.py:89
 msgid "DoctorNVDA Menu"
 msgstr "DoctorNVDA 菜单"
 
-#: recovery_gui.py:131
+#: __init__.py:103
+msgid "Emergency Synthesizer Reboot"
+msgstr "紧急重启语音合成器"
+
+#: recovery_gui.py:144
 msgid "Error"
 msgstr "错误"
 
-#: recovery_gui.py:131
+#: recovery_gui.py:144
 msgid "Error deleting: {}"
-msgstr "删除错误：{}"
+msgstr "删除时出错：{}"
 
-#: utils.py:23
+#: utils.py:24
 msgid "Failed to open user config folder"
 msgstr "无法打开用户配置文件夹"
 
-#: doctor.py:290
+#: doctor.py:298
 msgid "Found {n} inactive addons Opening report"
-msgstr "发现 {n} 个未启用的插件，正在打开报告"
+msgstr "发现 {n} 个未启用的插件。正在打开报告"
 
-#: doctor.py:269
+#: crash_analyzer.py:375
+msgid "Log file not found."
+msgstr "未找到日志文件。"
+
+#: doctor.py:277
 msgid "Missing {n} configuration files"
 msgstr "缺失 {n} 个配置文件"
 
-#: __init__.py:69
+#: __init__.py:90
 msgid "NVDA Version: {}"
 msgstr "NVDA 版本：{}"
 
-#: diagnostic.py:82
+#: cleanup.py:120
+msgid "No __pycache__ folders found. Everything is clean."
+msgstr "未找到 __pycache__ 文件夹。环境非常干净。"
+
+#: diagnostic.py:80
 msgid "No active add-ons found to diagnose."
-msgstr "未发现可诊断的已启用插件。"
+msgstr "未找到可供诊断的已启用插件。"
 
-#: recovery_gui.py:149
+#: cleanup.py:104
+msgid "No add-on directories found to clean."
+msgstr "未找到可清理的插件目录。"
+
+#: crash_analyzer.py:380
+msgid "No add-on related issues found in the current log."
+msgstr "当前日志中未发现与插件相关的问题。"
+
+#: crash_analyzer.py:382
+msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "当前日志中未发现与插件相关的问题。如需更全面的检测，请考虑在“常规设置”中将 NVDA 的日志记录级别设置为“调试”。"
+
+#: recovery_gui.py:162
 msgid "No recovery points available. Create a recovery first."
-msgstr "无可用恢复点。请先创建一个。"
+msgstr "没有可用的还原点。请先创建一个还原点。"
 
-#: recovery_gui.py:88
+#: recovery_gui.py:94
 msgid "No selection"
 msgstr "未选择"
 
-#: recovery_gui.py:88
+#: cleanup.py:160
+#: cleanup.py:201
+msgid "No temporary or .delete NVDA files found."
+msgstr "未找到 NVDA 的临时文件或 .delete 文件。"
+
+#: recovery_gui.py:94
 msgid "Please select a recovery folder first."
-msgstr "请先选择一个恢复文件夹。"
+msgstr "请先选择一个还原文件夹。"
 
-#: diagnostic.py:99
+#: diagnostic.py:97
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
-msgstr "准备好开始诊断了吗？NVDA 将重启并禁用一半已启用的插件。"
+msgstr "准备好开始诊断了吗？NVDA 将重启并禁用您一半已启用的插件。"
 
-#: recovery.py:91
+#: recovery.py:104
 msgid "Recovery created: {n}"
-msgstr "已创建恢复点：{n}"
+msgstr "已创建还原点：{n}"
 
-#: recovery_gui.py:46
+#: recovery_gui.py:44
 msgid "Remove All"
-msgstr "全部移除"
+msgstr "全部删除"
 
-#: recovery.py:132
+#: recovery.py:185
 msgid "Removed: {n}"
-msgstr "已移除：{n}"
+msgstr "已删除：{n}"
 
-#: __init__.py:74
+#: __init__.py:95
 msgid "Restart NVDA with add-ons disabled"
-msgstr "以禁用插件模式重启 NVDA"
+msgstr "禁用插件并重启 NVDA"
 
-#: __init__.py:76
+#: __init__.py:97
 msgid "Restart NVDA {}"
 msgstr "重启 NVDA {}"
 
-#: recovery_gui.py:44
+#: recovery_gui.py:42
 msgid "Restore"
-msgstr "恢复"
+msgstr "还原"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting"
-msgstr "恢复 NVDA 设置"
+msgstr "还原 NVDA 设置"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting unavailable"
-msgstr "NVDA 设置恢复不可用"
+msgstr "还原 NVDA 设置功能不可用"
 
-#: recovery.py:124
+#: recovery.py:178
 msgid "Restore completed, restarting NVDA..."
-msgstr "恢复完成，正在重启 NVDA..."
+msgstr "还原完成，正在重启 NVDA..."
 
-#: recovery.py:126
+#: recovery.py:175
 msgid "Restore failed"
-msgstr "恢复失败"
+msgstr "还原失败"
 
-#: __init__.py:41
+#: __init__.py:59
 msgid ""
-"Round {round}: {count} add-ons are DISABLED.\n"
+"Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"Is the problem GONE?\n"
+"{list}\n"
 msgstr ""
-"第 {round} 轮：{count} 个插件已被禁用。\n"
+"第 {round} 轮：已禁用 {count} 个插件。\n"
 "\n"
-"问题解决了吗？\n"
+"{list}\n"
 
-#: recovery_gui.py:30
+#: recovery_gui.py:28
 msgid "Select Recovery Folder"
-msgstr "选择恢复文件夹"
+msgstr "选择还原文件夹"
 
-#: __init__.py:107
+#: __init__.py:168
+msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
+msgstr "单击：紧急重启语音合成器并强制重新初始化音频输出。双击：打开崩溃日志分析器"
+
+#: __init__.py:140
 msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
-msgstr "单击：打开 DoctorNVDA 菜单；双击：重启 NVDA；三击：以禁用插件模式重启 NVDA"
+msgstr "单击：打开 DoctorNVDA 菜单，双击：重启 NVDA，三击：禁用插件并重启 NVDA"
 
-#: __init__.py:83
+#: __init__.py:106
 msgid "System Info Summary"
 msgstr "系统信息摘要"
 
-#: doctor.py:262
+#: doctor.py:266
 msgid "System info copied"
-msgstr "系统信息已复制"
+msgstr "已复制系统信息"
 
-#: doctor.py:307
-#: doctor.py:314
+#: cleanup.py:196
+msgid "Temp file cleanup encountered an error. Check NVDA log."
+msgstr "清理临时文件时出错。请检查 NVDA 日志。"
+
+#: doctor.py:230
+#: doctor.py:240
+msgid "Unknown Motherboard"
+msgstr "未知主板"
+
+#: doctor.py:315
+#: doctor.py:322
 msgid "Unknown NVDA version"
-msgstr "未知的 NVDA 版本"
+msgstr "未知 NVDA 版本"
 
-#: __init__.py:82
+#: doctor.py:144
+msgid "Unknown RAM"
+msgstr "未知内存"
+
+#: crash_analyzer.py:194
+msgid "Unknown error"
+msgstr "未知错误"
+
+#: __init__.py:105
 msgid "User Config Folder"
 msgstr "用户配置文件夹"
 
-#: utils.py:25
+#: utils.py:26
 msgid "User config folder not found"
-msgstr "找不到用户配置文件夹"
+msgstr "未找到用户配置文件夹"
+
+#: crash_analyzer.py:218
+msgid "add-on: {addon}"
+msgstr "插件：{addon}"
+
+#: crash_analyzer.py:221
+msgid "error: {error}"
+msgstr "错误：{error}"
+
+#: crash_analyzer.py:219
+msgid "file: {file}"
+msgstr "文件：{file}"
+
+#: crash_analyzer.py:220
+msgid "line: {line}"
+msgstr "行：{line}"

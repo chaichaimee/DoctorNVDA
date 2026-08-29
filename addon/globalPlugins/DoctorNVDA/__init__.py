@@ -1,4 +1,4 @@
-# init.py
+# __init__.py
 # Copyright (C) 2026 Chai Chaimee
 # Licensed under GNU General Public License. See COPYING.txt for details.
 
@@ -11,13 +11,23 @@ import addonHandler
 import globalPluginHandler
 import time
 from scriptHandler import script
-from . import recovery, doctor, menu, recovery_gui, diagnostic, utils
+from . import recovery, doctor, menu, recovery_gui, diagnostic, utils, cleanup, audio_reset, crash_analyzer
 
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
 except:
 	def _(x): return x
+
+
+def _getAddonDisplayName(internalName):
+	"""Return the display name of an add-on given its internal name."""
+	addons = addonHandler.getAvailableAddons()
+	for addon in addons:
+		if addon.name == internalName:
+			return addon.manifest.get('name', internalName)
+	return internalName
+
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self):
@@ -26,7 +36,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self._tap_count = 0
 		self._triple_tap_threshold = 0.5
 		self._pending_call = None
+		self._r_last_tap_time = 0
+		self._r_tap_count = 0
+		self._r_pending_call = None
 		core.callLater(3000, self.check_diagnostic_on_startup)
+		core.callLater(3500, crash_analyzer.analyze_and_report)
 
 	def check_diagnostic_on_startup(self):
 		if diagnostic.load_state():
@@ -38,9 +52,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 
 		disabled_list = state.get("test_group", [])
-		msg = _("Round {round}: {count} add-ons are DISABLED.\n\nIs the problem GONE?").format(
-			round=state.get("round", 1),
-			count=len(disabled_list)
+		round_num = state.get("round", 1)
+		disabled_names = [_getAddonDisplayName(name) for name in disabled_list]
+		list_text = "\n".join(f"• {name}" for name in disabled_names)
+
+		msg = _(
+			"Round {round}: {count} add-on(s) are DISABLED.\n\n{list}"
+		).format(
+			round=round_num,
+			count=len(disabled_list),
+			list=list_text
 		)
 
 		def on_response(btn_id):
@@ -79,8 +100,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			items.append((_("Cancel Add-on Diagnostic and Restore All"), "diag_cancel"))
 		else:
 			items.append((_("Binary Search Debugging add-on"), "diag_addons"))
+		items.append((_("Emergency Synthesizer Reboot"), "audio_reset"))
+		items.append((_("Crash Log Analyzer"), "crash_log"))
 		items.append((_("User Config Folder"), "open_user_config"))
 		items.append((_("System Info Summary"), "sys_info"))
+		items.append((_("Clean Add-on Caches"), "clean_cache"))
+		items.append((_("Clean NVDA Temp Files"), "clean_temp"))
 		return items
 
 	def _menu_callback(self, data):
@@ -102,6 +127,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			doctor.restart_nvda_normal()
 		elif data == "open_user_config":
 			utils.open_user_config()
+		elif data == "clean_cache":
+			cleanup.run_cache_cleanup()
+		elif data == "clean_temp":
+			cleanup.run_temp_cleanup()
+		elif data == "audio_reset":
+			audio_reset.reinit_audio_subsystem()
+		elif data == "crash_log":
+			crash_analyzer.run_manual_check()
 
 	@script(
 		description=_("Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"),
@@ -130,3 +163,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._pending_call = None
 
 		self._pending_call = wx.CallLater(int(self._triple_tap_threshold * 1000), execute_action)
+
+	@script(
+		description=_("Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"),
+		gesture="kb:alt+windows+r",
+		category="DoctorNVDA"
+	)
+	def script_emergencyAudioReset(self, gesture):
+		current_time = time.time()
+		if current_time - self._r_last_tap_time > self._triple_tap_threshold:
+			self._r_tap_count = 0
+		self._r_tap_count += 1
+		self._r_last_tap_time = current_time
+
+		if self._r_pending_call is not None:
+			self._r_pending_call.Stop()
+			self._r_pending_call = None
+
+		def execute_action():
+			if self._r_tap_count == 1:
+				audio_reset.reinit_audio_subsystem()
+			elif self._r_tap_count >= 2:
+				crash_analyzer.run_manual_check()
+			self._r_tap_count = 0
+			self._r_pending_call = None
+
+		self._r_pending_call = wx.CallLater(int(self._triple_tap_threshold * 1000), execute_action)

@@ -1,7 +1,10 @@
 # utils.py
+
 import os
 import subprocess
 import addonHandler
+import ui
+import logHandler
 from globalVars import appArgs
 
 addonHandler.initTranslation()
@@ -16,10 +19,10 @@ def open_user_config():
 	if os.path.isdir(path):
 		try:
 			os.startfile(path)
-		except Exception as e:
-			import logHandler
-			log = logHandler.getLogger()
-			log.exception("Error opening user config folder")
+		except OSError:
+			# logHandler has no getLogger() function; the module-level
+			# logger object is logHandler.log itself.
+			logHandler.log.exception("Error opening user config folder")
 			ui.message(_("Failed to open user config folder"))
 	else:
 		ui.message(_("User config folder not found"))

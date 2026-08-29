@@ -1,9 +1,8 @@
 # doctor.py
-# Copyright (C) 2026 Chai Chaimee
-# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import os
 import datetime
+import threading
 import ui
 import api
 import platform
@@ -15,6 +14,7 @@ import subprocess
 import ctypes
 import ctypes.wintypes
 import winreg
+import wx
 from globalVars import appArgs
 import addonHandler
 
@@ -52,7 +52,7 @@ def cleanup_reports():
 			for f in os.listdir(path):
 				if f.endswith(".txt"):
 					os.remove(os.path.join(path, f))
-	except:
+	except OSError:
 		pass
 
 def speak_now(text, is_error=False):
@@ -111,7 +111,7 @@ def get_os_info():
 			"build_lab": build_lab,
 			"arch": arch_str,
 		}
-	except Exception as e:
+	except OSError:
 		return {
 			"product": platform.system(),
 			"version": platform.release(),
@@ -128,7 +128,7 @@ def get_cpu_info():
 		name = winreg.QueryValueEx(key, "ProcessorNameString")[0]
 		winreg.CloseKey(key)
 		return " ".join(name.split())
-	except Exception:
+	except OSError:
 		return "Unknown CPU"
 
 def get_ram_info():
@@ -140,7 +140,10 @@ def get_ram_info():
 		mem.dwLength = ctypes.sizeof(mem)
 		ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(mem))
 		total_gb = mem.ullTotalPhys / (1024**3)
+	except OSError:
+		return _("Unknown RAM")
 
+	try:
 		result = subprocess.run(
 			["wmic", "memorychip", "get", "caption, speed", "/format:csv"],
 			capture_output=True,
@@ -148,8 +151,12 @@ def get_ram_info():
 			timeout=5,
 			check=True
 		)
-		import csv
-		from io import StringIO
+	except (FileNotFoundError, subprocess.TimeoutExpired, subprocess.CalledProcessError, OSError):
+		return f"{total_gb:.2f} GB"
+
+	import csv
+	from io import StringIO
+	try:
 		f = StringIO(result.stdout)
 		reader = csv.reader(f)
 		rows = list(reader)
@@ -195,18 +202,9 @@ def get_ram_info():
 
 		if ddr_text:
 			return f"{total_gb:.2f} GB {ddr_text}{speed_text}"
-		else:
-			return f"{total_gb:.2f} GB"
-
-	except Exception:
-		try:
-			mem = MEMORYSTATUSEX()
-			mem.dwLength = ctypes.sizeof(mem)
-			ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(mem))
-			total_gb = mem.ullTotalPhys / (1024**3)
-			return f"{total_gb:.2f} GB"
-		except:
-			return "Unknown RAM"
+		return f"{total_gb:.2f} GB"
+	except (ValueError, IndexError):
+		return f"{total_gb:.2f} GB"
 
 def get_motherboard_info():
 	"""Read motherboard information from Registry or WMI"""
@@ -217,28 +215,29 @@ def get_motherboard_info():
 		winreg.CloseKey(key)
 		if manufacturer and product:
 			return f"{manufacturer} {product}"
-		else:
-			raise Exception("No registry data")
-	except Exception:
-		try:
-			result = subprocess.run(
-				["wmic", "baseboard", "get", "manufacturer,product", "/format:csv"],
-				capture_output=True,
-				text=True,
-				timeout=5,
-				check=True
-			)
-			lines = result.stdout.strip().splitlines()
-			if len(lines) >= 2:
-				parts = lines[1].split(',')
-				if len(parts) >= 3:
-					manufacturer = parts[1].strip()
-					product = parts[2].strip()
-					if manufacturer and product:
-						return f"{manufacturer} {product}"
-		except Exception:
-			pass
-		return "Unknown Motherboard"
+	except OSError:
+		pass
+
+	try:
+		result = subprocess.run(
+			["wmic", "baseboard", "get", "manufacturer,product", "/format:csv"],
+			capture_output=True,
+			text=True,
+			timeout=5,
+			check=True
+		)
+	except (FileNotFoundError, subprocess.TimeoutExpired, subprocess.CalledProcessError, OSError):
+		return _("Unknown Motherboard")
+
+	lines = result.stdout.strip().splitlines()
+	if len(lines) >= 2:
+		parts = lines[1].split(',')
+		if len(parts) >= 3:
+			manufacturer = parts[1].strip()
+			product = parts[2].strip()
+			if manufacturer and product:
+				return f"{manufacturer} {product}"
+	return _("Unknown Motherboard")
 
 def get_detailed_sys_info():
 	os_info = get_os_info()
@@ -257,9 +256,18 @@ def get_detailed_sys_info():
 	return "\n".join(lines)
 
 def copy_sys_info():
-	info = get_detailed_sys_info()
-	api.copyToClip(info)
-	speak_now(_("System info copied"))
+	"""Gather hardware/OS details on a worker thread to avoid blocking the
+	main thread with WMIC subprocess calls, then copy the result on the GUI thread."""
+	def worker():
+		info = get_detailed_sys_info()
+
+		def done():
+			api.copyToClip(info)
+			speak_now(_("System info copied"))
+
+		wx.CallAfter(done)
+
+	threading.Thread(target=worker, daemon=True).start()
 
 def run_health_scan():
 	missing = [i for i in CRITICAL_FILES if not os.path.exists(os.path.join(appArgs.configPath, i))]
@@ -279,7 +287,7 @@ def save_and_open_report(report_type, content):
 			f.write(content)
 		os.startfile(full_path)
 		return full_path
-	except:
+	except OSError:
 		return None
 
 def check_addons():

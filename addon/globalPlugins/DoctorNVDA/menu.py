@@ -1,6 +1,4 @@
 # menu.py
-# Copyright (C) 2026 Chai Chaimee
-# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import wx
 import core
@@ -16,13 +14,13 @@ except:
 
 _instance = None
 
-class DoctorMenu(wx.Frame):
+class DoctorMenu(wx.Dialog):
 	def __init__(self, items_func, callback, title=_("DoctorNVDA Menu")):
 		super(DoctorMenu, self).__init__(
-			gui.mainFrame, 
-			title=title, 
+			gui.mainFrame,
+			title=title,
 			size=(450, 400),
-			style=wx.DEFAULT_FRAME_STYLE | wx.STAY_ON_TOP
+			style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER
 		)
 		self.items_func = items_func
 		self.callback = callback
@@ -38,7 +36,7 @@ class DoctorMenu(wx.Frame):
 
 		self.list_box.Bind(wx.EVT_LISTBOX_DCLICK, self.on_select)
 		self.list_box.Bind(wx.EVT_CHAR_HOOK, self.on_key)
-		
+
 		self.timer = wx.Timer(self)
 		self.Bind(wx.EVT_TIMER, self.on_timeout, self.timer)
 		self.timer.Start(15000)
@@ -57,7 +55,7 @@ class DoctorMenu(wx.Frame):
 			if self.list_box.GetCount() > 0:
 				self.list_box.SetSelection(0)
 			self.list_box.SetFocus()
-		except Exception as e:
+		except Exception:
 			self.Close()
 			raise
 

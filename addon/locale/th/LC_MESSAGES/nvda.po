@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Project-Id-Version: DoctorNVDA 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-03 07:16+0700\n"
-"PO-Revision-Date: 2026-05-04 14:30+0700\n"
+"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Thai\n"
 "Language: th\n"
@@ -12,220 +12,318 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: diagnostic.py:168
+#: diagnostic.py:173
 msgid "&Cancel"
-msgstr "&ยกเลิก"
+msgstr "ยกเลิ&ก"
 
-#: diagnostic.py:164
+#: diagnostic.py:169
 msgid "&No"
-msgstr "&ไม่"
+msgstr "ไ&ม่ใช่"
 
-#: diagnostic.py:172
+#: diagnostic.py:177
 msgid "&OK"
 msgstr "&ตกลง"
 
-#: diagnostic.py:160
+#: diagnostic.py:165
 msgid "&Yes"
 msgstr "&ใช่"
 
-#: recovery_gui.py:71
+#: recovery_gui.py:77
 msgid "(No recovery points available)"
-msgstr "(ไม่มีจุดกู้คืน)"
+msgstr "(ไม่มีจุดคืนค่าระบบ)"
 
-#: doctor.py:288
+#: doctor.py:296
 msgid "All addons active"
 msgstr "ส่วนเสริมทั้งหมดเปิดใช้งานอยู่"
 
-#: doctor.py:267
+#: doctor.py:275
 msgid "All configuration files present"
-msgstr "ไฟล์การตั้งค่าทั้งหมดอยู่ครบถ้วน"
+msgstr "พบไฟล์การตั้งค่าทั้งหมดครบถ้วน"
 
-#: recovery.py:139
-#: recovery_gui.py:99
+#: recovery.py:192
+#: recovery_gui.py:105
 msgid "All recoveries removed"
-msgstr "ลบจุดกู้คืนทั้งหมดแล้ว"
+msgstr "ลบจุดคืนค่าระบบทั้งหมดแล้ว"
 
-#: recovery_gui.py:117
+#: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
-msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบ {}?"
+msgstr "คุณแน่ใจหรือว่าต้องการลบ {}?"
 
-#: recovery_gui.py:94
+#: recovery_gui.py:100
 msgid "Are you sure you want to remove all recovery points?"
-msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบจุดกู้คืนทั้งหมด?"
+msgstr "คุณแน่ใจหรือว่าต้องการลบจุดคืนค่าระบบทั้งหมด?"
 
-#: __init__.py:81
+#: audio_reset.py:44
+msgid "Audio reset failed. Check NVDA log."
+msgstr "รีเซ็ตระบบเสียงไม่สำเร็จ กรุณาตรวจสอบปักษิน (Log) ของ NVDA"
+
+#: audio_reset.py:48
+msgid "Audio subsystem reset complete"
+msgstr "รีเซ็ตระบบเสียงย่อยเสร็จสมบูรณ์"
+
+#: __init__.py:102
 msgid "Binary Search Debugging add-on"
-msgstr "ส่วนเสริมช่วยวิเคราะห์ปัญหาแบบแบ่งครึ่ง (Binary Search)"
+msgstr "ส่วนเสริมตรวจหาข้อผิดพลาดด้วยการค้นหาแบบทวิภาค (Binary Search)"
 
-#: recovery_gui.py:48
+#: cleanup.py:132
+msgid "Cache cleanup encountered an error. Check NVDA log."
+msgstr "เกิดข้อผิดพลาดขณะล้างแคช กรุณาตรวจสอบปักษิน (Log) ของ NVDA"
+
+#: recovery_gui.py:46
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: __init__.py:79
+#: __init__.py:100
 msgid "Cancel Add-on Diagnostic and Restore All"
-msgstr "ยกเลิกการวิเคราะห์ปัญหาและคืนค่าส่วนเสริมทั้งหมด"
+msgstr "ยกเลิกการวินิจฉัยส่วนเสริมและคืนค่าทั้งหมด"
 
-#: recovery_gui.py:118
+#: __init__.py:107
+msgid "Clean Add-on Caches"
+msgstr "ล้างแคชของส่วนเสริม"
+
+#: __init__.py:108
+msgid "Clean NVDA Temp Files"
+msgstr "ล้างไฟล์ชั่วคราวของ NVDA"
+
+#: cleanup.py:124
+msgid "Cleaned {files} file(s) in {dirs} cache folder(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "ล้างไฟล์ {files} ไฟล์ ในโฟลเดอร์แคช {dirs} โฟลเดอร์ คืนพื้นที่ได้ {size} ไบต์ กำลังเริ่มทำงาน NVDA ใหม่..."
+
+#: recovery_gui.py:131
 msgid "Confirm delete"
 msgstr "ยืนยันการลบ"
 
-#: recovery_gui.py:95
+#: recovery_gui.py:101
 msgid "Confirm remove all"
-msgstr "ยืนยันการลบทิ้งทั้งหมด"
+msgstr "ยืนยันการลบทั้งหมด"
 
-#: doctor.py:321
+#: doctor.py:329
 msgid "Copied to clipboard: {}"
 msgstr "คัดลอกไปยังคลิปบอร์ดแล้ว: {}"
 
-#: __init__.py:70
+#: __init__.py:104
+msgid "Crash Log Analyzer"
+msgstr "เครื่องมือวิเคราะห์ปักษินข้อผิดพลาด (Crash Log)"
+
+#: __init__.py:91
 msgid "Create NVDA Setting Recovery"
-msgstr "สร้างจุดกู้คืนการตั้งค่า NVDA"
+msgstr "สร้างจุดคืนค่าการตั้งค่า NVDA"
 
-#: recovery.py:93
+#: recovery.py:100
 msgid "Create recovery failed"
-msgstr "การสร้างจุดกู้คืนล้มเหลว"
+msgstr "สร้างจุดคืนค่าไม่สำเร็จ"
 
-#: recovery_gui.py:125
+#: cleanup.py:164
+msgid "Deleted {count} temporary/.delete file(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "ลบไฟล์ชั่วคราว/.delete จำนวน {count} ไฟล์ คืนพื้นที่ได้ {size} ไบต์ กำลังเริ่มทำงาน NVDA ใหม่..."
+
+#: recovery_gui.py:138
 msgid "Deleted."
 msgstr "ลบเรียบร้อยแล้ว"
 
-#: diagnostic.py:144
+#: diagnostic.py:142
 msgid "Diagnostic complete. Found and disabled: {name}"
-msgstr "วิเคราะห์ปัญหาเสร็จสิ้น พบและปิดการใช้งานส่วนเสริม: {name}"
+msgstr "ตรวจวินิจฉัยเสร็จสมบูรณ์ พบและปิดการใช้งาน: {name}"
 
-#: __init__.py:124
-#: diagnostic.py:100
+#: __init__.py:157
+#: diagnostic.py:98
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:60
+#: __init__.py:81
 msgid "DoctorNVDA Health Check"
-msgstr "ตรวจสุขภาพ DoctorNVDA"
+msgstr "ตรวจสุขภาพระบบ DoctorNVDA"
 
-#: menu.py:20
-#: menu.py:91
+#: menu.py:18
+#: menu.py:89
 msgid "DoctorNVDA Menu"
 msgstr "เมนู DoctorNVDA"
 
-#: recovery_gui.py:131
+#: __init__.py:103
+msgid "Emergency Synthesizer Reboot"
+msgstr "รีบูตสังเคราะห์เสียงฉุกเฉิน"
+
+#: recovery_gui.py:144
 msgid "Error"
 msgstr "ข้อผิดพลาด"
 
-#: recovery_gui.py:131
+#: recovery_gui.py:144
 msgid "Error deleting: {}"
 msgstr "เกิดข้อผิดพลาดในการลบ: {}"
 
-#: utils.py:23
+#: utils.py:24
 msgid "Failed to open user config folder"
-msgstr "ไม่สามารถเปิดโฟลเดอร์การตั้งค่าผู้ใช้ได้"
+msgstr "ไม่สามารถเปิดโฟลเดอร์การตั้งค่าของผู้ใช้ได้"
 
-#: doctor.py:290
+#: doctor.py:298
 msgid "Found {n} inactive addons Opening report"
-msgstr "พบส่วนเสริมที่ไม่ได้เปิดใช้งาน {n} รายการ กำลังเปิดรายงาน"
+msgstr "พบส่วนเสริมที่ไม่ถูกเปิดใช้งาน {n} รายการ กำลังเปิดรายงาน..."
 
-#: doctor.py:269
+#: crash_analyzer.py:375
+msgid "Log file not found."
+msgstr "ไม่พบไฟล์ปักษิน (Log)"
+
+#: doctor.py:277
 msgid "Missing {n} configuration files"
-msgstr "ไฟล์การตั้งค่าหายไป {n} ไฟล์"
+msgstr "ไฟล์การตั้งค่าสูญหาย {n} ไฟล์"
 
-#: __init__.py:69
+#: __init__.py:90
 msgid "NVDA Version: {}"
 msgstr "เวอร์ชัน NVDA: {}"
 
-#: diagnostic.py:82
+#: cleanup.py:120
+msgid "No __pycache__ folders found. Everything is clean."
+msgstr "ไม่พบโฟลเดอร์ __pycache__ ระบบสะอาดสมบูรณ์"
+
+#: diagnostic.py:80
 msgid "No active add-ons found to diagnose."
-msgstr "ไม่พบส่วนเสริมที่เปิดใช้งานเพื่อทำการวิเคราะห์ปัญหา"
+msgstr "ไม่พบส่วนเสริมที่เปิดใช้งานอยู่เพื่อตรวจวินิจฉัย"
 
-#: recovery_gui.py:149
+#: cleanup.py:104
+msgid "No add-on directories found to clean."
+msgstr "ไม่พบไดเรกทอรีของส่วนเสริมเพื่อล้างแคช"
+
+#: crash_analyzer.py:380
+msgid "No add-on related issues found in the current log."
+msgstr "ไม่พบปัญหาที่เกี่ยวข้องกับส่วนเสริมในบันทึกปักษินปัจจุบัน"
+
+#: crash_analyzer.py:382
+msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "ไม่พบปัญหาที่เกี่ยวกับส่วนเสริมในบันทึกปักษินปัจจุบัน เพื่อการตรวจสอบที่ละเอียดขึ้น โปรดพิจารณาตั้งค่าระดับการบันทึกปักษินของ NVDA เป็น Debug ในการตั้งค่าทั่วไป"
+
+#: recovery_gui.py:162
 msgid "No recovery points available. Create a recovery first."
-msgstr "ไม่มีจุดกู้คืน กรุณาสร้างจุดกู้คืนก่อน"
+msgstr "ไม่มีจุดคืนค่าระบบ กรุณาสร้างจุดคืนค่าก่อน"
 
-#: recovery_gui.py:88
+#: recovery_gui.py:94
 msgid "No selection"
-msgstr "ไม่ได้เลือก"
+msgstr "ยังไม่ได้เลือกรายการ"
 
-#: recovery_gui.py:88
+#: cleanup.py:160
+#: cleanup.py:201
+msgid "No temporary or .delete NVDA files found."
+msgstr "ไม่พบไฟล์ชั่วคราวหรือไฟล์ .delete ของ NVDA"
+
+#: recovery_gui.py:94
 msgid "Please select a recovery folder first."
-msgstr "กรุณาเลือกจุดกู้คืนก่อน"
+msgstr "กรุณาเลือกโฟลเดอร์จุดคืนค่าก่อน"
 
-#: diagnostic.py:99
+#: diagnostic.py:97
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
-msgstr "พร้อมเริ่มการวิเคราะห์ปัญหาหรือไม่? NVDA จะเริ่มการทำงานใหม่และปิดส่วนเสริมที่ใช้งานอยู่ของคุณออกครึ่งหนึ่ง"
+msgstr "พร้อมที่จะเริ่มการวินิจฉัยหรือไม่? NVDA จะเริ่มทำงานใหม่และปิดการใช้งานส่วนเสริมของคุณครึ่งหนึ่ง"
 
-#: recovery.py:91
+#: recovery.py:104
 msgid "Recovery created: {n}"
-msgstr "สร้างจุดกู้คืนแล้ว: {n}"
+msgstr "สร้างจุดคืนค่าเรียบร้อยแล้ว: {n}"
 
-#: recovery_gui.py:46
+#: recovery_gui.py:44
 msgid "Remove All"
 msgstr "ลบทั้งหมด"
 
-#: recovery.py:132
+#: recovery.py:185
 msgid "Removed: {n}"
-msgstr "ลบออกแล้ว: {n}"
+msgstr "ลบเรียบร้อยแล้ว: {n}"
 
-#: __init__.py:74
+#: __init__.py:95
 msgid "Restart NVDA with add-ons disabled"
-msgstr "เริ่มการทำงาน NVDA ใหม่โดยปิดส่วนเสริมทั้งหมด"
+msgstr "เริ่มทำงาน NVDA ใหม่โดยปิดใช้งานส่วนเสริม"
 
-#: __init__.py:76
+#: __init__.py:97
 msgid "Restart NVDA {}"
-msgstr "เริ่มการทำงาน NVDA ใหม่ {}"
+msgstr "เริ่มทำงาน NVDA ใหม่ {}"
 
-#: recovery_gui.py:44
+#: recovery_gui.py:42
 msgid "Restore"
 msgstr "คืนค่า"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting"
 msgstr "คืนค่าการตั้งค่า NVDA"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting unavailable"
-msgstr "ไม่สามารถคืนค่าการตั้งค่า NVDA ได้"
+msgstr "ไม่สามารถใช้งานการคืนค่าการตั้งค่า NVDA ได้"
 
-#: recovery.py:124
+#: recovery.py:178
 msgid "Restore completed, restarting NVDA..."
-msgstr "คืนค่าเสร็จสมบูรณ์ กำลังเริ่มการทำงาน NVDA ใหม่..."
+msgstr "คืนค่าเสร็จสมบูรณ์ กำลังเริ่มทำงาน NVDA ใหม่..."
 
-#: recovery.py:126
+#: recovery.py:175
 msgid "Restore failed"
-msgstr "การคืนค่าล้มเหลว"
+msgstr "คืนค่าไม่สำเร็จ"
 
-#: __init__.py:41
+#: __init__.py:59
 msgid ""
-"Round {round}: {count} add-ons are DISABLED.\n"
+"Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"Is the problem GONE?\n"
+"{list}\n"
 msgstr ""
-"รอบที่ {round}: มีส่วนเสริมถูกปิดการใช้งาน {count} ตัว\n"
+"รอบที่ {round}: ส่วนเสริมจำนวน {count} รายการถูกปิดใช้งาน\n"
 "\n"
-"ปัญหาหายไปแล้วใช่หรือไม่?\n"
+"{list}\n"
 
-#: recovery_gui.py:30
+#: recovery_gui.py:28
 msgid "Select Recovery Folder"
-msgstr "เลือกโฟลเดอร์จุดกู้คืน"
+msgstr "เลือกโฟลเดอร์จุดคืนค่า"
 
-#: __init__.py:107
+#: __init__.py:168
+msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
+msgstr "กดครั้งเดียว: รีบูตสังเคราะห์เสียงฉุกเฉินและล้างค่าระบบเสียงใหม่ กดสองครั้ง: เปิดเครื่องมือวิเคราะห์ปักษินข้อผิดพลาด"
+
+#: __init__.py:140
 msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
-msgstr "แตะ 1 ครั้ง: เปิดเมนู DoctorNVDA, แตะ 2 ครั้ง: เริ่มการทำงาน NVDA ใหม่, แตะ 3 ครั้ง: เริ่มการทำงาน NVDA ใหม่โดยปิดส่วนเสริม"
+msgstr "กดครั้งเดียว: เปิดเมนู DoctorNVDA, กดสองครั้ง: เริ่มทำงาน NVDA ใหม่, กดสามครั้ง: เริ่มทำงาน NVDA ใหม่โดยปิดใช้งานส่วนเสริม"
 
-#: __init__.py:83
+#: __init__.py:106
 msgid "System Info Summary"
 msgstr "สรุปข้อมูลระบบ"
 
-#: doctor.py:262
+#: doctor.py:266
 msgid "System info copied"
 msgstr "คัดลอกข้อมูลระบบแล้ว"
 
-#: doctor.py:307
-#: doctor.py:314
+#: cleanup.py:196
+msgid "Temp file cleanup encountered an error. Check NVDA log."
+msgstr "เกิดข้อผิดพลาดขณะล้างไฟล์ชั่วคราว กรุณาตรวจสอบปักษิน (Log) ของ NVDA"
+
+#: doctor.py:230
+#: doctor.py:240
+msgid "Unknown Motherboard"
+msgstr "ไม่ทราบรุ่นเมนบอร์ด"
+
+#: doctor.py:315
+#: doctor.py:322
 msgid "Unknown NVDA version"
-msgstr "ไม่ทราบเวอร์ชันของ NVDA"
+msgstr "ไม่ทราบเวอร์ชัน NVDA"
 
-#: __init__.py:82
+#: doctor.py:144
+msgid "Unknown RAM"
+msgstr "ไม่ทราบขนาด RAM"
+
+#: crash_analyzer.py:194
+msgid "Unknown error"
+msgstr "ข้อผิดพลาดไม่ทราบสาเหตุ"
+
+#: __init__.py:105
 msgid "User Config Folder"
-msgstr "โฟลเดอร์การตั้งค่าผู้ใช้"
+msgstr "โฟลเดอร์การตั้งค่าของผู้ใช้"
 
-#: utils.py:25
+#: utils.py:26
 msgid "User config folder not found"
-msgstr "ไม่พบโฟลเดอร์การตั้งค่าผู้ใช้"
+msgstr "ไม่พบโฟลเดอร์การตั้งค่าของผู้ใช้"
+
+#: crash_analyzer.py:218
+msgid "add-on: {addon}"
+msgstr "ส่วนเสริม: {addon}"
+
+#: crash_analyzer.py:221
+msgid "error: {error}"
+msgstr "ข้อผิดพลาด: {error}"
+
+#: crash_analyzer.py:219
+msgid "file: {file}"
+msgstr "ไฟล์: {file}"
+
+#: crash_analyzer.py:220
+msgid "line: {line}"
+msgstr "บรรทัด: {line}"

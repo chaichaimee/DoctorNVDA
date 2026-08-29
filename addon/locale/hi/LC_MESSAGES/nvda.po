@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Project-Id-Version: DoctorNVDA 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-03 07:16+0700\n"
-"PO-Revision-Date: 2026-05-04 14:10+0700\n"
+"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hindi\n"
 "Language: hi\n"
@@ -12,220 +12,318 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: diagnostic.py:168
+#: diagnostic.py:173
 msgid "&Cancel"
 msgstr "रद्द करें (&C)"
 
-#: diagnostic.py:164
+#: diagnostic.py:169
 msgid "&No"
 msgstr "नहीं (&N)"
 
-#: diagnostic.py:172
+#: diagnostic.py:177
 msgid "&OK"
 msgstr "ठीक है (&O)"
 
-#: diagnostic.py:160
+#: diagnostic.py:165
 msgid "&Yes"
 msgstr "हाँ (&Y)"
 
-#: recovery_gui.py:71
+#: recovery_gui.py:77
 msgid "(No recovery points available)"
-msgstr "(कोई रिकवरी पॉइंट उपलब्ध नहीं है)"
+msgstr "(कोई रिकवरी बिंदु उपलब्ध नहीं है)"
 
-#: doctor.py:288
+#: doctor.py:296
 msgid "All addons active"
-msgstr "सभी एड-ऑन्स सक्रिय हैं"
+msgstr "सभी ऐड-ऑन सक्रिय हैं"
 
-#: doctor.py:267
+#: doctor.py:275
 msgid "All configuration files present"
 msgstr "सभी कॉन्फ़िगरेशन फ़ाइलें मौजूद हैं"
 
-#: recovery.py:139
-#: recovery_gui.py:99
+#: recovery.py:192
+#: recovery_gui.py:105
 msgid "All recoveries removed"
-msgstr "सभी रिकवरी हटा दी गई हैं"
+msgstr "सभी रिकवरी बिंदु हटा दिए गए हैं"
 
-#: recovery_gui.py:117
+#: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
-msgstr "क्या आप वाकई {} को हटाना चाहते हैं?"
+msgstr "क्या आप निश्चित रूप से {} को हटाना चाहते हैं?"
 
-#: recovery_gui.py:94
+#: recovery_gui.py:100
 msgid "Are you sure you want to remove all recovery points?"
-msgstr "क्या आप वाकई सभी रिकवरी पॉइंट्स को हटाना चाहते हैं?"
+msgstr "क्या आप निश्चित रूप से सभी रिकवरी बिंदुओं को हटाना चाहते हैं?"
 
-#: __init__.py:81
+#: audio_reset.py:44
+msgid "Audio reset failed. Check NVDA log."
+msgstr "ऑडियो रीसेट विफल रहा। NVDA लॉग जांचें।"
+
+#: audio_reset.py:48
+msgid "Audio subsystem reset complete"
+msgstr "ऑडियो सबसिस्टम रीसेट पूर्ण हुआ"
+
+#: __init__.py:102
 msgid "Binary Search Debugging add-on"
-msgstr "बाइनरी सर्च डिबगिंग एड-ऑन"
+msgstr "बाइनरी सर्च डिबगिंग ऐड-ऑन"
 
-#: recovery_gui.py:48
+#: cleanup.py:132
+msgid "Cache cleanup encountered an error. Check NVDA log."
+msgstr "कैश की सफाई के दौरान एक त्रुटि आई। NVDA लॉग जांचें।"
+
+#: recovery_gui.py:46
 msgid "Cancel"
 msgstr "रद्द करें"
 
-#: __init__.py:79
+#: __init__.py:100
 msgid "Cancel Add-on Diagnostic and Restore All"
-msgstr "एड-ऑन डायग्नोस्टिक रद्द करें और सब कुछ रीस्टोर करें"
+msgstr "ऐड-ऑन निदान रद्द करें और सभी को पुनर्स्थापित करें"
 
-#: recovery_gui.py:118
+#: __init__.py:107
+msgid "Clean Add-on Caches"
+msgstr "ऐड-ऑन कैश साफ़ करें"
+
+#: __init__.py:108
+msgid "Clean NVDA Temp Files"
+msgstr "NVDA अस्थायी फ़ाइलें साफ़ करें"
+
+#: cleanup.py:124
+msgid "Cleaned {files} file(s) in {dirs} cache folder(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "{dirs} कैश फ़ोल्डर में {files} फ़ाइलें साफ़ की गईं। {size} बाइट्स मुक्त हुए। NVDA अब पुनरारंभ हो रहा है।"
+
+#: recovery_gui.py:131
 msgid "Confirm delete"
 msgstr "हटाने की पुष्टि करें"
 
-#: recovery_gui.py:95
+#: recovery_gui.py:101
 msgid "Confirm remove all"
 msgstr "सभी को हटाने की पुष्टि करें"
 
-#: doctor.py:321
+#: doctor.py:329
 msgid "Copied to clipboard: {}"
 msgstr "क्लिपबोर्ड पर कॉपी किया गया: {}"
 
-#: __init__.py:70
+#: __init__.py:104
+msgid "Crash Log Analyzer"
+msgstr "क्रैश लॉग विश्लेषक"
+
+#: __init__.py:91
 msgid "Create NVDA Setting Recovery"
-msgstr "NVDA सेटिंग्स रिकवरी बनाएं"
+msgstr "NVDA सेटिंग रिकवरी बिंदु बनाएं"
 
-#: recovery.py:93
+#: recovery.py:100
 msgid "Create recovery failed"
-msgstr "रिकवरी बनाने में विफल"
+msgstr "रिकवरी बिंदु बनाना विफल रहा"
 
-#: recovery_gui.py:125
+#: cleanup.py:164
+msgid "Deleted {count} temporary/.delete file(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "{count} अस्थायी/.delete फ़ाइलें हटाई गईं। {size} बाइट्स मुक्त हुए। NVDA अब पुनरारंभ हो रहा है।"
+
+#: recovery_gui.py:138
 msgid "Deleted."
 msgstr "हटा दिया गया।"
 
-#: diagnostic.py:144
+#: diagnostic.py:142
 msgid "Diagnostic complete. Found and disabled: {name}"
-msgstr "डायग्नोस्टिक पूरा हुआ। खोजा गया और अक्षम किया गया: {name}"
+msgstr "निदान पूर्ण हुआ। पाया गया और अक्षम किया गया: {name}"
 
-#: __init__.py:124
-#: diagnostic.py:100
+#: __init__.py:157
+#: diagnostic.py:98
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:60
+#: __init__.py:81
 msgid "DoctorNVDA Health Check"
-msgstr "DoctorNVDA हेल्थ चेक"
+msgstr "DoctorNVDA स्वास्थ्य जाँच"
 
-#: menu.py:20
-#: menu.py:91
+#: menu.py:18
+#: menu.py:89
 msgid "DoctorNVDA Menu"
 msgstr "DoctorNVDA मेनू"
 
-#: recovery_gui.py:131
+#: __init__.py:103
+msgid "Emergency Synthesizer Reboot"
+msgstr "आपतकालीन वाक्-संश्लेषक रीबूट"
+
+#: recovery_gui.py:144
 msgid "Error"
 msgstr "त्रुटि"
 
-#: recovery_gui.py:131
+#: recovery_gui.py:144
 msgid "Error deleting: {}"
 msgstr "हटाने में त्रुटि: {}"
 
-#: utils.py:23
+#: utils.py:24
 msgid "Failed to open user config folder"
-msgstr "यूज़र कॉन्फ़िग फ़ोल्डर खोलने में विफल"
+msgstr "उपयोगकर्ता कॉन्फ़िगरेशन फ़ोल्डर खोलने में विफल"
 
-#: doctor.py:290
+#: doctor.py:298
 msgid "Found {n} inactive addons Opening report"
-msgstr "{n} निष्क्रिय एड-ऑन्स मिले। रिपोर्ट खोली जा रही है"
+msgstr "{n} निष्क्रिय ऐड-ऑन मिले। रिपोर्ट खोली जा रही है"
 
-#: doctor.py:269
+#: crash_analyzer.py:375
+msgid "Log file not found."
+msgstr "लॉग फ़ाइल नहीं मिली।"
+
+#: doctor.py:277
 msgid "Missing {n} configuration files"
 msgstr "{n} कॉन्फ़िगरेशन फ़ाइलें गायब हैं"
 
-#: __init__.py:69
+#: __init__.py:90
 msgid "NVDA Version: {}"
-msgstr "NVDA वर्शन: {}"
+msgstr "NVDA संस्करण: {}"
 
-#: diagnostic.py:82
+#: cleanup.py:120
+msgid "No __pycache__ folders found. Everything is clean."
+msgstr "कोई __pycache__ फ़ोल्डर नहीं मिला। सब कुछ साफ़ है।"
+
+#: diagnostic.py:80
 msgid "No active add-ons found to diagnose."
-msgstr "डायग्नोस्टिक के लिए कोई सक्रिय एड-ऑन नहीं मिला।"
+msgstr "निदान के लिए कोई सक्रिय ऐड-ऑन नहीं मिला।"
 
-#: recovery_gui.py:149
+#: cleanup.py:104
+msgid "No add-on directories found to clean."
+msgstr "सफाई के लिए कोई ऐड-ऑन डायरेक्टरी नहीं मिली।"
+
+#: crash_analyzer.py:380
+msgid "No add-on related issues found in the current log."
+msgstr "वर्तमान लॉग में ऐड-ऑन से संबंधित कोई समस्या नहीं मिली।"
+
+#: crash_analyzer.py:382
+msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "वर्तमान लॉग में ऐड-ऑन से संबंधित कोई समस्या नहीं मिली। अधिक विस्तृत जाँच के लिए, सामान्य सेटिंग्स में NVDA लॉगिंग स्तर को डिबग पर सेट करने पर विचार करें।"
+
+#: recovery_gui.py:162
 msgid "No recovery points available. Create a recovery first."
-msgstr "कोई रिकवरी पॉइंट उपलब्ध नहीं है। पहले एक रिकवरी बनाएं।"
+msgstr "कोई रिकवरी बिंदु उपलब्ध नहीं है। पहले एक रिकवरी बिंदु बनाएं।"
 
-#: recovery_gui.py:88
+#: recovery_gui.py:94
 msgid "No selection"
 msgstr "कोई चयन नहीं"
 
-#: recovery_gui.py:88
+#: cleanup.py:160
+#: cleanup.py:201
+msgid "No temporary or .delete NVDA files found."
+msgstr "कोई अस्थायी या .delete NVDA फ़ाइलें नहीं मिलीं।"
+
+#: recovery_gui.py:94
 msgid "Please select a recovery folder first."
 msgstr "कृपया पहले एक रिकवरी फ़ोल्डर चुनें।"
 
-#: diagnostic.py:99
+#: diagnostic.py:97
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
-msgstr "डायग्नोस्टिक शुरू करने के लिए तैयार हैं? NVDA रीस्टार्ट होगा और आपके आधे सक्रिय एड-ऑन्स को अक्षम कर देगा।"
+msgstr "निदान शुरू करने के लिए तैयार हैं? NVDA पुनरारंभ होगा और आपके आधे सक्रिय ऐड-ऑन को अक्षम कर देगा।"
 
-#: recovery.py:91
+#: recovery.py:104
 msgid "Recovery created: {n}"
-msgstr "रिकवरी बनाई गई: {n}"
+msgstr "रिकवरी बिंदु बनाया गया: {n}"
 
-#: recovery_gui.py:46
+#: recovery_gui.py:44
 msgid "Remove All"
-msgstr "सभी हटाएं"
+msgstr "सभी को हटाएं"
 
-#: recovery.py:132
+#: recovery.py:185
 msgid "Removed: {n}"
 msgstr "हटाया गया: {n}"
 
-#: __init__.py:74
+#: __init__.py:95
 msgid "Restart NVDA with add-ons disabled"
-msgstr "एड-ऑन्स अक्षम करके NVDA रीस्टार्ट करें"
+msgstr "ऐड-ऑन अक्षम करके NVDA पुनरारंभ करें"
 
-#: __init__.py:76
+#: __init__.py:97
 msgid "Restart NVDA {}"
-msgstr "NVDA रीस्टार्ट करें {}"
+msgstr "NVDA पुनरारंभ करें {}"
 
-#: recovery_gui.py:44
+#: recovery_gui.py:42
 msgid "Restore"
-msgstr "रीस्टोर करें"
+msgstr "पुनर्स्थापित करें"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting"
-msgstr "NVDA सेटिंग्स रीस्टोर करें"
+msgstr "NVDA सेटिंग्स पुनर्स्थापित करें"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting unavailable"
-msgstr "NVDA सेटिंग्स रीस्टोर अनुपलब्ध है"
+msgstr "NVDA सेटिंग्स पुनर्स्थापित करना अनुपलब्ध है"
 
-#: recovery.py:124
+#: recovery.py:178
 msgid "Restore completed, restarting NVDA..."
-msgstr "रीस्टोर पूरा हुआ, NVDA रीस्टार्ट हो रहा है..."
+msgstr "पुनर्स्थापना पूर्ण हुई, NVDA पुनरारंभ हो रहा है..."
 
-#: recovery.py:126
+#: recovery.py:175
 msgid "Restore failed"
-msgstr "रीस्टोर विफल रहा"
+msgstr "पुनर्स्थापना विफल रही"
 
-#: __init__.py:41
+#: __init__.py:59
 msgid ""
-"Round {round}: {count} add-ons are DISABLED.\n"
+"Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"Is the problem GONE?\n"
+"{list}\n"
 msgstr ""
-"राउंड {round}: {count} एड-ऑन्स अक्षम (DISABLED) हैं।\n"
+"चरण {round}: {count} ऐड-ऑन अक्षम हैं।\n"
 "\n"
-"क्या समस्या हल हो गई?"
+"{list}\n"
 
-#: recovery_gui.py:30
+#: recovery_gui.py:28
 msgid "Select Recovery Folder"
 msgstr "रिकवरी फ़ोल्डर चुनें"
 
-#: __init__.py:107
+#: __init__.py:168
+msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
+msgstr "एक बार दबाएं: आपातकालीन वाक्-संश्लेषक रीबूट और ऑडियो आउटपुट रीसेट। दो बार दबाएं: क्रैश लॉग विश्लेषक खोलें"
+
+#: __init__.py:140
 msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
-msgstr "एक बार टैप: DoctorNVDA मेनू खोलें, दो बार टैप: NVDA रीस्टार्ट करें, तीन बार टैप: एड-ऑन्स के बिना रीस्टार्ट करें"
+msgstr "एक बार दबाएं: DoctorNVDA मेनू खोलें, दो बार दबाएं: NVDA पुनरारंभ करें, तीन बार दबाएं: ऐड-ऑन अक्षम करके NVDA पुनरारंभ करें"
 
-#: __init__.py:83
+#: __init__.py:106
 msgid "System Info Summary"
-msgstr "सिस्टम जानकारी सारांश"
+msgstr "सिस्टम जानकारी का सारांश"
 
-#: doctor.py:262
+#: doctor.py:266
 msgid "System info copied"
-msgstr "सिस्टम जानकारी कॉपी की गई"
+msgstr "सिस्टम जानकारी कॉपी हो गई"
 
-#: doctor.py:307
-#: doctor.py:314
+#: cleanup.py:196
+msgid "Temp file cleanup encountered an error. Check NVDA log."
+msgstr "अस्थायी फ़ाइलों की सफाई के दौरान एक त्रुटि आई। NVDA लॉग जांचें।"
+
+#: doctor.py:230
+#: doctor.py:240
+msgid "Unknown Motherboard"
+msgstr "अज्ञात मदरबोर्ड"
+
+#: doctor.py:315
+#: doctor.py:322
 msgid "Unknown NVDA version"
-msgstr "अज्ञात NVDA वर्शन"
+msgstr "अज्ञात NVDA संस्करण"
 
-#: __init__.py:82
+#: doctor.py:144
+msgid "Unknown RAM"
+msgstr "अज्ञात रैम (RAM)"
+
+#: crash_analyzer.py:194
+msgid "Unknown error"
+msgstr "अज्ञात त्रुटि"
+
+#: __init__.py:105
 msgid "User Config Folder"
-msgstr "यूज़र कॉन्फ़िग फ़ोल्डर"
+msgstr "उपयोगकर्ता कॉन्फ़िगरेशन फ़ोल्डर"
 
-#: utils.py:25
+#: utils.py:26
 msgid "User config folder not found"
-msgstr "यूज़र कॉन्फ़िग फ़ोल्डर नहीं मिला"
+msgstr "उपयोगकर्ता कॉन्फ़िगरेशन फ़ोल्डर नहीं मिला"
+
+#: crash_analyzer.py:218
+msgid "add-on: {addon}"
+msgstr "ऐड-ऑन: {addon}"
+
+#: crash_analyzer.py:221
+msgid "error: {error}"
+msgstr "त्रुटि: {error}"
+
+#: crash_analyzer.py:219
+msgid "file: {file}"
+msgstr "फ़ाइल: {file}"
+
+#: crash_analyzer.py:220
+msgid "line: {line}"
+msgstr "पंक्ति: {line}"

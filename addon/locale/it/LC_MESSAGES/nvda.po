@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.5.1\n"
+"Project-Id-Version: DoctorNVDA 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-03 07:16+0700\n"
-"PO-Revision-Date: 2026-05-04 14:10+0700\n"
+"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -12,220 +12,318 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: diagnostic.py:168
+#: diagnostic.py:173
 msgid "&Cancel"
 msgstr "&Annulla"
 
-#: diagnostic.py:164
+#: diagnostic.py:169
 msgid "&No"
 msgstr "&No"
 
-#: diagnostic.py:172
+#: diagnostic.py:177
 msgid "&OK"
 msgstr "&OK"
 
-#: diagnostic.py:160
+#: diagnostic.py:165
 msgid "&Yes"
 msgstr "&Sì"
 
-#: recovery_gui.py:71
+#: recovery_gui.py:77
 msgid "(No recovery points available)"
 msgstr "(Nessun punto di ripristino disponibile)"
 
-#: doctor.py:288
+#: doctor.py:296
 msgid "All addons active"
 msgstr "Tutti i componenti aggiuntivi sono attivi"
 
-#: doctor.py:267
+#: doctor.py:275
 msgid "All configuration files present"
 msgstr "Tutti i file di configurazione sono presenti"
 
-#: recovery.py:139
-#: recovery_gui.py:99
+#: recovery.py:192
+#: recovery_gui.py:105
 msgid "All recoveries removed"
-msgstr "Tutti i ripristini sono stati rimossi"
+msgstr "Tutti i punti di ripristino sono stati rimossi"
 
-#: recovery_gui.py:117
+#: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
 msgstr "Sei sicuro di voler eliminare {}?"
 
-#: recovery_gui.py:94
+#: recovery_gui.py:100
 msgid "Are you sure you want to remove all recovery points?"
 msgstr "Sei sicuro di voler rimuovere tutti i punti di ripristino?"
 
-#: __init__.py:81
-msgid "Binary Search Debugging add-on"
-msgstr "Componente aggiuntivo per il debug tramite ricerca binaria"
+#: audio_reset.py:44
+msgid "Audio reset failed. Check NVDA log."
+msgstr "Ripristino dell'audio fallito. Controllare il log di NVDA."
 
-#: recovery_gui.py:48
+#: audio_reset.py:48
+msgid "Audio subsystem reset complete"
+msgstr "Ripristino del sottosistema audio completato"
+
+#: __init__.py:102
+msgid "Binary Search Debugging add-on"
+msgstr "Componente aggiuntivo per la ricerca binaria di errori"
+
+#: cleanup.py:132
+msgid "Cache cleanup encountered an error. Check NVDA log."
+msgstr "Si è verificato un errore durante la pulizia della cache. Controllare il log di NVDA."
+
+#: recovery_gui.py:46
 msgid "Cancel"
 msgstr "Annulla"
 
-#: __init__.py:79
+#: __init__.py:100
 msgid "Cancel Add-on Diagnostic and Restore All"
-msgstr "Annulla la diagnostica dei componenti e ripristina tutto"
+msgstr "Annulla la diagnosi dei componenti aggiuntivi e ripristina tutto"
 
-#: recovery_gui.py:118
+#: __init__.py:107
+msgid "Clean Add-on Caches"
+msgstr "Pulisci la cache dei componenti aggiuntivi"
+
+#: __init__.py:108
+msgid "Clean NVDA Temp Files"
+msgstr "Pulisci i file temporanei di NVDA"
+
+#: cleanup.py:124
+msgid "Cleaned {files} file(s) in {dirs} cache folder(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "Puliti {files} file in {dirs} cartelle di cache. Liberati {size} byte. Riassesto di NVDA in corso."
+
+#: recovery_gui.py:131
 msgid "Confirm delete"
 msgstr "Conferma eliminazione"
 
-#: recovery_gui.py:95
+#: recovery_gui.py:101
 msgid "Confirm remove all"
 msgstr "Conferma rimozione totale"
 
-#: doctor.py:321
+#: doctor.py:329
 msgid "Copied to clipboard: {}"
 msgstr "Copiato negli appunti: {}"
 
-#: __init__.py:70
+#: __init__.py:104
+msgid "Crash Log Analyzer"
+msgstr "Analizzatore del registro di sistema/crash"
+
+#: __init__.py:91
 msgid "Create NVDA Setting Recovery"
-msgstr "Crea un punto di ripristino delle impostazioni NVDA"
+msgstr "Crea punto di ripristino impostazioni di NVDA"
 
-#: recovery.py:93
+#: recovery.py:100
 msgid "Create recovery failed"
-msgstr "Creazione del ripristino fallita"
+msgstr "Creazione del punto di ripristino fallita"
 
-#: recovery_gui.py:125
+#: cleanup.py:164
+msgid "Deleted {count} temporary/.delete file(s). Freed {size} bytes. Restarting NVDA now."
+msgstr "Eliminati {count} file temporanei/.delete. Liberati {size} byte. Riassesto di NVDA in corso."
+
+#: recovery_gui.py:138
 msgid "Deleted."
 msgstr "Eliminato."
 
-#: diagnostic.py:144
+#: diagnostic.py:142
 msgid "Diagnostic complete. Found and disabled: {name}"
-msgstr "Diagnostica completata. Trovato e disattivato: {name}"
+msgstr "Diagnosi completata. Trovato e disattivato: {name}"
 
-#: __init__.py:124
-#: diagnostic.py:100
+#: __init__.py:157
+#: diagnostic.py:98
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:60
+#: __init__.py:81
 msgid "DoctorNVDA Health Check"
-msgstr "Controllo stato di DoctorNVDA"
+msgstr "Controllo dello stato di salute DoctorNVDA"
 
-#: menu.py:20
-#: menu.py:91
+#: menu.py:18
+#: menu.py:89
 msgid "DoctorNVDA Menu"
 msgstr "Menu DoctorNVDA"
 
-#: recovery_gui.py:131
+#: __init__.py:103
+msgid "Emergency Synthesizer Reboot"
+msgstr "Riavvio di emergenza del sintetizzatore"
+
+#: recovery_gui.py:144
 msgid "Error"
 msgstr "Errore"
 
-#: recovery_gui.py:131
+#: recovery_gui.py:144
 msgid "Error deleting: {}"
-msgstr "Errore durante l'eliminazione di: {}"
+msgstr "Errore durante l'eliminazione: {}"
 
-#: utils.py:23
+#: utils.py:24
 msgid "Failed to open user config folder"
 msgstr "Impossibile aprire la cartella di configurazione utente"
 
-#: doctor.py:290
+#: doctor.py:298
 msgid "Found {n} inactive addons Opening report"
-msgstr "Trovati {n} componenti non attivi. Apertura del rapporto"
+msgstr "Trovati {n} componenti aggiuntivi non attivi. Apertura del report"
 
-#: doctor.py:269
+#: crash_analyzer.py:375
+msgid "Log file not found."
+msgstr "File di log non trovato."
+
+#: doctor.py:277
 msgid "Missing {n} configuration files"
-msgstr "Mancano {n} file di configurazione"
+msgstr "{n} file di configurazione mancanti"
 
-#: __init__.py:69
+#: __init__.py:90
 msgid "NVDA Version: {}"
-msgstr "Versione NVDA: {}"
+msgstr "Versione di NVDA: {}"
 
-#: diagnostic.py:82
+#: cleanup.py:120
+msgid "No __pycache__ folders found. Everything is clean."
+msgstr "Nessuna cartella __pycache__ trovata. È tutto pulito."
+
+#: diagnostic.py:80
 msgid "No active add-ons found to diagnose."
-msgstr "Nessun componente aggiuntivo attivo trovato per la diagnostica."
+msgstr "Nessun componente aggiuntivo attivo trovato da diagnosticare."
 
-#: recovery_gui.py:149
+#: cleanup.py:104
+msgid "No add-on directories found to clean."
+msgstr "Nessun cartella di componenti aggiuntivi trovata da pulire."
+
+#: crash_analyzer.py:380
+msgid "No add-on related issues found in the current log."
+msgstr "Nessun problema relativo ai componenti aggiuntivi trovato nel log attuale."
+
+#: crash_analyzer.py:382
+msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "Nessun problema relativo ai componenti aggiuntivi trovato nel log attuale. Per una ricerca più approfondita, imposta il livello di log di NVDA su Debug nelle Impostazioni Generali."
+
+#: recovery_gui.py:162
 msgid "No recovery points available. Create a recovery first."
 msgstr "Nessun punto di ripristino disponibile. Creane uno prima."
 
-#: recovery_gui.py:88
+#: recovery_gui.py:94
 msgid "No selection"
 msgstr "Nessuna selezione"
 
-#: recovery_gui.py:88
+#: cleanup.py:160
+#: cleanup.py:201
+msgid "No temporary or .delete NVDA files found."
+msgstr "Nessun file temporaneo o .delete di NVDA trovato."
+
+#: recovery_gui.py:94
 msgid "Please select a recovery folder first."
-msgstr "Seleziona prima una cartella di ripristino."
+msgstr "Selezionare prima una cartella di ripristino."
 
-#: diagnostic.py:99
+#: diagnostic.py:97
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
-msgstr "Pronto per iniziare la diagnostica? NVDA si riavvierà e disattiverà metà dei componenti aggiuntivi attivi."
+msgstr "Pronto per avviare la diagnosi? NVDA si riavvierà e disabiliterà la metà dei componenti aggiuntivi attivi."
 
-#: recovery.py:91
+#: recovery.py:104
 msgid "Recovery created: {n}"
 msgstr "Punto di ripristino creato: {n}"
 
-#: recovery_gui.py:46
+#: recovery_gui.py:44
 msgid "Remove All"
 msgstr "Rimuovi tutto"
 
-#: recovery.py:132
+#: recovery.py:185
 msgid "Removed: {n}"
 msgstr "Rimosso: {n}"
 
-#: __init__.py:74
+#: __init__.py:95
 msgid "Restart NVDA with add-ons disabled"
-msgstr "Riavvia NVDA con i componenti aggiuntivi disattivati"
+msgstr "Riavvia NVDA con i componenti aggiuntivi disabilitati"
 
-#: __init__.py:76
+#: __init__.py:97
 msgid "Restart NVDA {}"
 msgstr "Riavvia NVDA {}"
 
-#: recovery_gui.py:44
+#: recovery_gui.py:42
 msgid "Restore"
 msgstr "Ripristina"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting"
-msgstr "Ripristina impostazioni NVDA"
+msgstr "Ripristina impostazioni di NVDA"
 
-#: __init__.py:73
+#: __init__.py:94
 msgid "Restore NVDA Setting unavailable"
-msgstr "Ripristino impostazioni NVDA non disponibile"
+msgstr "Ripristino impostazioni di NVDA non disponibile"
 
-#: recovery.py:124
+#: recovery.py:178
 msgid "Restore completed, restarting NVDA..."
 msgstr "Ripristino completato, riavvio di NVDA in corso..."
 
-#: recovery.py:126
+#: recovery.py:175
 msgid "Restore failed"
 msgstr "Ripristino fallito"
 
-#: __init__.py:41
+#: __init__.py:59
 msgid ""
-"Round {round}: {count} add-ons are DISABLED.\n"
+"Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"Is the problem GONE?\n"
+"{list}\n"
 msgstr ""
-"Round {round}: {count} componenti aggiuntivi sono DISATTIVATI.\n"
+"Sessione {round}: {count} componenti aggiuntivi DISABILITATI.\n"
 "\n"
-"Il problema è RISOLTO?\n"
+"{list}\n"
 
-#: recovery_gui.py:30
+#: recovery_gui.py:28
 msgid "Select Recovery Folder"
 msgstr "Seleziona cartella di ripristino"
 
-#: __init__.py:107
-msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
-msgstr "Tocco singolo: Menu DoctorNVDA, doppio tocco: Riavvia NVDA, triplo tocco: Riavvia senza componenti"
+#: __init__.py:168
+msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
+msgstr "Pressione singola: Riavvio di emergenza del sintetizzatore e reinizializzazione dell'output audio. Pressione doppia: Apri l'analizzatore dei log di crash"
 
-#: __init__.py:83
+#: __init__.py:140
+msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
+msgstr "Pressione singola: Apri il menu DoctorNVDA, pressione doppia: Riavvia NVDA, pressione tripla: Riavvia NVDA con i componenti aggiuntivi disabilitati"
+
+#: __init__.py:106
 msgid "System Info Summary"
 msgstr "Riepilogo informazioni di sistema"
 
-#: doctor.py:262
+#: doctor.py:266
 msgid "System info copied"
 msgstr "Informazioni di sistema copiate"
 
-#: doctor.py:307
-#: doctor.py:314
+#: cleanup.py:196
+msgid "Temp file cleanup encountered an error. Check NVDA log."
+msgstr "Si è verificato un errore durante la pulizia dei file temporanei. Controllare il log di NVDA."
+
+#: doctor.py:230
+#: doctor.py:240
+msgid "Unknown Motherboard"
+msgstr "Scheda madre sconosciuta"
+
+#: doctor.py:315
+#: doctor.py:322
 msgid "Unknown NVDA version"
-msgstr "Versione NVDA sconosciuta"
+msgstr "Versione di NVDA sconosciuta"
 
-#: __init__.py:82
+#: doctor.py:144
+msgid "Unknown RAM"
+msgstr "Memoria RAM sconosciuta"
+
+#: crash_analyzer.py:194
+msgid "Unknown error"
+msgstr "Errore sconosciuto"
+
+#: __init__.py:105
 msgid "User Config Folder"
-msgstr "Cartella configurazione utente"
+msgstr "Cartella di configurazione utente"
 
-#: utils.py:25
+#: utils.py:26
 msgid "User config folder not found"
-msgstr "Cartella configurazione utente non trovata"
+msgstr "Cartella di configurazione utente non trovata"
+
+#: crash_analyzer.py:218
+msgid "add-on: {addon}"
+msgstr "componente aggiuntivo: {addon}"
+
+#: crash_analyzer.py:221
+msgid "error: {error}"
+msgstr "errore: {error}"
+
+#: crash_analyzer.py:219
+msgid "file: {file}"
+msgstr "file: {file}"
+
+#: crash_analyzer.py:220
+msgid "line: {line}"
+msgstr "riga: {line}"
