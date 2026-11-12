@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.9.0\n"
+"Project-Id-Version: DoctorNVDA 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"POT-Creation-Date: 2026-11-12 16:09+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Thai\n"
@@ -10,27 +10,51 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
-#: diagnostic.py:173
+#: diagnostic.py:182
 msgid "&Cancel"
 msgstr "ยกเลิ&ก"
 
-#: diagnostic.py:169
+#: diagnostic.py:178
 msgid "&No"
 msgstr "ไ&ม่ใช่"
 
-#: diagnostic.py:177
+#: diagnostic.py:186
 msgid "&OK"
 msgstr "&ตกลง"
 
-#: diagnostic.py:165
+#: diagnostic.py:174
 msgid "&Yes"
 msgstr "&ใช่"
 
 #: recovery_gui.py:77
 msgid "(No recovery points available)"
 msgstr "(ไม่มีจุดคืนค่าระบบ)"
+
+#: healthCheck.py:123
+msgid "A Windows accessibility component returned an error. The program in use may not support accessibility fully."
+msgstr "คอมโพเนนต์การ Go เข้าถึงได้ของ Windows ส่งคืนข้อผิดพลาด โปรแกรมที่ใช้อยู่แต่อาจไม่รองรับการเข้าถึงได้ทั้งหมด"
+
+#: healthCheck.py:363
+msgid "A component uses a Python feature that is being removed or changed."
+msgstr "คอมโพเนนต์หนึ่งใช้ฟีเจอร์ Python ที่กำลังจะถูกถอดออกหรือเปลี่ยนแปลง"
+
+#: healthCheck.py:127
+msgid "A connection or an operation took too long or was refused."
+msgstr "การเชื่อมต่อหรือการดำเนินการใช้เวลานานเกินไปหรือถูกปฏิเสธ"
+
+#: healthCheck.py:121
+msgid "A file or folder that was needed could not be found."
+msgstr "ไม่พบไฟล์หรือโฟลเดอร์ที่ต้องการ"
+
+#: healthCheck.py:346
+msgid "A program gave NVDA incomplete accessibility information. This is usually harmless."
+msgstr "โปรแกรมหนึ่งให้ข้อมูลการเข้าถึงได้ที่ไม่สมบูรณ์แก่ NVDA ปกติแล้วไม่มีอันตราย"
+
+#: crash_analyzer.py:241
+msgid "Add-on errors:"
+msgstr "ข้อผิดพลาดของส่วนเสริม:"
 
 #: doctor.py:296
 msgid "All addons active"
@@ -40,10 +64,18 @@ msgstr "ส่วนเสริมทั้งหมดเปิดใช้ง
 msgid "All configuration files present"
 msgstr "พบไฟล์การตั้งค่าทั้งหมดครบถ้วน"
 
-#: recovery.py:192
+#: recovery.py:265
 #: recovery_gui.py:105
 msgid "All recoveries removed"
 msgstr "ลบจุดคืนค่าระบบทั้งหมดแล้ว"
+
+#: healthCheck.py:356
+msgid "An add-on or NVDA component uses an outdated NVDA feature."
+msgstr "ส่วนเสริมหรือคอมโพเนนต์ของ NVDA ใช้ฟีเจอร์ NVDA ที่ล้าสมัย"
+
+#: healthCheck.py:136
+msgid "An error of type {name} occurred."
+msgstr "เกิดข้อผิดพลาดประเภท {name}"
 
 #: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
@@ -61,7 +93,7 @@ msgstr "รีเซ็ตระบบเสียงไม่สำเร็จ
 msgid "Audio subsystem reset complete"
 msgstr "รีเซ็ตระบบเสียงย่อยเสร็จสมบูรณ์"
 
-#: __init__.py:102
+#: addonCore.py:126
 msgid "Binary Search Debugging add-on"
 msgstr "ส่วนเสริมตรวจหาข้อผิดพลาดด้วยการค้นหาแบบทวิภาค (Binary Search)"
 
@@ -73,15 +105,15 @@ msgstr "เกิดข้อผิดพลาดขณะล้างแคช
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: __init__.py:100
+#: addonCore.py:124
 msgid "Cancel Add-on Diagnostic and Restore All"
 msgstr "ยกเลิกการวินิจฉัยส่วนเสริมและคืนค่าทั้งหมด"
 
-#: __init__.py:107
+#: addonCore.py:131
 msgid "Clean Add-on Caches"
 msgstr "ล้างแคชของส่วนเสริม"
 
-#: __init__.py:108
+#: addonCore.py:132
 msgid "Clean NVDA Temp Files"
 msgstr "ล้างไฟล์ชั่วคราวของ NVDA"
 
@@ -101,15 +133,15 @@ msgstr "ยืนยันการลบทั้งหมด"
 msgid "Copied to clipboard: {}"
 msgstr "คัดลอกไปยังคลิปบอร์ดแล้ว: {}"
 
-#: __init__.py:104
+#: addonCore.py:128
 msgid "Crash Log Analyzer"
 msgstr "เครื่องมือวิเคราะห์ปักษินข้อผิดพลาด (Crash Log)"
 
-#: __init__.py:91
+#: addonCore.py:115
 msgid "Create NVDA Setting Recovery"
 msgstr "สร้างจุดคืนค่าการตั้งค่า NVDA"
 
-#: recovery.py:100
+#: recovery.py:136
 msgid "Create recovery failed"
 msgstr "สร้างจุดคืนค่าไม่สำเร็จ"
 
@@ -121,25 +153,25 @@ msgstr "ลบไฟล์ชั่วคราว/.delete จำนวน {coun
 msgid "Deleted."
 msgstr "ลบเรียบร้อยแล้ว"
 
-#: diagnostic.py:142
+#: diagnostic.py:151
 msgid "Diagnostic complete. Found and disabled: {name}"
 msgstr "ตรวจวินิจฉัยเสร็จสมบูรณ์ พบและปิดการใช้งาน: {name}"
 
-#: __init__.py:157
-#: diagnostic.py:98
+#: addonCore.py:181
+#: diagnostic.py:103
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:81
+#: addonCore.py:105
 msgid "DoctorNVDA Health Check"
 msgstr "ตรวจสุขภาพระบบ DoctorNVDA"
 
-#: menu.py:18
-#: menu.py:89
+#: menu.py:59
+#: menu.py:130
 msgid "DoctorNVDA Menu"
 msgstr "เมนู DoctorNVDA"
 
-#: __init__.py:103
+#: addonCore.py:127
 msgid "Emergency Synthesizer Reboot"
 msgstr "รีบูตสังเคราะห์เสียงฉุกเฉิน"
 
@@ -151,7 +183,7 @@ msgstr "ข้อผิดพลาด"
 msgid "Error deleting: {}"
 msgstr "เกิดข้อผิดพลาดในการลบ: {}"
 
-#: utils.py:24
+#: utils.py:26
 msgid "Failed to open user config folder"
 msgstr "ไม่สามารถเปิดโฟลเดอร์การตั้งค่าของผู้ใช้ได้"
 
@@ -159,23 +191,83 @@ msgstr "ไม่สามารถเปิดโฟลเดอร์การ
 msgid "Found {n} inactive addons Opening report"
 msgstr "พบส่วนเสริมที่ไม่ถูกเปิดใช้งาน {n} รายการ กำลังเปิดรายงาน..."
 
-#: crash_analyzer.py:375
+#: healthCheck.py:385
+msgid "Harmless notice"
+msgstr "แจ้งเตือนทั่วไป ไม่มีอันตราย"
+
+#: healthCheck.py:347
+msgid "If it keeps happening while you use one program, that program has an accessibility problem."
+msgstr "หากยังคงเกิดขึ้นขณะใช้โปรแกรมใดโปรแกรมหนึ่ง แสดงว่าโปรแกรมนั้นมีปัญหาการเข้าถึงได้"
+
+#: healthCheck.py:358
+msgid "It works for now but may stop working after a future NVDA update. The add-on author should update it."
+msgstr "ใช้งานได้ในตอนนี้ แต่อาจหยุดทำงานหลังจากการอัปเดต NVDA ในอนาคต ผู้พัฒนาส่วนเสริมควรทำการอัปเดต"
+
+#: crash_analyzer.py:423
 msgid "Log file not found."
 msgstr "ไม่พบไฟล์ปักษิน (Log)"
+
+#: healthCheck.py:338
+msgid "Many add-ons or a slow disk can cause this. Binary Search Debugging can help find a slow add-on."
+msgstr "ส่วนเสริมจำนวนมากหรือดิสก์ที่ช้าอาจทำให้เกิดสิ่งนี้ได้ การดีบักแบบค้นหาทวิภาคสามารถช่วยหา个ส่วนเสริมที่ทำงานช้าได้"
 
 #: doctor.py:277
 msgid "Missing {n} configuration files"
 msgstr "ไฟล์การตั้งค่าสูญหาย {n} ไฟล์"
 
-#: __init__.py:90
+#: addonCore.py:114
 msgid "NVDA Version: {}"
 msgstr "เวอร์ชัน NVDA: {}"
+
+#: healthCheck.py:344
+msgid "NVDA could not look inside a protected Windows process. This is normal and harmless."
+msgstr "NVDA ไม่สามารถตรวจสอบภายในกระบวนการ Windows ที่ได้รับการป้องกันได้ นี่เป็นเรื่องปกติและไม่มีอันตราย"
+
+#: healthCheck.py:349
+msgid "NVDA has no separate keyboard command map for your language, so the default commands are used. This is normal."
+msgstr "NVDA ไม่มีแผนผังคำสั่งแป้นพิมพ์แยกต่างหากสำหรับภาษาของคุณ จึงใช้คำสั่งเริ่มต้น นี่เป็นเรื่องปกติ"
+
+#: crash_analyzer.py:244
+msgid "NVDA health findings:"
+msgstr "ผลการตรวจสอบสุขภาพของ NVDA:"
+
+#: healthCheck.py:428
+msgid "NVDA health: good."
+msgstr "สุขภาพของ NVDA: ดี"
+
+#: healthCheck.py:426
+msgid "NVDA health: mostly good, with minor issues."
+msgstr "สุขภาพของ NVDA: ค่อนข้างดี มีปัญหาเล็กน้อย"
+
+#: healthCheck.py:424
+msgid "NVDA health: needs attention."
+msgstr "สุขภาพของ NVDA: ต้องตรวจสอบ"
+
+#: healthCheck.py:326
+msgid "NVDA stopped responding and the log ends before it recovered. NVDA was probably closed or restarted while frozen."
+msgstr "NVDA หยุดตอบสนองและบันทึกการทำงานสิ้นสุดลงก่อนที่จะกลับมาทำงานต่อ อาจมีการปิดหรือรีสตาร์ท NVDA ขณะที่ค้างอยู่"
+
+#: healthCheck.py:324
+msgid "NVDA stopped responding for about {seconds:.1f} seconds and then recovered."
+msgstr "NVDA หยุดตอบสนองประมาณ {seconds:.1f} วินาทีแล้วจึงกลับมาทำงานต่อ"
+
+#: healthCheck.py:337
+msgid "NVDA took {seconds:.1f} seconds to start, which is slower than normal."
+msgstr "NVDA ใช้เวลาเริ่มการทำงาน {seconds:.1f} วินาที ซึ่งช้ากว่าปกติ"
+
+#: healthCheck.py:335
+msgid "NVDA was busy inside {module} (line {line})."
+msgstr "NVDA กำลังทำงานหนักภายใน {module} (บรรทัด {line})"
+
+#: healthCheck.py:333
+msgid "NVDA was waiting for the program in front of you to answer an accessibility request. That program is probably the cause."
+msgstr "NVDA กำลังรอโปรแกรมที่อยู่ตรงหน้าคุณตอบสนองต่อคำขอการเข้าถึง โปรแกรมนั้นน่าจะเป็นสาเหตุ"
 
 #: cleanup.py:120
 msgid "No __pycache__ folders found. Everything is clean."
 msgstr "ไม่พบโฟลเดอร์ __pycache__ ระบบสะอาดสมบูรณ์"
 
-#: diagnostic.py:80
+#: diagnostic.py:85
 msgid "No active add-ons found to diagnose."
 msgstr "ไม่พบส่วนเสริมที่เปิดใช้งานอยู่เพื่อตรวจวินิจฉัย"
 
@@ -183,15 +275,15 @@ msgstr "ไม่พบส่วนเสริมที่เปิดใช้
 msgid "No add-on directories found to clean."
 msgstr "ไม่พบไดเรกทอรีของส่วนเสริมเพื่อล้างแคช"
 
-#: crash_analyzer.py:380
-msgid "No add-on related issues found in the current log."
-msgstr "ไม่พบปัญหาที่เกี่ยวข้องกับส่วนเสริมในบันทึกปักษินปัจจุบัน"
+#: crash_analyzer.py:433
+msgid "No problems found in the NVDA log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "ไม่พบปัญหาในบันทึกการทำงานของ NVDA หากต้องการการตรวจสอบที่ละเอียดยิ่งขึ้น โปรดตั้งค่าระดับการบันทึกของ NVDA เป็น ดีบัก ในการตั้งค่าทั่วไป"
 
-#: crash_analyzer.py:382
-msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
-msgstr "ไม่พบปัญหาที่เกี่ยวกับส่วนเสริมในบันทึกปักษินปัจจุบัน เพื่อการตรวจสอบที่ละเอียดขึ้น โปรดพิจารณาตั้งค่าระดับการบันทึกปักษินของ NVDA เป็น Debug ในการตั้งค่าทั่วไป"
+#: crash_analyzer.py:431
+msgid "No problems found in the NVDA log. NVDA looks healthy."
+msgstr "ไม่พบปัญหาในบันทึกการทำงานของ NVDA NVDA ทำงานปกติ"
 
-#: recovery_gui.py:162
+#: recovery_gui.py:175
 msgid "No recovery points available. Create a recovery first."
 msgstr "ไม่มีจุดคืนค่าระบบ กรุณาสร้างจุดคืนค่าก่อน"
 
@@ -208,11 +300,11 @@ msgstr "ไม่พบไฟล์ชั่วคราวหรือไฟล
 msgid "Please select a recovery folder first."
 msgstr "กรุณาเลือกโฟลเดอร์จุดคืนค่าก่อน"
 
-#: diagnostic.py:97
+#: diagnostic.py:102
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
 msgstr "พร้อมที่จะเริ่มการวินิจฉัยหรือไม่? NVDA จะเริ่มทำงานใหม่และปิดการใช้งานส่วนเสริมของคุณครึ่งหนึ่ง"
 
-#: recovery.py:104
+#: recovery.py:140
 msgid "Recovery created: {n}"
 msgstr "สร้างจุดคืนค่าเรียบร้อยแล้ว: {n}"
 
@@ -220,15 +312,15 @@ msgstr "สร้างจุดคืนค่าเรียบร้อยแ
 msgid "Remove All"
 msgstr "ลบทั้งหมด"
 
-#: recovery.py:185
+#: recovery.py:258
 msgid "Removed: {n}"
 msgstr "ลบเรียบร้อยแล้ว: {n}"
 
-#: __init__.py:95
+#: addonCore.py:119
 msgid "Restart NVDA with add-ons disabled"
 msgstr "เริ่มทำงาน NVDA ใหม่โดยปิดใช้งานส่วนเสริม"
 
-#: __init__.py:97
+#: addonCore.py:121
 msgid "Restart NVDA {}"
 msgstr "เริ่มทำงาน NVDA ใหม่ {}"
 
@@ -236,45 +328,58 @@ msgstr "เริ่มทำงาน NVDA ใหม่ {}"
 msgid "Restore"
 msgstr "คืนค่า"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting"
 msgstr "คืนค่าการตั้งค่า NVDA"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting unavailable"
 msgstr "ไม่สามารถใช้งานการคืนค่าการตั้งค่า NVDA ได้"
 
-#: recovery.py:178
+#: recovery.py:210
 msgid "Restore completed, restarting NVDA..."
 msgstr "คืนค่าเสร็จสมบูรณ์ กำลังเริ่มทำงาน NVDA ใหม่..."
 
-#: recovery.py:175
+#: recovery.py:193
+#: recovery.py:246
 msgid "Restore failed"
 msgstr "คืนค่าไม่สำเร็จ"
 
-#: __init__.py:59
+#: addonCore.py:83
 msgid ""
 "Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"{list}\n"
+"{list}"
 msgstr ""
-"รอบที่ {round}: ส่วนเสริมจำนวน {count} รายการถูกปิดใช้งาน\n"
+"รอบที่ {round}: มีส่วนเสริม {count} รายการถูกปิดใช้งาน\n"
 "\n"
-"{list}\n"
+"{list}"
 
 #: recovery_gui.py:28
 msgid "Select Recovery Folder"
 msgstr "เลือกโฟลเดอร์จุดคืนค่า"
 
-#: __init__.py:168
+#: healthCheck.py:382
+msgid "Serious problem"
+msgstr "ปัญหาสำคัญ"
+
+#: healthCheck.py:429
+msgid "Serious problems: {serious}. Warnings: {warning}. Harmless notices: {notice}. Add-on errors: {addons}."
+msgstr "ปัญหาสำคัญ: {serious}, คำเตือน: {warning}, ประกาศทั่วไป: {notice}, ข้อผิดพลาดของส่วนเสริม: {addons}"
+
+#: addonCore.py:192
 msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
 msgstr "กดครั้งเดียว: รีบูตสังเคราะห์เสียงฉุกเฉินและล้างค่าระบบเสียงใหม่ กดสองครั้ง: เปิดเครื่องมือวิเคราะห์ปักษินข้อผิดพลาด"
 
-#: __init__.py:140
+#: addonCore.py:164
 msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
 msgstr "กดครั้งเดียว: เปิดเมนู DoctorNVDA, กดสองครั้ง: เริ่มทำงาน NVDA ใหม่, กดสามครั้ง: เริ่มทำงาน NVDA ใหม่โดยปิดใช้งานส่วนเสริม"
 
-#: __init__.py:106
+#: healthCheck.py:129
+msgid "Some text could not be read because of an encoding problem."
+msgstr "ไม่สามารถอ่านข้อความบางส่วนได้เนื่องจากปัญหาการเข้ารหัส"
+
+#: addonCore.py:130
 msgid "System Info Summary"
 msgstr "สรุปข้อมูลระบบ"
 
@@ -285,6 +390,38 @@ msgstr "คัดลอกข้อมูลระบบแล้ว"
 #: cleanup.py:196
 msgid "Temp file cleanup encountered an error. Check NVDA log."
 msgstr "เกิดข้อผิดพลาดขณะล้างไฟล์ชั่วคราว กรุณาตรวจสอบปักษิน (Log) ของ NVDA"
+
+#: healthCheck.py:361
+msgid "The add-on {addon} uses a Python feature that is being removed or changed."
+msgstr "ส่วนเสริม {addon} ใช้ฟีเจอร์ Python ที่กำลังจะถูกลบหรือเปลี่ยนแปลง"
+
+#: healthCheck.py:354
+msgid "The add-on {addon} uses an outdated NVDA feature."
+msgstr "ส่วนเสริม {addon} ใช้ฟีเจอร์ NVDA ที่ล้าสมัย"
+
+#: healthCheck.py:328
+msgid "The add-on {addon} was running at that moment (file {file}, line {line})."
+msgstr "ส่วนเสริม {addon} กำลังทำงานอยู่ในขณะนั้น (ไฟล์ {file}, บรรทัด {line})"
+
+#: healthCheck.py:125
+msgid "The computer ran out of memory."
+msgstr "หน่วยความจำของคอมพิวเตอร์หมด"
+
+#: healthCheck.py:366
+msgid "The previous NVDA session ended unexpectedly (a crash or a forced close)."
+msgstr "เซสชัน NVDA ก่อนหน้าสิ้นสุดลงอย่างผิดปกติ (การขัดข้องหรือการปิดบังคับ)"
+
+#: healthCheck.py:133
+msgid "The program stopped an operation because of an unexpected state."
+msgstr "โปรแกรมหยุดการทำงานเนื่องจากสถานะที่ไม่คาดคิด"
+
+#: healthCheck.py:135
+msgid "This is a mistake in the program code ({name}), not a problem with your computer."
+msgstr "นี่คือข้อผิดพลาดในโค้ดโปรแกรม ({name}) ไม่ใช่ปัญหาเกี่ยวกับคอมพิวเตอร์ของคุณ"
+
+#: healthCheck.py:351
+msgid "Touch screen support is off because this is a portable copy of NVDA. This is normal."
+msgstr "การรองรับหน้าจอสัมผัสถูกปิดเนื่องจากนี่คือสำเนา NVDA แบบพกพา นี่คือปกติ"
 
 #: doctor.py:230
 #: doctor.py:240
@@ -300,30 +437,111 @@ msgstr "ไม่ทราบเวอร์ชัน NVDA"
 msgid "Unknown RAM"
 msgstr "ไม่ทราบขนาด RAM"
 
-#: crash_analyzer.py:194
+#: crash_analyzer.py:206
 msgid "Unknown error"
 msgstr "ข้อผิดพลาดไม่ทราบสาเหตุ"
 
-#: __init__.py:105
+#: healthCheck.py:331
+msgid "Use Binary Search Debugging in this menu to confirm whether this add-on is the cause."
+msgstr "ใช้การดีบักแบบค้นหาทวิภาคในเมนูนี้เพื่อยืนยันว่าส่วนเสริมนี้เป็นสาเหตุหรือไม่"
+
+#: addonCore.py:129
 msgid "User Config Folder"
 msgstr "โฟลเดอร์การตั้งค่าของผู้ใช้"
 
-#: utils.py:26
+#: utils.py:28
 msgid "User config folder not found"
 msgstr "ไม่พบโฟลเดอร์การตั้งค่าของผู้ใช้"
 
-#: crash_analyzer.py:218
+#: healthCheck.py:384
+msgid "Warning"
+msgstr "คำเตือน"
+
+#: healthCheck.py:342
+msgid "Window class: {name}."
+msgstr "คลาสหน้าต่าง: {name}"
+
+#: healthCheck.py:119
+msgid "Windows refused access to a file, folder or process."
+msgstr "Windows ปฏิเสธการเข้าถึงไฟล์ โฟลเดอร์ หรือกระบวนการทำงาน"
+
+#: healthCheck.py:131
+msgid "Windows reported a system error."
+msgstr "Windows รายงานข้อผิดพลาดของระบบ"
+
+#: healthCheck.py:340
+msgid "Windows was slow to switch the active window, so NVDA may have announced it late."
+msgstr "Windows สลับหน้าต่างใช้งานช้า NVDA จึงอาจประกาศผลช้า"
+
+#: crash_analyzer.py:230
 msgid "add-on: {addon}"
 msgstr "ส่วนเสริม: {addon}"
 
-#: crash_analyzer.py:221
+#: healthCheck.py:399
+msgid "advice: {text}"
+msgstr "คำแนะนำ: {text}"
+
+#: crash_analyzer.py:233
 msgid "error: {error}"
 msgstr "ข้อผิดพลาด: {error}"
 
-#: crash_analyzer.py:219
+#: crash_analyzer.py:231
 msgid "file: {file}"
 msgstr "ไฟล์: {file}"
 
-#: crash_analyzer.py:220
+#: crash_analyzer.py:232
 msgid "line: {line}"
 msgstr "บรรทัด: {line}"
+
+#: healthCheck.py:397
+msgid "meaning: {text}"
+msgstr "ความหมาย: {text}"
+
+#: healthCheck.py:392
+msgid "problem: {text}"
+msgstr "ปัญหา: {text}"
+
+#: healthCheck.py:391
+msgid "severity: {label}"
+msgstr "ความรุนแรง: {label}"
+
+#: crash_analyzer.py:408
+msgid "the current log"
+msgstr "บันทึกการทำงานปัจจุบัน"
+
+#: crash_analyzer.py:348
+#: crash_analyzer.py:405
+msgid "the previous session's log"
+msgstr "บันทึกการทำงานของเซสชันก่อนหน้า"
+
+#: healthCheck.py:401
+msgid "when: first at {time} in {log}, seen {count} times"
+msgstr "เมื่อใด: ครั้งแรกที่ {time} ใน {log} พบ {count} ครั้ง"
+
+#: healthCheck.py:405
+msgid "when: {log}"
+msgstr "เมื่อใด: {log}"
+
+#: healthCheck.py:403
+msgid "when: {time} in {log}"
+msgstr "เมื่อใด: {time} ใน {log}"
+
+#: healthCheck.py:395
+msgid "where: {text}"
+msgstr "ตำแหน่ง: {text}"
+
+#: healthCheck.py:415
+msgid "{count} more minor items were not listed."
+msgstr "รายการเล็กๆ น้อยๆ อีก {count} รายการไม่ได้แสดงไว้"
+
+#: healthCheck.py:374
+msgid "{who} left a minor note: {text}"
+msgstr "{who} ทิ้งบันทึกย่อไว้ว่า: {text}"
+
+#: healthCheck.py:372
+msgid "{who} reported a problem that NVDA handled: {text}"
+msgstr "{who} รายงานปัญหาที่ NVDA จัดการแล้ว: {text}"
+
+#: healthCheck.py:370
+msgid "{who} reported an error: {text}"
+msgstr "{who} รายงานข้อผิดพลาด: {text}"

@@ -10,7 +10,7 @@ from globalVars import appArgs
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
-except:
+except Exception:
 	def _(x): return x
 
 def open_user_config():

@@ -11,11 +11,12 @@ import tones
 import addonHandler
 import logHandler
 from globalVars import appArgs
+from . import healthCheck
 
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
-except:
+except Exception:
 	def _(x): return x
 
 _LOG_ENTRY_RE = re.compile(r"^[A-Z]+ - .+\(\d{2}:\d{2}:\d{2}\.\d+\)")
@@ -234,6 +235,26 @@ def _build_plain_language_report(issues):
 	return "\n\n".join(entries)
 
 
+def _build_full_report(issues, findings):
+	parts = [healthCheck.build_summary(findings, len(issues))]
+	if issues:
+		parts.append(_("Add-on errors:") + "\n\n" + _build_plain_language_report(issues))
+	health_text = healthCheck.build_findings_text(findings, _addon_display_name)
+	if health_text:
+		parts.append(_("NVDA health findings:") + "\n\n" + health_text)
+	return "\n\n".join(parts)
+
+
+def _scan_log(path, log_label):
+	"""Return (add-on errors, NVDA health findings) for one log file.
+	The file is streamed twice instead of being held in memory."""
+	with open(path, "r", encoding="utf-8", errors="replace") as f:
+		issues = _collect_addon_issues_from_blocks(_iter_traceback_blocks(f))
+	with open(path, "r", encoding="utf-8", errors="replace") as f:
+		findings = healthCheck.analyze_entries(healthCheck.iter_entries(f), log_label)
+	return issues, findings
+
+
 def _clear_previous_report():
 	path = _report_file_path()
 	if os.path.exists(path):
@@ -324,18 +345,16 @@ def analyze_and_report():
 		if not _old_log_indicates_crash(old_log_path):
 			return
 
+		previous_label = _("the previous session's log")
 		try:
-			with open(old_log_path, "r", encoding="utf-8", errors="replace") as f:
-				issues = _collect_addon_issues_from_blocks(_iter_traceback_blocks(f))
+			issues, findings = _scan_log(old_log_path, previous_label)
 		except OSError as e:
 			logHandler.log.error("Crash analyzer could not read the previous session log: %s", e)
 			return
 
+		findings.append(healthCheck.make_crash_finding(previous_label))
 		_clear_previous_report()
-		if not issues:
-			return
-
-		report_text = _build_plain_language_report(issues)
+		report_text = _build_full_report(issues, findings)
 		report_path = _write_report(report_text)
 		if report_path:
 			wx.CallAfter(_open_report, report_path)
@@ -381,39 +400,43 @@ def run_manual_check():
 
 	def worker():
 		issues = []
+		findings = []
 		found_any_log = False
-
+		previous_label = _("the previous session's log")
+		log_sources = []
 		if log_path and os.path.isfile(log_path):
-			found_any_log = True
-			try:
-				with open(log_path, "r", encoding="utf-8", errors="replace") as f:
-					issues.extend(_collect_addon_issues_from_blocks(_iter_traceback_blocks(f)))
-			except OSError as e:
-				logHandler.log.error("Crash analyzer could not read log file: %s", e)
-
+			log_sources.append((log_path, _("the current log")))
 		if os.path.isfile(old_log_path):
+			log_sources.append((old_log_path, previous_label))
+
+		for source_path, source_label in log_sources:
 			found_any_log = True
 			try:
-				with open(old_log_path, "r", encoding="utf-8", errors="replace") as f:
-					issues.extend(_collect_addon_issues_from_blocks(_iter_traceback_blocks(f)))
+				log_issues, log_findings = _scan_log(source_path, source_label)
 			except OSError as e:
-				logHandler.log.error("Crash analyzer could not read the previous session log: %s", e)
+				logHandler.log.error("Crash analyzer could not read %s: %s", source_path, e)
+				continue
+			issues.extend(log_issues)
+			findings.extend(log_findings)
 
 		if not found_any_log:
 			wx.CallAfter(ui.message, _("Log file not found."))
 			return
 
-		if not issues:
+		if os.path.isfile(old_log_path) and _old_log_indicates_crash(old_log_path):
+			findings.append(healthCheck.make_crash_finding(previous_label))
+
+		if not issues and not findings:
 			if is_debug_logging:
-				wx.CallAfter(ui.message, _("No add-on related issues found in the current log."))
+				wx.CallAfter(ui.message, _("No problems found in the NVDA log. NVDA looks healthy."))
 			else:
 				wx.CallAfter(ui.message, _(
-					"No add-on related issues found in the current log. For more thorough "
+					"No problems found in the NVDA log. For more thorough "
 					"detection, consider setting NVDA's Logging Level to Debug in General Settings."
 				))
 			return
 
-		report_text = _build_plain_language_report(issues)
+		report_text = _build_full_report(issues, findings)
 		report_path = _write_report(report_text)
 		if report_path:
 			wx.CallAfter(_open_report, report_path)

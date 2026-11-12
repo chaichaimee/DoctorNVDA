@@ -17,7 +17,7 @@ from globalVars import appArgs
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
-except:
+except Exception:
 	def _(x): return x
 
 # Determine NVDA version to select appropriate recovery items

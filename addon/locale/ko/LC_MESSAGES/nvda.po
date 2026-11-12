@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.9.0\n"
+"Project-Id-Version: DoctorNVDA 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"POT-Creation-Date: 2026-11-12 16:09+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Korean\n"
@@ -10,27 +10,51 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
-#: diagnostic.py:173
+#: diagnostic.py:182
 msgid "&Cancel"
 msgstr "취소(&C)"
 
-#: diagnostic.py:169
+#: diagnostic.py:178
 msgid "&No"
 msgstr "아니오(&N)"
 
-#: diagnostic.py:177
+#: diagnostic.py:186
 msgid "&OK"
 msgstr "확인(&O)"
 
-#: diagnostic.py:165
+#: diagnostic.py:174
 msgid "&Yes"
 msgstr "예(&Y)"
 
 #: recovery_gui.py:77
 msgid "(No recovery points available)"
 msgstr "(복원 지점 없음)"
+
+#: healthCheck.py:123
+msgid "A Windows accessibility component returned an error. The program in use may not support accessibility fully."
+msgstr "Windows 접근성 구성 요소에서 오류가 발생했습니다. 현재 사용 중인 프로그램이 접근성을 완전히 지원하지 않을 수 있습니다."
+
+#: healthCheck.py:363
+msgid "A component uses a Python feature that is being removed or changed."
+msgstr "구성 요소가 제거되거나 변경될 예정인 Python 기능을 사용하고 있습니다."
+
+#: healthCheck.py:127
+msgid "A connection or an operation took too long or was refused."
+msgstr "연결 또는 작업에 시간이 너무 오래 걸렸거나 거부되었습니다."
+
+#: healthCheck.py:121
+msgid "A file or folder that was needed could not be found."
+msgstr "필요한 파일이나 폴더를 찾을 수 없습니다."
+
+#: healthCheck.py:346
+msgid "A program gave NVDA incomplete accessibility information. This is usually harmless."
+msgstr "프로그램이 NVDA에 불완전한 접근성 정보를 제공했습니다. 이는 대개 무해합니다."
+
+#: crash_analyzer.py:241
+msgid "Add-on errors:"
+msgstr "애드온 오류:"
 
 #: doctor.py:296
 msgid "All addons active"
@@ -40,10 +64,18 @@ msgstr "모든 부가 기능 활성화됨"
 msgid "All configuration files present"
 msgstr "모든 설정 파일 존재함"
 
-#: recovery.py:192
+#: recovery.py:265
 #: recovery_gui.py:105
 msgid "All recoveries removed"
 msgstr "모든 복원 지점이 삭제되었습니다."
+
+#: healthCheck.py:356
+msgid "An add-on or NVDA component uses an outdated NVDA feature."
+msgstr "애드온 또는 NVDA 구성 요소가 오래된 NVDA 기능을 사용하고 있습니다."
+
+#: healthCheck.py:136
+msgid "An error of type {name} occurred."
+msgstr "{name} 형식의 오류가 발생했습니다."
 
 #: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
@@ -61,7 +93,7 @@ msgstr "오디오 재설정 실패. NVDA 로그를 확인하세요."
 msgid "Audio subsystem reset complete"
 msgstr "오디오 서브시스템 재설정 완료"
 
-#: __init__.py:102
+#: addonCore.py:126
 msgid "Binary Search Debugging add-on"
 msgstr "이진 탐색 디버깅 부가 기능"
 
@@ -73,15 +105,15 @@ msgstr "캐시 정리 중 오류가 발생했습니다. NVDA 로그를 확인하
 msgid "Cancel"
 msgstr "취소"
 
-#: __init__.py:100
+#: addonCore.py:124
 msgid "Cancel Add-on Diagnostic and Restore All"
 msgstr "부가 기능 진단 취소 및 모두 복원"
 
-#: __init__.py:107
+#: addonCore.py:131
 msgid "Clean Add-on Caches"
 msgstr "부가 기능 캐시 정리"
 
-#: __init__.py:108
+#: addonCore.py:132
 msgid "Clean NVDA Temp Files"
 msgstr "NVDA 임시 파일 정리"
 
@@ -101,15 +133,15 @@ msgstr "전체 삭제 확인"
 msgid "Copied to clipboard: {}"
 msgstr "클립보드에 복사됨: {}"
 
-#: __init__.py:104
+#: addonCore.py:128
 msgid "Crash Log Analyzer"
 msgstr "충돌 로그 분석기"
 
-#: __init__.py:91
+#: addonCore.py:115
 msgid "Create NVDA Setting Recovery"
 msgstr "NVDA 설정 복원 지점 생성"
 
-#: recovery.py:100
+#: recovery.py:136
 msgid "Create recovery failed"
 msgstr "복원 지점 생성 실패"
 
@@ -121,25 +153,25 @@ msgstr "{count}개의 임시/.delete 파일을 삭제하여 {size}바이트를 �
 msgid "Deleted."
 msgstr "삭제되었습니다."
 
-#: diagnostic.py:142
+#: diagnostic.py:151
 msgid "Diagnostic complete. Found and disabled: {name}"
 msgstr "진단 완료. 문제 항목 발견 및 비활성화됨: {name}"
 
-#: __init__.py:157
-#: diagnostic.py:98
+#: addonCore.py:181
+#: diagnostic.py:103
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:81
+#: addonCore.py:105
 msgid "DoctorNVDA Health Check"
 msgstr "DoctorNVDA 상태 점검"
 
-#: menu.py:18
-#: menu.py:89
+#: menu.py:59
+#: menu.py:130
 msgid "DoctorNVDA Menu"
 msgstr "DoctorNVDA 메뉴"
 
-#: __init__.py:103
+#: addonCore.py:127
 msgid "Emergency Synthesizer Reboot"
 msgstr "음성 합성기 비상 재시작"
 
@@ -151,7 +183,7 @@ msgstr "오류"
 msgid "Error deleting: {}"
 msgstr "삭제 중 오류 발생: {}"
 
-#: utils.py:24
+#: utils.py:26
 msgid "Failed to open user config folder"
 msgstr "사용자 설정 폴더 열기 실패"
 
@@ -159,23 +191,83 @@ msgstr "사용자 설정 폴더 열기 실패"
 msgid "Found {n} inactive addons Opening report"
 msgstr "비활성화된 부가 기능 {n}개 발견. 보고서를 엽니다."
 
-#: crash_analyzer.py:375
+#: healthCheck.py:385
+msgid "Harmless notice"
+msgstr "무해한 알림"
+
+#: healthCheck.py:347
+msgid "If it keeps happening while you use one program, that program has an accessibility problem."
+msgstr "특정 프로그램을 사용할 때 이 문제가 지속되면 해당 프로그램에 접근성 문제가 있는 것입니다."
+
+#: healthCheck.py:358
+msgid "It works for now but may stop working after a future NVDA update. The add-on author should update it."
+msgstr "지금은 작동하지만 향후 NVDA 업데이트 후 작동이 중단될 수 있습니다. 애드온 제작자가 이를 업데이트해야 합니다."
+
+#: crash_analyzer.py:423
 msgid "Log file not found."
 msgstr "로그 파일을 찾을 수 없습니다."
+
+#: healthCheck.py:338
+msgid "Many add-ons or a slow disk can cause this. Binary Search Debugging can help find a slow add-on."
+msgstr "많은 애드온이나 느린 디스크로 인해 발생할 수 있습니다. 이진 탐색 디버깅이 느린 애드온을 찾는 데 도움이 될 수 있습니다."
 
 #: doctor.py:277
 msgid "Missing {n} configuration files"
 msgstr "{n}개의 설정 파일 누락됨"
 
-#: __init__.py:90
+#: addonCore.py:114
 msgid "NVDA Version: {}"
 msgstr "NVDA 버전: {}"
+
+#: healthCheck.py:344
+msgid "NVDA could not look inside a protected Windows process. This is normal and harmless."
+msgstr "NVDA가 보호된 Windows 프로세스 내부를 확인할 수 없습니다. 이는 정상이며 무해합니다."
+
+#: healthCheck.py:349
+msgid "NVDA has no separate keyboard command map for your language, so the default commands are used. This is normal."
+msgstr "NVDA에 사용 중인 언어에 대한 별도의 키보드 단축키 맵이 없어 기본 단축키가 사용됩니다. 이는 정상입니다."
+
+#: crash_analyzer.py:244
+msgid "NVDA health findings:"
+msgstr "NVDA 상태 진단 결과:"
+
+#: healthCheck.py:428
+msgid "NVDA health: good."
+msgstr "NVDA 상태: 양호함."
+
+#: healthCheck.py:426
+msgid "NVDA health: mostly good, with minor issues."
+msgstr "NVDA 상태: 대체로 양호하나 사소한 문제가 있음."
+
+#: healthCheck.py:424
+msgid "NVDA health: needs attention."
+msgstr "NVDA 상태: 주의가 필요함."
+
+#: healthCheck.py:326
+msgid "NVDA stopped responding and the log ends before it recovered. NVDA was probably closed or restarted while frozen."
+msgstr "NVDA 응답이 중단되었으며 복구되기 전에 로그가 끝났습니다. 멈춘 상태에서 NVDA가 종료되었거나 재시작되었을 수 있습니다."
+
+#: healthCheck.py:324
+msgid "NVDA stopped responding for about {seconds:.1f} seconds and then recovered."
+msgstr "NVDA 응답이 약 {seconds:.1f}초 동안 중단되었다가 복구되었습니다."
+
+#: healthCheck.py:337
+msgid "NVDA took {seconds:.1f} seconds to start, which is slower than normal."
+msgstr "NVDA 시작에 {seconds:.1f}초가 걸렸으며, 이는 평소보다 느립니다."
+
+#: healthCheck.py:335
+msgid "NVDA was busy inside {module} (line {line})."
+msgstr "NVDA가 {module} 내부에서 응답하지 않았습니다 ({line}번째 줄)."
+
+#: healthCheck.py:333
+msgid "NVDA was waiting for the program in front of you to answer an accessibility request. That program is probably the cause."
+msgstr "NVDA가 사용자 앞의 프로그램으로부터 접근성 요청에 대한 응답을 기다리고 있습니다. 해당 프로그램이 원인일 가능성이 높습니다."
 
 #: cleanup.py:120
 msgid "No __pycache__ folders found. Everything is clean."
 msgstr "__pycache__ 폴더를 찾을 수 없습니다. 모든 항목이 깨끗합니다."
 
-#: diagnostic.py:80
+#: diagnostic.py:85
 msgid "No active add-ons found to diagnose."
 msgstr "진단할 활성화된 부가 기능이 없습니다."
 
@@ -183,15 +275,15 @@ msgstr "진단할 활성화된 부가 기능이 없습니다."
 msgid "No add-on directories found to clean."
 msgstr "정리할 부가 기능 디렉터리가 없습니다."
 
-#: crash_analyzer.py:380
-msgid "No add-on related issues found in the current log."
-msgstr "현재 로그에서 부가 기능 관련 문제를 찾을 수 없습니다."
+#: crash_analyzer.py:433
+msgid "No problems found in the NVDA log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "NVDA 로그에서 문제를 찾지 못했습니다. 더 철저한 감지를 원하시면 일반 설정에서 NVDA 로그 수준을 디버그로 설정하는 것을 고려해 보세요."
 
-#: crash_analyzer.py:382
-msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
-msgstr "현재 로그에서 부가 기능 관련 문제를 찾을 수 없습니다. 더 자세한 감지를 위해 일반 설정에서 NVDA 로그 기록 수준을 '디버그'로 설정해 보세요."
+#: crash_analyzer.py:431
+msgid "No problems found in the NVDA log. NVDA looks healthy."
+msgstr "NVDA 로그에서 문제를 찾지 못했습니다. NVDA가 정상적으로 작동 중입니다."
 
-#: recovery_gui.py:162
+#: recovery_gui.py:175
 msgid "No recovery points available. Create a recovery first."
 msgstr "사용 가능한 복원 지점이 없습니다. 먼저 복원 지점을 만드세요."
 
@@ -208,11 +300,11 @@ msgstr "임시 또는 .delete NVDA 파일을 찾을 수 없습니다."
 msgid "Please select a recovery folder first."
 msgstr "먼저 복원 폴더를 선택하세요."
 
-#: diagnostic.py:97
+#: diagnostic.py:102
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
 msgstr "진단을 시작하시겠습니까? NVDA가 다시 시작되며 활성화된 부가 기능의 절반이 비활성화됩니다."
 
-#: recovery.py:104
+#: recovery.py:140
 msgid "Recovery created: {n}"
 msgstr "복원 지점 생성됨: {n}"
 
@@ -220,15 +312,15 @@ msgstr "복원 지점 생성됨: {n}"
 msgid "Remove All"
 msgstr "모두 삭제"
 
-#: recovery.py:185
+#: recovery.py:258
 msgid "Removed: {n}"
 msgstr "삭제됨: {n}"
 
-#: __init__.py:95
+#: addonCore.py:119
 msgid "Restart NVDA with add-ons disabled"
 msgstr "부가 기능을 비활성화하고 NVDA 다시 시작"
 
-#: __init__.py:97
+#: addonCore.py:121
 msgid "Restart NVDA {}"
 msgstr "NVDA 다시 시작 {}"
 
@@ -236,45 +328,58 @@ msgstr "NVDA 다시 시작 {}"
 msgid "Restore"
 msgstr "복원"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting"
 msgstr "NVDA 설정 복원"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting unavailable"
 msgstr "NVDA 설정 복원을 사용할 수 없음"
 
-#: recovery.py:178
+#: recovery.py:210
 msgid "Restore completed, restarting NVDA..."
 msgstr "복원 완료, NVDA를 다시 시작하는 중..."
 
-#: recovery.py:175
+#: recovery.py:193
+#: recovery.py:246
 msgid "Restore failed"
 msgstr "복원 실패"
 
-#: __init__.py:59
+#: addonCore.py:83
 msgid ""
 "Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"{list}\n"
+"{list}"
 msgstr ""
-"{round}단계: {count}개의 부가 기능이 비활성화되었습니다.\n"
+"{round}차 라운드: {count}개의 애드온이 비활성화되었습니다.\n"
 "\n"
-"{list}\n"
+"{list}"
 
 #: recovery_gui.py:28
 msgid "Select Recovery Folder"
 msgstr "복원 폴더 선택"
 
-#: __init__.py:168
+#: healthCheck.py:382
+msgid "Serious problem"
+msgstr "심각한 문제"
+
+#: healthCheck.py:429
+msgid "Serious problems: {serious}. Warnings: {warning}. Harmless notices: {notice}. Add-on errors: {addons}."
+msgstr "심각한 문제: {serious}개. 경고: {warning}개. 사소한 알림: {notice}개. 애드온 오류: {addons}개."
+
+#: addonCore.py:192
 msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
 msgstr "한 번 누르기: 음성 합성기 비상 재시작 및 오디오 출력 강제 재초기화. 두 번 누르기: 충돌 로그 분석기 열기"
 
-#: __init__.py:140
+#: addonCore.py:164
 msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
 msgstr "한 번 누르기: DoctorNVDA 메뉴 열기, 두 번 누르기: NVDA 다시 시작, 세 번 누르기: 부가 기능을 비활성화하고 NVDA 다시 시작"
 
-#: __init__.py:106
+#: healthCheck.py:129
+msgid "Some text could not be read because of an encoding problem."
+msgstr "인코딩 문제로 인해 일부 텍스트를 읽을 수 없습니다."
+
+#: addonCore.py:130
 msgid "System Info Summary"
 msgstr "시스템 정보 요약"
 
@@ -285,6 +390,38 @@ msgstr "시스템 정보가 복사되었습니다."
 #: cleanup.py:196
 msgid "Temp file cleanup encountered an error. Check NVDA log."
 msgstr "임시 파일 정리 중 오류가 발생했습니다. NVDA 로그를 확인하세요."
+
+#: healthCheck.py:361
+msgid "The add-on {addon} uses a Python feature that is being removed or changed."
+msgstr "{addon} 애드온이 제거되거나 변경될 예정인 Python 기능을 사용하고 있습니다."
+
+#: healthCheck.py:354
+msgid "The add-on {addon} uses an outdated NVDA feature."
+msgstr "{addon} 애드온이 구버전 NVDA 기능을 사용하고 있습니다."
+
+#: healthCheck.py:328
+msgid "The add-on {addon} was running at that moment (file {file}, line {line})."
+msgstr "해당 순간에 {addon} 애드온이 실행 중이었습니다 (파일 {file}, {line}번째 줄)."
+
+#: healthCheck.py:125
+msgid "The computer ran out of memory."
+msgstr "컴퓨터의 메모리가 부족합니다."
+
+#: healthCheck.py:366
+msgid "The previous NVDA session ended unexpectedly (a crash or a forced close)."
+msgstr "이전 NVDA 세션이 예기치 않게 종료되었습니다 (충돌 또는 강제 종료)."
+
+#: healthCheck.py:133
+msgid "The program stopped an operation because of an unexpected state."
+msgstr "프로그램이 예기치 않은 상태로 인해 작업을 중단했습니다."
+
+#: healthCheck.py:135
+msgid "This is a mistake in the program code ({name}), not a problem with your computer."
+msgstr "이는 컴퓨터의 문제가 아니라 프로그램 코드({name})의 결함입니다."
+
+#: healthCheck.py:351
+msgid "Touch screen support is off because this is a portable copy of NVDA. This is normal."
+msgstr "포터블 버전의 NVDA이므로 터치스크린 지원이 꺼져 있습니다. 이는 정상적인 동작입니다."
 
 #: doctor.py:230
 #: doctor.py:240
@@ -300,30 +437,111 @@ msgstr "알 수 없는 NVDA 버전"
 msgid "Unknown RAM"
 msgstr "알 수 없는 RAM"
 
-#: crash_analyzer.py:194
+#: crash_analyzer.py:206
 msgid "Unknown error"
 msgstr "알 수 없는 오류"
 
-#: __init__.py:105
+#: healthCheck.py:331
+msgid "Use Binary Search Debugging in this menu to confirm whether this add-on is the cause."
+msgstr "이 애드온이 원인인지 확인하려면 이 메뉴의 이진 탐색 디버깅을 사용하십시오."
+
+#: addonCore.py:129
 msgid "User Config Folder"
 msgstr "사용자 설정 폴더"
 
-#: utils.py:26
+#: utils.py:28
 msgid "User config folder not found"
 msgstr "사용자 설정 폴더를 찾을 수 없습니다."
 
-#: crash_analyzer.py:218
+#: healthCheck.py:384
+msgid "Warning"
+msgstr "경고"
+
+#: healthCheck.py:342
+msgid "Window class: {name}."
+msgstr "창 클래스: {name}."
+
+#: healthCheck.py:119
+msgid "Windows refused access to a file, folder or process."
+msgstr "Windows가 파일, 폴더 또는 프로세스에 대한 접근을 거부했습니다."
+
+#: healthCheck.py:131
+msgid "Windows reported a system error."
+msgstr "Windows가 시스템 오류를보고했습니다."
+
+#: healthCheck.py:340
+msgid "Windows was slow to switch the active window, so NVDA may have announced it late."
+msgstr "Windows가 활성 창을 전환하는 데 오래 걸려 NVDA가 뒤늦게 알렸을 수 있습니다."
+
+#: crash_analyzer.py:230
 msgid "add-on: {addon}"
 msgstr "부가 기능: {addon}"
 
-#: crash_analyzer.py:221
+#: healthCheck.py:399
+msgid "advice: {text}"
+msgstr "조언: {text}"
+
+#: crash_analyzer.py:233
 msgid "error: {error}"
 msgstr "오류: {error}"
 
-#: crash_analyzer.py:219
+#: crash_analyzer.py:231
 msgid "file: {file}"
 msgstr "파일: {file}"
 
-#: crash_analyzer.py:220
+#: crash_analyzer.py:232
 msgid "line: {line}"
 msgstr "줄: {line}"
+
+#: healthCheck.py:397
+msgid "meaning: {text}"
+msgstr "의미: {text}"
+
+#: healthCheck.py:392
+msgid "problem: {text}"
+msgstr "문제: {text}"
+
+#: healthCheck.py:391
+msgid "severity: {label}"
+msgstr "심각도: {label}"
+
+#: crash_analyzer.py:408
+msgid "the current log"
+msgstr "현재 로그"
+
+#: crash_analyzer.py:348
+#: crash_analyzer.py:405
+msgid "the previous session's log"
+msgstr "이전 세션의 로그"
+
+#: healthCheck.py:401
+msgid "when: first at {time} in {log}, seen {count} times"
+msgstr "발생 시기: {log}에서 {time}에 처음 발생, 총 {count}회 감지됨"
+
+#: healthCheck.py:405
+msgid "when: {log}"
+msgstr "발생 시기: {log}"
+
+#: healthCheck.py:403
+msgid "when: {time} in {log}"
+msgstr "발생 시기: {log}의 {time}"
+
+#: healthCheck.py:395
+msgid "where: {text}"
+msgstr "위치: {text}"
+
+#: healthCheck.py:415
+msgid "{count} more minor items were not listed."
+msgstr "{count}개의 사소한 항목이 더 나열되지 않았습니다."
+
+#: healthCheck.py:374
+msgid "{who} left a minor note: {text}"
+msgstr "{who}님이 사소한 메모를 남겼습니다: {text}"
+
+#: healthCheck.py:372
+msgid "{who} reported a problem that NVDA handled: {text}"
+msgstr "{who}님이 NVDA가 처리한 문제를 보고했습니다: {text}"
+
+#: healthCheck.py:370
+msgid "{who} reported an error: {text}"
+msgstr "{who}님이 오류를 보고했습니다: {text}"

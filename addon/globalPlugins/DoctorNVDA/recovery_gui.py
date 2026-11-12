@@ -12,7 +12,7 @@ from . import recovery
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
-except:
+except Exception:
 	def _(x): return x
 
 _active_frame = None

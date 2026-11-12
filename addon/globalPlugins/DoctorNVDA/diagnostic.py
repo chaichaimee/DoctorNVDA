@@ -14,7 +14,7 @@ from globalVars import appArgs
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
-except:
+except Exception:
 	def _(x): return x
 
 STATE_FILE = os.path.join(appArgs.configPath, "ChaiChaimee", "DoctorNVDA", "diagnostic_state.json")

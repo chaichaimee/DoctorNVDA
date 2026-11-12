@@ -21,7 +21,7 @@ import addonHandler
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
-except:
+except Exception:
 	def _(x): return x
 
 CRITICAL_FILES = ["nvda.ini", "gestures.ini", "profiles", "speechDicts", "addons"]

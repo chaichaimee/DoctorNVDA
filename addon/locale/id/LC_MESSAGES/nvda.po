@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.9.0\n"
+"Project-Id-Version: DoctorNVDA 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"POT-Creation-Date: 2026-11-12 16:09+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Indonesian\n"
@@ -10,27 +10,51 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
-#: diagnostic.py:173
+#: diagnostic.py:182
 msgid "&Cancel"
 msgstr "&Batal"
 
-#: diagnostic.py:169
+#: diagnostic.py:178
 msgid "&No"
 msgstr "&Tidak"
 
-#: diagnostic.py:177
+#: diagnostic.py:186
 msgid "&OK"
 msgstr "&OK"
 
-#: diagnostic.py:165
+#: diagnostic.py:174
 msgid "&Yes"
 msgstr "&Ya"
 
 #: recovery_gui.py:77
 msgid "(No recovery points available)"
 msgstr "(Tidak ada titik pemulihan yang tersedia)"
+
+#: healthCheck.py:123
+msgid "A Windows accessibility component returned an error. The program in use may not support accessibility fully."
+msgstr "Komponen aksesibilitas Windows mengembalikan galat. Program yang sedang digunakan mungkin tidak sepenuhnya mendukung aksesibilitas."
+
+#: healthCheck.py:363
+msgid "A component uses a Python feature that is being removed or changed."
+msgstr "Sebuah komponen menggunakan fitur Python yang sedang dihapus atau diubah."
+
+#: healthCheck.py:127
+msgid "A connection or an operation took too long or was refused."
+msgstr "Koneksi atau operasi membutuhkan waktu terlalu lama atau ditolak."
+
+#: healthCheck.py:121
+msgid "A file or folder that was needed could not be found."
+msgstr "Berkas atau folder yang diperlukan tidak dapat ditemukan."
+
+#: healthCheck.py:346
+msgid "A program gave NVDA incomplete accessibility information. This is usually harmless."
+msgstr "Sebuah program memberikan informasi aksesibilitas yang tidak lengkap kepada NVDA. Ini biasanya tidak berbahaya."
+
+#: crash_analyzer.py:241
+msgid "Add-on errors:"
+msgstr "Kesalahan pengaya:"
 
 #: doctor.py:296
 msgid "All addons active"
@@ -40,10 +64,18 @@ msgstr "Semua pengaya aktif"
 msgid "All configuration files present"
 msgstr "Semua berkas konfigurasi ditemukan"
 
-#: recovery.py:192
+#: recovery.py:265
 #: recovery_gui.py:105
 msgid "All recoveries removed"
 msgstr "Semua titik pemulihan telah dihapus"
+
+#: healthCheck.py:356
+msgid "An add-on or NVDA component uses an outdated NVDA feature."
+msgstr "Sebuah add-on atau komponen NVDA menggunakan fitur NVDA yang sudah kedaluwarsa."
+
+#: healthCheck.py:136
+msgid "An error of type {name} occurred."
+msgstr "Terjadi galat jenis {name}."
 
 #: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
@@ -61,7 +93,7 @@ msgstr "Gagal mengatur ulang audio. Periksa log NVDA."
 msgid "Audio subsystem reset complete"
 msgstr "Pengaturan ulang subsistem audio selesai"
 
-#: __init__.py:102
+#: addonCore.py:126
 msgid "Binary Search Debugging add-on"
 msgstr "Pengaya Diagnosis Pencarian Biner"
 
@@ -73,15 +105,15 @@ msgstr "Pembersihan tembolok mengalami kesalahan. Periksa log NVDA."
 msgid "Cancel"
 msgstr "Batal"
 
-#: __init__.py:100
+#: addonCore.py:124
 msgid "Cancel Add-on Diagnostic and Restore All"
 msgstr "Batalkan Diagnostik Pengaya dan Pulihkan Semua"
 
-#: __init__.py:107
+#: addonCore.py:131
 msgid "Clean Add-on Caches"
 msgstr "Bersihkan Tembolok Pengaya"
 
-#: __init__.py:108
+#: addonCore.py:132
 msgid "Clean NVDA Temp Files"
 msgstr "Bersihkan Berkas Sementara NVDA"
 
@@ -101,15 +133,15 @@ msgstr "Konfirmasi hapus semua"
 msgid "Copied to clipboard: {}"
 msgstr "Disalin ke papan klip: {}"
 
-#: __init__.py:104
+#: addonCore.py:128
 msgid "Crash Log Analyzer"
 msgstr "Penganalisis Log Kerusakan"
 
-#: __init__.py:91
+#: addonCore.py:115
 msgid "Create NVDA Setting Recovery"
 msgstr "Buat Pemulihan Pengaturan NVDA"
 
-#: recovery.py:100
+#: recovery.py:136
 msgid "Create recovery failed"
 msgstr "Gagal membuat titik pemulihan"
 
@@ -121,25 +153,25 @@ msgstr "Menghapus {count} berkas sementara/.delete. Membebaskan {size} bita. Mem
 msgid "Deleted."
 msgstr "Dihapus."
 
-#: diagnostic.py:142
+#: diagnostic.py:151
 msgid "Diagnostic complete. Found and disabled: {name}"
 msgstr "Diagnostik selesai. Ditemukan dan dinonaktifkan: {name}"
 
-#: __init__.py:157
-#: diagnostic.py:98
+#: addonCore.py:181
+#: diagnostic.py:103
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:81
+#: addonCore.py:105
 msgid "DoctorNVDA Health Check"
 msgstr "Pemeriksaan Kesehatan DoctorNVDA"
 
-#: menu.py:18
-#: menu.py:89
+#: menu.py:59
+#: menu.py:130
 msgid "DoctorNVDA Menu"
 msgstr "Menu DoctorNVDA"
 
-#: __init__.py:103
+#: addonCore.py:127
 msgid "Emergency Synthesizer Reboot"
 msgstr "Muat Ulang Sintesis Darurat"
 
@@ -151,7 +183,7 @@ msgstr "Kesalahan"
 msgid "Error deleting: {}"
 msgstr "Gagal menghapus: {}"
 
-#: utils.py:24
+#: utils.py:26
 msgid "Failed to open user config folder"
 msgstr "Gagal membuka folder konfigurasi pengguna"
 
@@ -159,23 +191,83 @@ msgstr "Gagal membuka folder konfigurasi pengguna"
 msgid "Found {n} inactive addons Opening report"
 msgstr "Ditemukan {n} pengaya tidak aktif. Membuka laporan"
 
-#: crash_analyzer.py:375
+#: healthCheck.py:385
+msgid "Harmless notice"
+msgstr "Pemberitahuan tidak berbahaya"
+
+#: healthCheck.py:347
+msgid "If it keeps happening while you use one program, that program has an accessibility problem."
+msgstr "Jika masalah ini terus terjadi saat Anda menggunakan satu program tertentu, program tersebut memiliki masalah aksesibilitas."
+
+#: healthCheck.py:358
+msgid "It works for now but may stop working after a future NVDA update. The add-on author should update it."
+msgstr "Berfungsi untuk sekarang tetapi mungkin berhenti berfungsi setelah pembaruan NVDA mendatang. Pembuat pengaya harus memperbaruinya."
+
+#: crash_analyzer.py:423
 msgid "Log file not found."
 msgstr "Berkas log tidak ditemukan."
+
+#: healthCheck.py:338
+msgid "Many add-ons or a slow disk can cause this. Binary Search Debugging can help find a slow add-on."
+msgstr "Banyak pengaya atau diska lambat dapat memicu hal ini. Debugging Pencarian Biner dapat membantu menemukan pengaya yang lambat."
 
 #: doctor.py:277
 msgid "Missing {n} configuration files"
 msgstr "Kehilangan {n} berkas konfigurasi"
 
-#: __init__.py:90
+#: addonCore.py:114
 msgid "NVDA Version: {}"
 msgstr "Versi NVDA: {}"
+
+#: healthCheck.py:344
+msgid "NVDA could not look inside a protected Windows process. This is normal and harmless."
+msgstr "NVDA tidak dapat memeriksa proses Windows yang dilindungi. Ini adalah hal yang normal dan tidak berbahaya."
+
+#: healthCheck.py:349
+msgid "NVDA has no separate keyboard command map for your language, so the default commands are used. This is normal."
+msgstr "NVDA tidak memiliki pemetaan perintah keyboard terpisah untuk bahasa Anda, jadi perintah default yang akan digunakan. Ini adalah hal yang normal."
+
+#: crash_analyzer.py:244
+msgid "NVDA health findings:"
+msgstr "Temuan kesehatan NVDA:"
+
+#: healthCheck.py:428
+msgid "NVDA health: good."
+msgstr "Kesehatan NVDA: baik."
+
+#: healthCheck.py:426
+msgid "NVDA health: mostly good, with minor issues."
+msgstr "Kesehatan NVDA: sebagian besar baik, dengan sedikit masalah."
+
+#: healthCheck.py:424
+msgid "NVDA health: needs attention."
+msgstr "Kesehatan NVDA: perlu perhatian."
+
+#: healthCheck.py:326
+msgid "NVDA stopped responding and the log ends before it recovered. NVDA was probably closed or restarted while frozen."
+msgstr "NVDA berhenti merespons dan log berakhir sebelum pulih. NVDA kemungkinan ditutup atau dimulai ulang saat macet."
+
+#: healthCheck.py:324
+msgid "NVDA stopped responding for about {seconds:.1f} seconds and then recovered."
+msgstr "NVDA berhenti merespons selama sekitar {seconds:.1f} detik lalu pulih kembali."
+
+#: healthCheck.py:337
+msgid "NVDA took {seconds:.1f} seconds to start, which is slower than normal."
+msgstr "NVDA memerlukan waktu {seconds:.1f} detik untuk memulai, yang lebih lambat dari biasanya."
+
+#: healthCheck.py:335
+msgid "NVDA was busy inside {module} (line {line})."
+msgstr "NVDA sedang sibuk di dalam {module} (baris {line})."
+
+#: healthCheck.py:333
+msgid "NVDA was waiting for the program in front of you to answer an accessibility request. That program is probably the cause."
+msgstr "NVDA sedang menunggu program di depan Anda untuk merespons permintaan aksesibilitas. Program tersebut mungkin menjadi penyebabnya."
 
 #: cleanup.py:120
 msgid "No __pycache__ folders found. Everything is clean."
 msgstr "Tidak ada folder __pycache__ ditemukan. Semuanya bersih."
 
-#: diagnostic.py:80
+#: diagnostic.py:85
 msgid "No active add-ons found to diagnose."
 msgstr "Tidak ada pengaya aktif yang ditemukan untuk didiagnosis."
 
@@ -183,15 +275,15 @@ msgstr "Tidak ada pengaya aktif yang ditemukan untuk didiagnosis."
 msgid "No add-on directories found to clean."
 msgstr "Tidak ada direktori pengaya yang ditemukan untuk dibersihkan."
 
-#: crash_analyzer.py:380
-msgid "No add-on related issues found in the current log."
-msgstr "Tidak ada masalah terkait pengaya yang ditemukan pada log saat ini."
+#: crash_analyzer.py:433
+msgid "No problems found in the NVDA log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "Tidak ada masalah yang ditemukan pada log NVDA. Untuk deteksi yang lebih menyeluruh, pertimbangkan untuk mengatur Level Pencatatan (Logging Level) NVDA ke Debug di Pengaturan Umum."
 
-#: crash_analyzer.py:382
-msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
-msgstr "Tidak ada masalah terkait pengaya yang ditemukan pada log saat ini. Untuk deteksi lebih mendalam, pertimbangkan untuk mengatur Tingkat Pencatatan Log NVDA ke Debug pada Pengaturan Umum."
+#: crash_analyzer.py:431
+msgid "No problems found in the NVDA log. NVDA looks healthy."
+msgstr "Tidak ada masalah yang ditemukan pada log NVDA. NVDA tampak normal."
 
-#: recovery_gui.py:162
+#: recovery_gui.py:175
 msgid "No recovery points available. Create a recovery first."
 msgstr "Tidak ada titik pemulihan yang tersedia. Buat pemulihan terlebih dahulu."
 
@@ -208,11 +300,11 @@ msgstr "Tidak ada berkas sementara atau .delete NVDA yang ditemukan."
 msgid "Please select a recovery folder first."
 msgstr "Silakan pilih folder pemulihan terlebih dahulu."
 
-#: diagnostic.py:97
+#: diagnostic.py:102
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
 msgstr "Siap memulai diagnostik? NVDA akan memuat ulang dan me-nonaktifkan separuh dari pengaya aktif Anda."
 
-#: recovery.py:104
+#: recovery.py:140
 msgid "Recovery created: {n}"
 msgstr "Pemulihan dibuat: {n}"
 
@@ -220,15 +312,15 @@ msgstr "Pemulihan dibuat: {n}"
 msgid "Remove All"
 msgstr "Hapus Semua"
 
-#: recovery.py:185
+#: recovery.py:258
 msgid "Removed: {n}"
 msgstr "Dihapus: {n}"
 
-#: __init__.py:95
+#: addonCore.py:119
 msgid "Restart NVDA with add-ons disabled"
 msgstr "Mulai ulang NVDA dengan pengaya dinonaktifkan"
 
-#: __init__.py:97
+#: addonCore.py:121
 msgid "Restart NVDA {}"
 msgstr "Mulai ulang NVDA {}"
 
@@ -236,45 +328,58 @@ msgstr "Mulai ulang NVDA {}"
 msgid "Restore"
 msgstr "Pulihkan"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting"
 msgstr "Pulihkan Pengaturan NVDA"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting unavailable"
 msgstr "Pemulihan Pengaturan NVDA tidak tersedia"
 
-#: recovery.py:178
+#: recovery.py:210
 msgid "Restore completed, restarting NVDA..."
 msgstr "Pemulihan selesai, memulai ulang NVDA..."
 
-#: recovery.py:175
+#: recovery.py:193
+#: recovery.py:246
 msgid "Restore failed"
 msgstr "Pemulihan gagal"
 
-#: __init__.py:59
+#: addonCore.py:83
 msgid ""
 "Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"{list}\n"
+"{list}"
 msgstr ""
-"Putaran {round}: {count} pengaya DINONAKTIFKAN.\n"
+"Putaran {round}: {count} pengaya dinonaktifkan.\n"
 "\n"
-"{list}\n"
+"{list}"
 
 #: recovery_gui.py:28
 msgid "Select Recovery Folder"
 msgstr "Pilih Folder Pemulihan"
 
-#: __init__.py:168
+#: healthCheck.py:382
+msgid "Serious problem"
+msgstr "Masalah serius"
+
+#: healthCheck.py:429
+msgid "Serious problems: {serious}. Warnings: {warning}. Harmless notices: {notice}. Add-on errors: {addons}."
+msgstr "Masalah serius: {serious}. Peringatan: {warning}. Pemberitahuan tidak berbahaya: {notice}. Error pengaya: {addons}."
+
+#: addonCore.py:192
 msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
 msgstr "Tekan sekali: Muat ulang sintesis darurat dan inisialisasi ulang keluaran audio. Tekan dua kali: Buka penganalisis log kerusakan"
 
-#: __init__.py:140
+#: addonCore.py:164
 msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
 msgstr "Tekan sekali: Buka menu DoctorNVDA, tekan dua kali: Mulai ulang NVDA, tekan tiga kali: Mulai ulang NVDA dengan pengaya dinonaktifkan"
 
-#: __init__.py:106
+#: healthCheck.py:129
+msgid "Some text could not be read because of an encoding problem."
+msgstr "Beberapa teks tidak dapat dibaca karena masalah penyandian (encoding)."
+
+#: addonCore.py:130
 msgid "System Info Summary"
 msgstr "Ringkasan Informasi Sistem"
 
@@ -285,6 +390,38 @@ msgstr "Informasi sistem telah disalin"
 #: cleanup.py:196
 msgid "Temp file cleanup encountered an error. Check NVDA log."
 msgstr "Pembersihan berkas sementara mengalami kesalahan. Periksa log NVDA."
+
+#: healthCheck.py:361
+msgid "The add-on {addon} uses a Python feature that is being removed or changed."
+msgstr "Pengaya {addon} menggunakan fitur Python yang akan dihapus atau diubah."
+
+#: healthCheck.py:354
+msgid "The add-on {addon} uses an outdated NVDA feature."
+msgstr "Pengaya {addon} menggunakan fitur NVDA yang sudah kedaluwarsa."
+
+#: healthCheck.py:328
+msgid "The add-on {addon} was running at that moment (file {file}, line {line})."
+msgstr "Pengaya {addon} sedang berjalan pada saat itu (file {file}, baris {line})."
+
+#: healthCheck.py:125
+msgid "The computer ran out of memory."
+msgstr "Memori komputer habis."
+
+#: healthCheck.py:366
+msgid "The previous NVDA session ended unexpectedly (a crash or a forced close)."
+msgstr "Sesi NVDA sebelumnya berakhir secara tak terduga (mengalami crash atau ditutup secara paksa)."
+
+#: healthCheck.py:133
+msgid "The program stopped an operation because of an unexpected state."
+msgstr "Program menghentikan operasi karena status yang tak terduga."
+
+#: healthCheck.py:135
+msgid "This is a mistake in the program code ({name}), not a problem with your computer."
+msgstr "Ini adalah kesalahan dalam kode program ({name}), bukan masalah pada komputer Anda."
+
+#: healthCheck.py:351
+msgid "Touch screen support is off because this is a portable copy of NVDA. This is normal."
+msgstr "Dukungan layar sentuh nonaktif karena ini adalah salinan portabel NVDA. Ini adalah hal yang normal."
 
 #: doctor.py:230
 #: doctor.py:240
@@ -300,30 +437,111 @@ msgstr "Versi NVDA tidak diketahui"
 msgid "Unknown RAM"
 msgstr "RAM Tidak Diketahui"
 
-#: crash_analyzer.py:194
+#: crash_analyzer.py:206
 msgid "Unknown error"
 msgstr "Kesalahan tidak diketahui"
 
-#: __init__.py:105
+#: healthCheck.py:331
+msgid "Use Binary Search Debugging in this menu to confirm whether this add-on is the cause."
+msgstr "Gunakan Debugging Pencarian Biner di menu ini untuk mengonfirmasi apakah pengaya ini menjadi penyebabnya."
+
+#: addonCore.py:129
 msgid "User Config Folder"
 msgstr "Folder Konfigurasi Pengguna"
 
-#: utils.py:26
+#: utils.py:28
 msgid "User config folder not found"
 msgstr "Folder konfigurasi pengguna tidak ditemukan"
 
-#: crash_analyzer.py:218
+#: healthCheck.py:384
+msgid "Warning"
+msgstr "Peringatan"
+
+#: healthCheck.py:342
+msgid "Window class: {name}."
+msgstr "Kelas jendela: {name}."
+
+#: healthCheck.py:119
+msgid "Windows refused access to a file, folder or process."
+msgstr "Windows menolak akses ke file, folder, atau proses."
+
+#: healthCheck.py:131
+msgid "Windows reported a system error."
+msgstr "Windows melaporkan galat sistem."
+
+#: healthCheck.py:340
+msgid "Windows was slow to switch the active window, so NVDA may have announced it late."
+msgstr "Windows lambat beralih ke jendela aktif, jadi NVDA mungkin mengumumkannya terlambat."
+
+#: crash_analyzer.py:230
 msgid "add-on: {addon}"
 msgstr "pengaya: {addon}"
 
-#: crash_analyzer.py:221
+#: healthCheck.py:399
+msgid "advice: {text}"
+msgstr "saran: {text}"
+
+#: crash_analyzer.py:233
 msgid "error: {error}"
 msgstr "kesalahan: {error}"
 
-#: crash_analyzer.py:219
+#: crash_analyzer.py:231
 msgid "file: {file}"
 msgstr "berkas: {file}"
 
-#: crash_analyzer.py:220
+#: crash_analyzer.py:232
 msgid "line: {line}"
 msgstr "baris: {line}"
+
+#: healthCheck.py:397
+msgid "meaning: {text}"
+msgstr "arti: {text}"
+
+#: healthCheck.py:392
+msgid "problem: {text}"
+msgstr "masalah: {text}"
+
+#: healthCheck.py:391
+msgid "severity: {label}"
+msgstr "tingkat keparahan: {label}"
+
+#: crash_analyzer.py:408
+msgid "the current log"
+msgstr "log saat ini"
+
+#: crash_analyzer.py:348
+#: crash_analyzer.py:405
+msgid "the previous session's log"
+msgstr "log sesi sebelumnya"
+
+#: healthCheck.py:401
+msgid "when: first at {time} in {log}, seen {count} times"
+msgstr "kapan: pertama kali pada {time} di {log}, terlihat {count} kali"
+
+#: healthCheck.py:405
+msgid "when: {log}"
+msgstr "kapan: {log}"
+
+#: healthCheck.py:403
+msgid "when: {time} in {log}"
+msgstr "kapan: {time} di {log}"
+
+#: healthCheck.py:395
+msgid "where: {text}"
+msgstr "di mana: {text}"
+
+#: healthCheck.py:415
+msgid "{count} more minor items were not listed."
+msgstr "{count} item minor lainnya tidak tercantum."
+
+#: healthCheck.py:374
+msgid "{who} left a minor note: {text}"
+msgstr "{who} meninggalkan catatan minor: {text}"
+
+#: healthCheck.py:372
+msgid "{who} reported a problem that NVDA handled: {text}"
+msgstr "{who} melaporkan masalah yang ditangani oleh NVDA: {text}"
+
+#: healthCheck.py:370
+msgid "{who} reported an error: {text}"
+msgstr "{who} melaporkan galat: {text}"

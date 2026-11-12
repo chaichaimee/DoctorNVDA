@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DoctorNVDA 2026.9.0\n"
+"Project-Id-Version: DoctorNVDA 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-29 07:38+0700\n"
+"POT-Creation-Date: 2026-11-12 16:09+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Russian\n"
@@ -10,27 +10,51 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
-#: diagnostic.py:173
+#: diagnostic.py:182
 msgid "&Cancel"
 msgstr "&Отмена"
 
-#: diagnostic.py:169
+#: diagnostic.py:178
 msgid "&No"
 msgstr "&Нет"
 
-#: diagnostic.py:177
+#: diagnostic.py:186
 msgid "&OK"
 msgstr "О&К"
 
-#: diagnostic.py:165
+#: diagnostic.py:174
 msgid "&Yes"
 msgstr "&Да"
 
 #: recovery_gui.py:77
 msgid "(No recovery points available)"
 msgstr "(Нет доступных точек восстановления)"
+
+#: healthCheck.py:123
+msgid "A Windows accessibility component returned an error. The program in use may not support accessibility fully."
+msgstr "Компонент специальной возможностей Windows вернул ошибку. Используемая программа может не полностью поддерживать специальный возможности."
+
+#: healthCheck.py:363
+msgid "A component uses a Python feature that is being removed or changed."
+msgstr "Компонент использует функцию Python, которая удаляется или изменяется."
+
+#: healthCheck.py:127
+msgid "A connection or an operation took too long or was refused."
+msgstr "Соединение или операция заняли слишком много времени либо были отклонены."
+
+#: healthCheck.py:121
+msgid "A file or folder that was needed could not be found."
+msgstr "Не удалось найти необходимый файл или папку."
+
+#: healthCheck.py:346
+msgid "A program gave NVDA incomplete accessibility information. This is usually harmless."
+msgstr "Программа передала в NVDA неполную информацию специального возможностей. Обычно это безвредно."
+
+#: crash_analyzer.py:241
+msgid "Add-on errors:"
+msgstr "Ошибки дополнений:"
 
 #: doctor.py:296
 msgid "All addons active"
@@ -40,10 +64,18 @@ msgstr "Все дополнения включены"
 msgid "All configuration files present"
 msgstr "Все конфигурационные файлы присутствуют"
 
-#: recovery.py:192
+#: recovery.py:265
 #: recovery_gui.py:105
 msgid "All recoveries removed"
 msgstr "Все точки восстановления удалены"
+
+#: healthCheck.py:356
+msgid "An add-on or NVDA component uses an outdated NVDA feature."
+msgstr "Дополнение или компонент NVDA используют устаревшую функцию NVDA."
+
+#: healthCheck.py:136
+msgid "An error of type {name} occurred."
+msgstr "Произошла ошибка типа {name}."
 
 #: recovery_gui.py:130
 msgid "Are you sure you want to delete {}?"
@@ -61,7 +93,7 @@ msgstr "Сброс аудиосистемы не удался. Проверьт�
 msgid "Audio subsystem reset complete"
 msgstr "Сброс подсистемы аудио завершён"
 
-#: __init__.py:102
+#: addonCore.py:126
 msgid "Binary Search Debugging add-on"
 msgstr "Диагностика дополнений методом бинарного поиска"
 
@@ -73,15 +105,15 @@ msgstr "При очистке кэша произошла ошибка. Пров
 msgid "Cancel"
 msgstr "Отмена"
 
-#: __init__.py:100
+#: addonCore.py:124
 msgid "Cancel Add-on Diagnostic and Restore All"
 msgstr "Отменить диагностику дополнений и восстановить всё"
 
-#: __init__.py:107
+#: addonCore.py:131
 msgid "Clean Add-on Caches"
 msgstr "Очистить кэш дополнений"
 
-#: __init__.py:108
+#: addonCore.py:132
 msgid "Clean NVDA Temp Files"
 msgstr "Очистить временные файлы NVDA"
 
@@ -101,15 +133,15 @@ msgstr "Подтверждение удаления всех элементов"
 msgid "Copied to clipboard: {}"
 msgstr "Скопировано в буфер обмена: {}"
 
-#: __init__.py:104
+#: addonCore.py:128
 msgid "Crash Log Analyzer"
 msgstr "Анализатор журнала сбоев"
 
-#: __init__.py:91
+#: addonCore.py:115
 msgid "Create NVDA Setting Recovery"
 msgstr "Создать точку восстановления настроек NVDA"
 
-#: recovery.py:100
+#: recovery.py:136
 msgid "Create recovery failed"
 msgstr "Не удалось создать точку восстановления"
 
@@ -121,25 +153,25 @@ msgstr "Удалено {count} временных файлов/.delete. Осво
 msgid "Deleted."
 msgstr "Удалено."
 
-#: diagnostic.py:142
+#: diagnostic.py:151
 msgid "Diagnostic complete. Found and disabled: {name}"
 msgstr "Диагностика завершена. Найдено и отключено: {name}"
 
-#: __init__.py:157
-#: diagnostic.py:98
+#: addonCore.py:181
+#: diagnostic.py:103
 msgid "DoctorNVDA"
 msgstr "DoctorNVDA"
 
-#: __init__.py:81
+#: addonCore.py:105
 msgid "DoctorNVDA Health Check"
 msgstr "Проверка состояния DoctorNVDA"
 
-#: menu.py:18
-#: menu.py:89
+#: menu.py:59
+#: menu.py:130
 msgid "DoctorNVDA Menu"
 msgstr "Меню DoctorNVDA"
 
-#: __init__.py:103
+#: addonCore.py:127
 msgid "Emergency Synthesizer Reboot"
 msgstr "Аварийная перезагрузка синтезатора"
 
@@ -151,7 +183,7 @@ msgstr "Ошибка"
 msgid "Error deleting: {}"
 msgstr "Ошибка при удалении: {}"
 
-#: utils.py:24
+#: utils.py:26
 msgid "Failed to open user config folder"
 msgstr "Не удалось открыть папку пользовательских настроек"
 
@@ -159,23 +191,83 @@ msgstr "Не удалось открыть папку пользовательс
 msgid "Found {n} inactive addons Opening report"
 msgstr "Найдено {n} неактивных дополнений. Открытие отчёта"
 
-#: crash_analyzer.py:375
+#: healthCheck.py:385
+msgid "Harmless notice"
+msgstr "Безвредное уведомление"
+
+#: healthCheck.py:347
+msgid "If it keeps happening while you use one program, that program has an accessibility problem."
+msgstr "Если это повторяется при использовании определенной программы, значит, в ней есть проблема с доступностью."
+
+#: healthCheck.py:358
+msgid "It works for now but may stop working after a future NVDA update. The add-on author should update it."
+msgstr "Сейчас это работает, но может перестать работать после будущего обновления NVDA. Автор дополнения должен обновить его."
+
+#: crash_analyzer.py:423
 msgid "Log file not found."
 msgstr "Файл журнала не найден."
+
+#: healthCheck.py:338
+msgid "Many add-ons or a slow disk can cause this. Binary Search Debugging can help find a slow add-on."
+msgstr "Это может быть вызвано большим количеством дополнений или медленным диском. Отладка методом двоичного поиска может помочь найти медленное дополнение."
 
 #: doctor.py:277
 msgid "Missing {n} configuration files"
 msgstr "Отсутствует {n} конфигурационных файлов"
 
-#: __init__.py:90
+#: addonCore.py:114
 msgid "NVDA Version: {}"
 msgstr "Версия NVDA: {}"
+
+#: healthCheck.py:344
+msgid "NVDA could not look inside a protected Windows process. This is normal and harmless."
+msgstr "NVDA не смогла заглянуть внутрь защищенного процесса Windows. Это нормально и безопасно."
+
+#: healthCheck.py:349
+msgid "NVDA has no separate keyboard command map for your language, so the default commands are used. This is normal."
+msgstr "У NVDA нет отдельной раскладки клавиатурных команд для вашего языка, поэтому используются стандартные команды. Это нормально."
+
+#: crash_analyzer.py:244
+msgid "NVDA health findings:"
+msgstr "Результаты проверки состояния NVDA:"
+
+#: healthCheck.py:428
+msgid "NVDA health: good."
+msgstr "Состояние NVDA: хорошее."
+
+#: healthCheck.py:426
+msgid "NVDA health: mostly good, with minor issues."
+msgstr "Состояние NVDA: в основном хорошее, с незначительными проблемами."
+
+#: healthCheck.py:424
+msgid "NVDA health: needs attention."
+msgstr "Состояние NVDA: требует внимания."
+
+#: healthCheck.py:326
+msgid "NVDA stopped responding and the log ends before it recovered. NVDA was probably closed or restarted while frozen."
+msgstr "NVDA перестала отвечать, и лог обрывается до ее восстановления. Вероятно, зависшая NVDA была закрыта или перезапущена."
+
+#: healthCheck.py:324
+msgid "NVDA stopped responding for about {seconds:.1f} seconds and then recovered."
+msgstr "NVDA перестала отвечать примерно на {seconds:.1f} сек., а затем восстановила работу."
+
+#: healthCheck.py:337
+msgid "NVDA took {seconds:.1f} seconds to start, which is slower than normal."
+msgstr "Запуск NVDA занял {seconds:.1f} сек., что дольше обычного."
+
+#: healthCheck.py:335
+msgid "NVDA was busy inside {module} (line {line})."
+msgstr "NVDA была занята в модуле {module} (строка {line})."
+
+#: healthCheck.py:333
+msgid "NVDA was waiting for the program in front of you to answer an accessibility request. That program is probably the cause."
+msgstr "NVDA ожидает ответа на запрос специаранных возможностей от активной программы. Вероятно, проблема в ней."
 
 #: cleanup.py:120
 msgid "No __pycache__ folders found. Everything is clean."
 msgstr "Папки __pycache__ не найдены. Всё чисто."
 
-#: diagnostic.py:80
+#: diagnostic.py:85
 msgid "No active add-ons found to diagnose."
 msgstr "Не найдено активных дополнений для диагностики."
 
@@ -183,15 +275,15 @@ msgstr "Не найдено активных дополнений для диа�
 msgid "No add-on directories found to clean."
 msgstr "Не найдено каталогов дополнений для очистки."
 
-#: crash_analyzer.py:380
-msgid "No add-on related issues found in the current log."
-msgstr "В текущем журнале не найдено проблем, связанных с дополнениями."
+#: crash_analyzer.py:433
+msgid "No problems found in the NVDA log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
+msgstr "В журнале NVDA проблем не обнаружено. Для более тщательной проверки установите уровень ведения журнала NVDA «Отладка» в общих настройках."
 
-#: crash_analyzer.py:382
-msgid "No add-on related issues found in the current log. For more thorough detection, consider setting NVDA's Logging Level to Debug in General Settings."
-msgstr "В текущем журнале не найдено проблем, связанных с дополнениями. Для более точного обнаружения установите уровень ведения журнала NVDA на «Отладка» в общих настройках."
+#: crash_analyzer.py:431
+msgid "No problems found in the NVDA log. NVDA looks healthy."
+msgstr "В журнале NVDA проблем не обнаружено. NVDA работает нормально."
 
-#: recovery_gui.py:162
+#: recovery_gui.py:175
 msgid "No recovery points available. Create a recovery first."
 msgstr "Нет доступных точек восстановления. Сначала создайте точку восстановления."
 
@@ -208,11 +300,11 @@ msgstr "Временные файлы или файлы .delete NVDA не най
 msgid "Please select a recovery folder first."
 msgstr "Пожалуйста, сначала выберите папку восстановления."
 
-#: diagnostic.py:97
+#: diagnostic.py:102
 msgid "Ready to start diagnostic? NVDA will restart and disable half of your active add-ons."
 msgstr "Готовы начать диагностику? NVDA перезапустится и отключит половину ваших активных дополнений."
 
-#: recovery.py:104
+#: recovery.py:140
 msgid "Recovery created: {n}"
 msgstr "Создана точка восстановления: {n}"
 
@@ -220,15 +312,15 @@ msgstr "Создана точка восстановления: {n}"
 msgid "Remove All"
 msgstr "Удалить всё"
 
-#: recovery.py:185
+#: recovery.py:258
 msgid "Removed: {n}"
 msgstr "Удалено: {n}"
 
-#: __init__.py:95
+#: addonCore.py:119
 msgid "Restart NVDA with add-ons disabled"
 msgstr "Перезапустить NVDA с отключенными дополнениями"
 
-#: __init__.py:97
+#: addonCore.py:121
 msgid "Restart NVDA {}"
 msgstr "Перезапустить NVDA {}"
 
@@ -236,45 +328,58 @@ msgstr "Перезапустить NVDA {}"
 msgid "Restore"
 msgstr "Восстановить"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting"
 msgstr "Восстановить настройки NVDA"
 
-#: __init__.py:94
+#: addonCore.py:118
 msgid "Restore NVDA Setting unavailable"
 msgstr "Восстановление настроек NVDA недоступно"
 
-#: recovery.py:178
+#: recovery.py:210
 msgid "Restore completed, restarting NVDA..."
 msgstr "Восстановление завершено, перезапуск NVDA..."
 
-#: recovery.py:175
+#: recovery.py:193
+#: recovery.py:246
 msgid "Restore failed"
 msgstr "Сбой восстановления"
 
-#: __init__.py:59
+#: addonCore.py:83
 msgid ""
 "Round {round}: {count} add-on(s) are DISABLED.\n"
 "\n"
-"{list}\n"
+"{list}"
 msgstr ""
-"Раунд {round}: {count} дополнений ОТКЛЮЧЕНО.\n"
+"Раунд {round}: отключено дополнений: {count}.\n"
 "\n"
-"{list}\n"
+"{list}"
 
 #: recovery_gui.py:28
 msgid "Select Recovery Folder"
 msgstr "Выберите папку восстановления"
 
-#: __init__.py:168
+#: healthCheck.py:382
+msgid "Serious problem"
+msgstr "Серьезная проблема"
+
+#: healthCheck.py:429
+msgid "Serious problems: {serious}. Warnings: {warning}. Harmless notices: {notice}. Add-on errors: {addons}."
+msgstr "Серьезные проблемы: {serious}. Предупреждения: {warning}. Безвредные уведомления: {notice}. Ошибки дополнений: {addons}."
+
+#: addonCore.py:192
 msgid "Single tap: Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output. Double tap: Open Crash Log Analyzer"
 msgstr "Одно нажатие: аварийный перезапуск синтезатора и аудиовыхода. Двойное нажатие: открыть анализатор журнала сбоев"
 
-#: __init__.py:140
+#: addonCore.py:164
 msgid "Single tap: Open DoctorNVDA menu, double tap: Restart NVDA, triple tap: Restart NVDA with add-ons disabled"
 msgstr "Одно нажатие: открыть меню DoctorNVDA, двойное нажатие: перезапустить NVDA, тройное нажатие: перезапустить NVDA с отключенными дополнениями"
 
-#: __init__.py:106
+#: healthCheck.py:129
+msgid "Some text could not be read because of an encoding problem."
+msgstr "Не удалось прочитать часть текста из-за проблемы с кодировкой."
+
+#: addonCore.py:130
 msgid "System Info Summary"
 msgstr "Сводка системной информации"
 
@@ -285,6 +390,38 @@ msgstr "Системная информация скопирована"
 #: cleanup.py:196
 msgid "Temp file cleanup encountered an error. Check NVDA log."
 msgstr "При очистке временных файлов произошла ошибка. Проверьте журнал NVDA."
+
+#: healthCheck.py:361
+msgid "The add-on {addon} uses a Python feature that is being removed or changed."
+msgstr "Дополнение {addon} использует функцию Python, которая удаляется или изменяется."
+
+#: healthCheck.py:354
+msgid "The add-on {addon} uses an outdated NVDA feature."
+msgstr "Дополнение {addon} использует устаревшую функцию NVDA."
+
+#: healthCheck.py:328
+msgid "The add-on {addon} was running at that moment (file {file}, line {line})."
+msgstr "В этот момент выполнялось дополнение {addon} (файл {file}, строка {line})."
+
+#: healthCheck.py:125
+msgid "The computer ran out of memory."
+msgstr "Недостаточно оперативной памяти."
+
+#: healthCheck.py:366
+msgid "The previous NVDA session ended unexpectedly (a crash or a forced close)."
+msgstr "Предыдущий сеанс NVDA завершился неожиданно (сбой или принудительное закрытие)."
+
+#: healthCheck.py:133
+msgid "The program stopped an operation because of an unexpected state."
+msgstr "Программа прервала операцию из-за непредвиденного состояния."
+
+#: healthCheck.py:135
+msgid "This is a mistake in the program code ({name}), not a problem with your computer."
+msgstr "Это ошибка в коде программы ({name}), а не проблема с вашим компьютером."
+
+#: healthCheck.py:351
+msgid "Touch screen support is off because this is a portable copy of NVDA. This is normal."
+msgstr "Поддержка сенсорного экрана отключена, так как это портативная копия NVDA. Это нормально."
 
 #: doctor.py:230
 #: doctor.py:240
@@ -300,30 +437,111 @@ msgstr "Неизвестная версия NVDA"
 msgid "Unknown RAM"
 msgstr "Неизвестная ОЗУ"
 
-#: crash_analyzer.py:194
+#: crash_analyzer.py:206
 msgid "Unknown error"
 msgstr "Неизвестная ошибка"
 
-#: __init__.py:105
+#: healthCheck.py:331
+msgid "Use Binary Search Debugging in this menu to confirm whether this add-on is the cause."
+msgstr "Используйте отладку методом двоичного поиска в этом меню, чтобы подтвердить, является ли это дополнение причиной проблемы."
+
+#: addonCore.py:129
 msgid "User Config Folder"
 msgstr "Папка пользовательских настроек"
 
-#: utils.py:26
+#: utils.py:28
 msgid "User config folder not found"
 msgstr "Папка пользовательских настроек не найдена"
 
-#: crash_analyzer.py:218
+#: healthCheck.py:384
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: healthCheck.py:342
+msgid "Window class: {name}."
+msgstr "Класс окна: {name}."
+
+#: healthCheck.py:119
+msgid "Windows refused access to a file, folder or process."
+msgstr "Windows отказал в доступе к файлу, папке или процессу."
+
+#: healthCheck.py:131
+msgid "Windows reported a system error."
+msgstr "Windows сообщила о системной ошибке."
+
+#: healthCheck.py:340
+msgid "Windows was slow to switch the active window, so NVDA may have announced it late."
+msgstr "Windows долго переключала активное окно, поэтому NVDA могла объявить его с запозданием."
+
+#: crash_analyzer.py:230
 msgid "add-on: {addon}"
 msgstr "дополнение: {addon}"
 
-#: crash_analyzer.py:221
+#: healthCheck.py:399
+msgid "advice: {text}"
+msgstr "совет: {text}"
+
+#: crash_analyzer.py:233
 msgid "error: {error}"
 msgstr "ошибка: {error}"
 
-#: crash_analyzer.py:219
+#: crash_analyzer.py:231
 msgid "file: {file}"
 msgstr "файл: {file}"
 
-#: crash_analyzer.py:220
+#: crash_analyzer.py:232
 msgid "line: {line}"
 msgstr "строка: {line}"
+
+#: healthCheck.py:397
+msgid "meaning: {text}"
+msgstr "значение: {text}"
+
+#: healthCheck.py:392
+msgid "problem: {text}"
+msgstr "проблема: {text}"
+
+#: healthCheck.py:391
+msgid "severity: {label}"
+msgstr "критичность: {label}"
+
+#: crash_analyzer.py:408
+msgid "the current log"
+msgstr "текущий журнал"
+
+#: crash_analyzer.py:348
+#: crash_analyzer.py:405
+msgid "the previous session's log"
+msgstr "журнал предыдущего сеанса"
+
+#: healthCheck.py:401
+msgid "when: first at {time} in {log}, seen {count} times"
+msgstr "когда: впервые в {time} в {log}, замечено {count} раз"
+
+#: healthCheck.py:405
+msgid "when: {log}"
+msgstr "когда: {log}"
+
+#: healthCheck.py:403
+msgid "when: {time} in {log}"
+msgstr "когда: {time} в {log}"
+
+#: healthCheck.py:395
+msgid "where: {text}"
+msgstr "где: {text}"
+
+#: healthCheck.py:415
+msgid "{count} more minor items were not listed."
+msgstr "еще {count} незначительных элементов не были перечислены."
+
+#: healthCheck.py:374
+msgid "{who} left a minor note: {text}"
+msgstr "{who} оставил незначительную заметку: {text}"
+
+#: healthCheck.py:372
+msgid "{who} reported a problem that NVDA handled: {text}"
+msgstr "{who} сообщил о проблеме, с которой NVDA справилась: {text}"
+
+#: healthCheck.py:370
+msgid "{who} reported an error: {text}"
+msgstr "{who} сообщил об ошибке: {text}"

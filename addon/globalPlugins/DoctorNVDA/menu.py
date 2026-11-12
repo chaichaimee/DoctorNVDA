@@ -1,18 +1,59 @@
 # menu.py
 
+import time
 import wx
-import core
 import addonHandler
+import controlTypes
+import logHandler
 import tones
 import gui
 
 addonHandler.initTranslation()
 try:
 	_ = addonHandler.getTranslation()
-except:
+except Exception:
 	def _(x): return x
 
 _instance = None
+_OPEN_SUPPRESS_SECONDS = 1.5
+_suppressUntil = 0.0
+_suppressedTitle = ""
+
+def _normalizeText(text):
+	return " ".join(text.casefold().split())
+
+def _getDialogRoleLabel():
+	try:
+		return controlTypes.Role.DIALOG.displayString
+	except AttributeError:
+		logHandler.log.debug("DoctorNVDA: dialog role label is unavailable")
+		return ""
+
+def _isDialogAnnouncement(text, titleKey, roleKey):
+	remainder = _normalizeText(text)
+	if not remainder:
+		return False
+	for part in (titleKey, roleKey):
+		if part:
+			remainder = remainder.replace(part, " ")
+	return not remainder.strip(" ,.:;")
+
+def filterOpeningSpeech(speechSequence=None, *args, **kwargs):
+	if not speechSequence or time.monotonic() >= _suppressUntil:
+		return speechSequence
+	titleKey = _normalizeText(_suppressedTitle)
+	roleKey = _normalizeText(_getDialogRoleLabel())
+	filtered = []
+	wasDropped = False
+	for entry in speechSequence:
+		if isinstance(entry, str) and _isDialogAnnouncement(entry, titleKey, roleKey):
+			wasDropped = True
+			logHandler.log.debug("DoctorNVDA: dropped dialog announcement %r", entry)
+			continue
+		filtered.append(entry)
+	if not wasDropped:
+		return speechSequence
+	return filtered
 
 class DoctorMenu(wx.Dialog):
 	def __init__(self, items_func, callback, title=_("DoctorNVDA Menu")):
@@ -32,8 +73,6 @@ class DoctorMenu(wx.Dialog):
 		vbox.Add(self.list_box, 1, wx.EXPAND | wx.ALL, 15)
 		panel.SetSizer(vbox)
 
-		core.callLater(50, self.refresh_list)
-
 		self.list_box.Bind(wx.EVT_LISTBOX_DCLICK, self.on_select)
 		self.list_box.Bind(wx.EVT_CHAR_HOOK, self.on_key)
 
@@ -43,8 +82,10 @@ class DoctorMenu(wx.Dialog):
 
 		self.Bind(wx.EVT_CLOSE, self.on_close)
 		self.CenterOnScreen()
+		self.refresh_list()
 		self.Show()
 		self.Raise()
+		self.list_box.SetFocus()
 
 	def refresh_list(self):
 		try:
@@ -87,7 +128,19 @@ class DoctorMenu(wx.Dialog):
 		self.Destroy()
 
 def showMenu(items_func, callback, title=_("DoctorNVDA Menu")):
-	global _instance
+	global _instance, _suppressUntil, _suppressedTitle
 	if _instance:
 		_instance.Close()
+	_suppressedTitle = title
+	_suppressUntil = time.monotonic() + _OPEN_SUPPRESS_SECONDS
 	_instance = DoctorMenu(items_func, callback, title)
+
+def closeMenu():
+	global _suppressUntil
+	_suppressUntil = 0.0
+	if not _instance:
+		return
+	try:
+		_instance.Close()
+	except RuntimeError:
+		logHandler.log.debug("DoctorNVDA: menu window was already destroyed")
